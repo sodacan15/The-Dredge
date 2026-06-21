@@ -109,6 +109,11 @@ const LOGS = [
         src: "/kanumai.jpg",
         caption: "Diospyros canomoi (Kanumai) — botanical illustration showing the leaves, fruit clusters, and flower detail. The fruit and bark were used as fish poison by communities along the creeks. Illustration: Stuart Xchange / Philippine Medicinal Plants."
       },
+      {
+        type: "image",
+        src: "/canumai_reimagined.png",
+        caption: "The Kanumai as it might have stood — a theoretical rendition of the tree by the author. No photograph of the original exists; this is reconstruction from description alone."
+      },
       { type: "subtitle", text: "Ecology and Topography, Before Any of This Was Paved" },
       { 
         type: "seg", 
