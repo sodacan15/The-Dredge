@@ -42,6 +42,27 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="home-map-section">
+        <p className="home-map-label">Victoria Village · Canumay East, Valenzuela City</p>
+        <div className="home-map-frame">
+          <iframe
+            title="Victoria Village, Canumay East location map"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=120.9520%2C14.6960%2C120.9720%2C14.7140&layer=mapnik&marker=14.7050%2C120.9620"
+            className="home-map-embed"
+            loading="lazy"
+            allowFullScreen
+          />
+        </div>
+        <a
+          href="https://www.openstreetmap.org/?mlat=14.7050&mlon=120.9620#map=15/14.7050/120.9620"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="home-map-link"
+        >
+          View on OpenStreetMap →
+        </a>
+      </div>
+
       <div className="home-annotation">
         * this is a student documentary — not peer-reviewed ecology, but honest fieldwork
       </div>

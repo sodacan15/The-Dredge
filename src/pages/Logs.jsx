@@ -48,6 +48,11 @@ const LOGS = [
         type: "seg", 
         text: "Today the city carries a real, documented list of business and governance awards. The Philippine Chamber of Commerce and Industry inducted Valenzuela into its Most Business-Friendly LGU Hall of Fame after wins in 2012, 2014, and 2015, then handed the city the award again in 2019 and 2020, with a special citation as recently as 2025. The World Bank and International Finance Corporation's 2011 ease-of-business rankings put Valenzuela first out of 25 nominated cities for Ease of Registering Property, fourth for Ease of Starting a Business, and sixth for Ease of Dealing with Construction Permits. By most economic measures, this is a success story. By the measures that matter for this project, it's the story of how a wetland got paved and faded in the recess of time." 
       },
+      {
+        type: "image",
+        src: "/dr_valenzuela.jpg",
+        caption: "Dr. Pío Valenzuela (1869–1956) — physician, Katipunero, first elected mayor of the area during the 1898 Philippine Revolution. The city — and this research — carry his name. Photo: Wikipedia / Wikimedia Commons."
+      },
       { type: "subtitle", text: "Canumay: The Barangay That Got Cut in Half" },
       {
         type: "image",
