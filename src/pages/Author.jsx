@@ -1,14 +1,17 @@
+import PageHeader from "../components/PageHeader";
+
 export default function Author() {
   return (
     <div className="page">
-      <p className="page-eyebrow">About</p>
-      <h1 className="page-title">Author</h1>
+      <PageHeader
+        eyebrow="About"
+        title="Author"
+      />
 
       <div className="author-card">
         <p className="author-name">An Armchair Archaeologist</p>
         <p className="author-role">CS Student · Victoria Village, Canumay East</p>
         <p className="author-bio">
-          {/* ── Replace with your actual bio ── */}
           This project grew out of a simple observation: the house I grew up in
           had a well inside the living room floor. Someone, at some point, dug
           through the sala and found water. That felt like a clue.

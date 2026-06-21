@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PageHeader from "../components/PageHeader";
 import { RenderedDoc } from "../components/TextParser";
 
 const LOGS = [
@@ -231,11 +232,11 @@ export default function Logs() {
 
   return (
     <div className="page">
-      <p className="page-eyebrow">Field Notes</p>
-      <h1 className="page-title">Logs</h1>
-      <p className="page-subtitle">
-        Dated entries from the field — observations, conversations, discoveries.
-      </p>
+      <PageHeader
+        eyebrow="Field Notes"
+        title="Logs"
+        subtitle="Dated entries from the field — observations, conversations, discoveries."
+      />
 
       {/* Top Tab Switcher */}
       <div className="log-tabs">

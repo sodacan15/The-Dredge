@@ -1,4 +1,5 @@
 import { useState, useMemo, useCallback, useEffect } from "react";
+import PageHeader from "../components/PageHeader";
 
 const ITEMS = [
   { filename: "barangay-map",                        wide: true,  alt: "Barangay Map",                    tag: "archival",       caption: "Hand-drawn boundary map of Barangay Victoria Village, Canumay East. The canal lines are still visible along the southern edge." },
@@ -98,12 +99,11 @@ export default function Gallery() {
 
   return (
     <div className="page gallery-page">
-      <p className="page-eyebrow">Field Photography</p>
-      <h1 className="page-title">Gallery</h1>
-      <p className="page-subtitle">
-        Photos from the field walks, May 2026 — surviving plants, buried creeks,
-        factory walls, and the margins where things still grow.
-      </p>
+      <PageHeader
+        eyebrow="Field Photography"
+        title="Gallery"
+        subtitle="Photos from the field walks, May 2026 — surviving plants, buried creeks, factory walls, and the margins where things still grow."
+      />
 
       <div className="gallery-filters">
         {FILTERS.map(f => (

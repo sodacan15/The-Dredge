@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PageHeader from "../components/PageHeader";
 
 const SECTIONS = [
   {
@@ -149,12 +150,11 @@ export default function Research() {
 
   return (
     <div className="page research-page">
-      <p className="page-eyebrow">Sources Directory</p>
-      <h1 className="page-title">The Research</h1>
-      <p className="page-subtitle">
-        Classified references backing the ecological reconstruction, land
-        subsidence analysis, and oral histories of Victoria Village, Canumay East.
-      </p>
+      <PageHeader
+        eyebrow="Sources Directory"
+        title="The Research"
+        subtitle="Classified references backing the ecological reconstruction, land subsidence analysis, and oral histories of Victoria Village, Canumay East."
+      />
 
       <hr className="divider" />
 

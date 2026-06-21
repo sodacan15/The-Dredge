@@ -26,7 +26,7 @@ export default function App() {
     <div className="layout">
       <nav className="sidebar">
         <div className="sidebar-brand">
-          <span className="brand-drop">~</span>
+          <img src="/logo.png" alt="The Dredge" className="sidebar-logo" />
         </div>
         <ul className="nav-list">
           {PAGES.map((p) => (
