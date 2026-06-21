@@ -46,22 +46,29 @@ const SECTIONS = [
         title: "Inquirer.net — River Protection Initiatives",
         url: "http://newsinfo.inquirer.net/615748/valenzuela-city-dead-serious-about-river-protection",
         urlLabel: "inquirer.net",
-        finding: null,
-        body: "Exposes local government regulatory actions regarding industrial waste controls alongside community efforts against manufacturing discharge in northern waterways."
+        finding: "The Enforcement Gap",
+        body: "Exposes local government regulatory actions regarding industrial waste controls alongside community efforts against manufacturing discharge in northern waterways. The article covers cleanup enforcement drives along Valenzuela's creek system — the same network that Log 4 documents as functionally dead at the micro-drainage level, even while macro-level enforcement continues."
       },
       {
         title: "Manila Bulletin — Emergency Creek Engineering",
         url: "https://mb.com.ph/2025/08/08/valenzuela-lgu-mmda-intensify-creeks-cleanup-drive",
         urlLabel: "mb.com.ph · August 2025",
-        finding: null,
-        body: "Reports on the extraction of over 69,000 cubic meters of heavy silt and municipal debris from 11 strategic water channels to resolve major NLEX expressway flooding bottlenecks."
+        finding: "The 69,000 Cubic Meter Number",
+        body: "Reports on the extraction of over 69,000 cubic meters of heavy silt and municipal debris from 11 strategic water channels after July 2025 flooding submerged nearly half a kilometer of NLEX for over five hours. The cleanup was triggered by highway flooding, not residential flooding — which is why the unnamed canals of Victoria Village and Sitio Libis were not among the eleven priority channels."
       },
       {
         title: "Manila Bulletin / UP Diliman Study — Sinking Cities",
         url: "https://mb.com.ph/2024/12/5/sinking-cities-land-subsidence-threatens-to-erase-metro-cities-up-study",
         urlLabel: "mb.com.ph · December 2024",
-        finding: null,
-        body: "Highlights specialized UP geodetic data detailing subsidence threats in Metro Manila where heavy infrastructure and private pumping cause land levels to fall continuously."
+        finding: "The Ground That Disappears",
+        body: "Highlights specialized UP geodetic data detailing subsidence threats in Metro Manila where heavy infrastructure and private pumping cause land levels to fall continuously. The CAMANAVA area — which includes Valenzuela — appears in the data as one of the most affected zones. Read alongside the peer-reviewed Sulapas et al. paper below, this establishes the scale of the sinking: 20–42mm per year in older measurements, still 10–20mm in more recent data even with restrictions on extraction."
+      },
+      {
+        title: "Tribune / Valenzuela LGU — State of Calamity Declaration",
+        url: "https://tribune.net.ph",
+        urlLabel: "tribune.net.ph · July 2025",
+        finding: "The Human Count",
+        body: "Covers the July 2025 calamity declaration after Typhoons Crising, Dante, and Emong hit Valenzuela in close succession, resulting in more than 9,000 residents requiring rescue or evacuation. The flooding was most severe in the low-lying residential zones of Canumay, Lawang Bato, and Lingunan — the same areas the World Bank assessment places in the sub-catchment with the least infrastructure investment."
       },
     ]
   },
@@ -112,6 +119,13 @@ const SECTIONS = [
         finding: null,
         body: "Maps the area's geological base as Tropudults paired with Tropudalfs and Oxisols, indicating highly weathered, poorly drained, and naturally waterlogged alluvial floodplain horizons."
       },
+      {
+        title: "Cash, Corrine — \"Creating the Conditions for Climate Resilience\" (2021)",
+        url: "https://www.cogitatiopress.com/urbanplanning/article/view/4205",
+        urlLabel: "Urban Planning Journal · Vol. 6, Issue 3",
+        finding: "The ULHOA Model",
+        body: "Documents the United Libis Homeowners Association (ULHOA) community-based flood response in Sitio Libis, Canumay East. Led by Theresa Carampatana, residents organized to purchase Philippine Veterans Bank land outright and re-block their settlement to improve drainage. The study is one of the few peer-reviewed documents that treats Canumay East as a subject of ecological consequence rather than a footnote to Valenzuela's industrial profile. Referenced directly in Log 3."
+      },
     ]
   },
   {
@@ -126,6 +140,13 @@ const SECTIONS = [
         finding: null,
         body: "The legislative act enacted on October 30, 2017, that officially executed the partition of the old 341-hectare land area into independent West and East administrative barangay jurisdictions."
       },
+      {
+        title: "Republic Act No. 9275 — Philippine Clean Water Act (2004)",
+        url: "https://www.officialgazette.gov.ph/2004/03/22/republic-act-no-9275/",
+        urlLabel: "Official Gazette of the Philippines",
+        finding: null,
+        body: "The foundational clean water legislation that Valenzuela City cites in its sustainability policy and creek management programs. Technically applies to the Meycauayan River and connected waterways — meaning the unnamed drainage canals of Victoria Village are part of a legally protected watershed system, even if no enforcement has ever touched them at that scale."
+      },
     ]
   },
   {
@@ -134,11 +155,44 @@ const SECTIONS = [
     eyebrow: "Field Records",
     entries: [
       {
+        title: "Grandfather — Original Resident, Victoria Village",
+        date: "May 2026",
+        speaker: "Lolo (maternal grandfather)",
+        quote: "Dati, dito, may hito, dalag, samaral. Kangkong, gabi, palay. Tubig malapit — ang balon, bubukas mo lang ang sahig.",
+        finding: "Three Fish, One Sentence",
+        body: "My grandfather confirmed three fish species living on the exact lot where our house now stands: hito (catfish), dalag (mudfish), and samaral (rabbitfish). On the plant side: kangkong, gabi (the wetland variety), sedge grass, rice paddies, cogon grass at the edges, and coconut trees on slightly drier ground. He also confirmed that the original water table was high enough that a well could be opened directly through the house floor — a detail later corroborated by the soil classification data. He came to Victoria Village for work, built the house, and established the family. That's the whole story I have."
+      },
+      {
+        title: "Barangay Worker — Canumay East Barangay Hall",
+        date: "May 2026",
+        speaker: "Barangay office staff (name withheld)",
+        quote: "Doon dati, sa NLEX overpass — doon nakatayo yung puno. Wala na ngayon.",
+        finding: "The Tree and the Bridge",
+        body: "Encountered while processing a PWD rice ticket. When asked whether she knew where the original Kanumai tree once stood — the tree the barangay is named after — she said it used to stand at the NLEX overpass bridge, the same structure that physically split Canumay East from Canumay West when construction began in 1966. There is no Kanumai anywhere in the vicinity today: no original, no descendant, no second-generation tree. Just the bridge."
+      },
+      {
+        title: "Neighbors — Victoria Village residents",
+        date: "May 2026",
+        speaker: "Multiple residents, Victoria Village",
+        quote: "Bumabaha talaga dito every typhoon. Hindi bago. Ganyan na since dati.",
+        finding: "The Water Always Comes Back",
+        body: "Multiple Victoria Village neighbors confirmed the old creek without prompting — none of them needed to be told there used to be water here; they already knew. They described the recurrent flooding as something they lived with rather than were surprised by. Several noted how road levels around their houses had risen over the decades while their own floors stayed at the original elevation, creating the bowl effect described in Log 4."
+      },
+      {
+        title: "Sitio Libis residents — low-lying community",
+        date: "May 2026",
+        speaker: "Libis residents (several, informal conversation)",
+        quote: "Guyabano ang puno namin. Gusto niya ang tubig — basta malapit sa tubig, tumutubo.",
+        finding: "The Guyabano Tells You Something",
+        body: "Residents of Sitio Libis pointed out guyabano trees growing in their yards — a detail I wouldn't have known to look for. Guyabano prefers moist, well-drained soil close to water. It's a small thing, but it lines up with everything else: this whole stretch sat on a wetland-edge gradient, and the plants people chose to grow (whether they realized it or not) reflect the soil moisture that's still there, even under the concrete."
+      },
+      {
         title: "Author's Personal Testimony — Victoria Village",
-        url: null,
-        urlLabel: "The Dredge Log: Section A.1 — no URL",
-        finding: null,
-        body: "Documents explicit structural evidence including a sealed residential living room well, historical conversion of local kangkungan marshes via volcanic adobe filler, and a recurring induced-flooding bowl phenomenon caused by elevated street paving."
+        date: "Ongoing — 20 years",
+        speaker: "The author",
+        quote: "I remember tadpoles in the kanal before it got concreted over. I didn't think much of it then.",
+        finding: "The Well Under the Floor",
+        body: "Documents structural evidence including a sealed residential living room well (confirming the original high water table), the historical conversion of local kangkungan marsh via volcanic adobe filler, and a recurring induced-flooding bowl phenomenon caused by elevated street paving around lower, unchanged homes. The tadpoles in the kanal — remembered from childhood, before concreting — confirm that a functioning amphibian breeding habitat existed within my own lifetime, not just historical record."
       },
     ]
   },
@@ -147,6 +201,7 @@ const SECTIONS = [
 export default function Research() {
   const [active, setActive] = useState(SECTIONS[0].id);
   const current = SECTIONS.find(s => s.id === active);
+  const isOral = current?.id === "oral";
 
   return (
     <div className="page research-page">
@@ -179,19 +234,37 @@ export default function Research() {
               <h2 className="research-heading">{current.label}</h2>
               <div className="research-entries">
                 {current.entries.map((entry, i) => (
-                  <div key={i} className="research-entry">
-                    <div className="entry-header">
+                  isOral ? (
+                    <div
+                      key={i}
+                      className="research-entry oral-entry"
+                      data-date={entry.date}
+                    >
+                      <p className="oral-speaker">{entry.speaker}</p>
                       <h3 className="entry-title">{entry.title}</h3>
-                      {entry.url
-                        ? <a href={entry.url} target="_blank" rel="noopener noreferrer" className="entry-url">{entry.urlLabel}</a>
-                        : <span className="entry-url muted">{entry.urlLabel}</span>
-                      }
+                      {entry.finding && (
+                        <p className="entry-finding">— {entry.finding}</p>
+                      )}
+                      {entry.quote && (
+                        <p className="oral-quote">"{entry.quote}"</p>
+                      )}
+                      <p className="entry-body">{entry.body}</p>
                     </div>
-                    {entry.finding && (
-                      <p className="entry-finding">— {entry.finding}</p>
-                    )}
-                    <p className="entry-body">{entry.body}</p>
-                  </div>
+                  ) : (
+                    <div key={i} className="research-entry">
+                      <div className="entry-header">
+                        <h3 className="entry-title">{entry.title}</h3>
+                        {entry.url
+                          ? <a href={entry.url} target="_blank" rel="noopener noreferrer" className="entry-url">{entry.urlLabel}</a>
+                          : <span className="entry-url muted">{entry.urlLabel}</span>
+                        }
+                      </div>
+                      {entry.finding && (
+                        <p className="entry-finding">— {entry.finding}</p>
+                      )}
+                      <p className="entry-body">{entry.body}</p>
+                    </div>
+                  )
                 ))}
               </div>
             </>

@@ -30,6 +30,11 @@ const LOGS = [
         type: "seg", 
         text: "The town's eventual renaming is where local history gets a name and a face. Dr. Pío Valenzuela was born in Polo in 1887. He is a physician, Katipunero, one of the key figures in the revolutionary movement against Spain. During the 1898 Philippine Revolution he was elected the area's first municipal mayor, and it's his role in that uprising that earned the town his surname decades later, when a portion of old Polo was carved out and renamed in his honor." 
       },
+      {
+        type: "image",
+        src: "/Assets/barangay-profile.jpg",
+        caption: "Barangay Profile of Canumay East, Section 2.1 — the official history document listing all 7 sitios and 11 sapang. The Kanumai tree is named explicitly as the barangay's landmark. Barangay Hall physical archives."
+      },
       { type: "subtitle", text: "The Long Road to Cityhood" },
       { 
         type: "seg", 
@@ -49,6 +54,11 @@ const LOGS = [
         src: "/Assets/old-farm.jpg",
         caption: "Old agricultural land use in the area — the kind of landscape Canumay East used to be before industrialization."
       },
+      {
+        type: "image",
+        src: "/Assets/binunga2014.jpg",
+        caption: "A binunga tree photographed on a Canumay East street in February 2014 via Google Street View — these pioneer trees were already colonizing disturbed lots even then. The contrast between the tree and the concrete wall behind it is the whole story."
+      },
       { 
         type: "seg", 
         text: "Before the split, old Canumay was one of the largest original barangays in Valenzuela. 341 hectares combined, seven sitios, and eleven sapangs; all of the land is named after the Kanumai tree. Each sitio name was its own small piece of ecological evidence: Kaypandan for the pandan that grows at marshy edges; Bilaran for where people dried fish and crops by the water; Daang Malalim for a sunken, flood-prone road; Pinagbayanan for the old town center; Dulong Canumay for the farthest edge of the barangay; and Canumay itself, where a big tree is located." 
@@ -63,8 +73,13 @@ const LOGS = [
       },
       {
         type: "image",
+        src: "/Assets/emptylot2014.jpg",
+        caption: "An empty lot in Canumay East, February 2014 — Google Street View captures pioneer trees already reclaiming disturbed ground before the lot was built over. The adobe rubble in the foreground is typical of infill construction in the area."
+      },
+      {
+        type: "image",
         src: "/Assets/barangay-map.jpg",
-        caption: "Barangay profile of Canumay East — the official document showing the split territory and its boundaries."
+        caption: "Road Map of Barangay Canumay East — the official map showing the NLEX diagonal cut on the left, the named roads, and the waterway lines that represent what used to be eleven living creeks. Note for reference purposes only, drawn not to scale."
       },
     ],
   },
@@ -202,13 +217,23 @@ const LOGS = [
       },
       {
         type: "image",
+        src: "/aratilis.jpg",
+        caption: "Aratilis growing over a concrete wall on D. Bonifacio Drive — nobody planted it here. It colonized the moist, disturbed soil at the canal's edge on its own. This exact tree is the one mentioned in the log. Photo: D. Bonifacio, May 2026."
+      },
+      {
+        type: "image",
+        src: "/Assets/mangoxguava.jpg",
+        caption: "A mango tree growing alongside a guava beside a neighborhood home in Canumay East — mango trees can live 100 to 300 years. The ones still standing here were almost certainly planted by someone's great-grandparents."
+      },
+      {
+        type: "image",
         src: "/Assets/canal-plants.jpg",
         caption: "Canal-edge plants along Canumay East — pioneer species colonizing the disturbed, moist soil where creeks used to flow."
       },
       {
         type: "image",
         src: "/Assets/binunga.jpg",
-        caption: "Binunga trees growing around empty lots — a pioneer species that thrives in areas once surrounded by water."
+        caption: "Binunga trees growing around empty lots — a pioneer species that thrives in areas once surrounded by water. The sticky sap is a distinctive field marker."
       },
       { type: "subtitle", text: "The Full Portrait" },
       { 
@@ -246,11 +271,16 @@ const LOGS = [
         type: "seg", 
         text: "And the dead zone doesn't stay local. Victoria Village's kanal drains into Canumay East's unnamed waterways, which drain into the Meycauayan River, which drains into Manila Bay. It then connects, however loosely, to the much larger Pampanga River watershed reaching back to the Sierra Madre. We sealed the kangkungan with concrete and mostly forgot. The Meycauayan River itself isn't a footnote here. As part of the Marilao-Meycauayan-Obando River System, it was named to the Blacksmith Institute's 2007 \"Dirty Thirty\" list of the world's most polluted places, and multiple peer-reviewed water studies independently describe it as one of the most severely polluted rivers in the Philippines. Downstream dissolved oxygen has been measured as low as 0.49 parts per million in published water quality research; fish need a minimum of about 5 ppm just to survive. The contamination includes lead from battery recycling, hexavalent chromium from leather tanning, mercury, and nickel — and despite all of that, the river still serves as a domestic and agricultural water source for roughly 250,000 people. The nearby Tullahan River, which forms Valenzuela's southern border, is in even worse shape: functionally biologically dead and one of seven Philippine rivers identified as major contributors of plastic waste to the world's oceans. It's worth sitting with the irony in its name: \"Tullahan\" comes from \"tulya,\" meaning clam, because the river was once so full of shellfish that people named it after them." 
       },
+      {
+        type: "image",
+        src: "/Assets/vgc-canal.jpg",
+        caption: "A canal running through VGC — water moves, but nothing lives in it. This is what replaced the Sapang Bangka-bangka, where people once traveled by boat."
+      },
       { type: "subtitle", text: "Flooding: The Water Remembers Where It Used to Be" },
       {
         type: "image",
         src: "/nlex_east2west.jpg",
-        caption: "Looking east to west along the NLEX, the physical divide that split old Canumay in 1966."
+        caption: "Looking east to west along the NLEX, the physical divide that split old Canumay in 1966. The highway was built over and beside the original creek corridor — flooding here in 2025 shut it down for five hours."
       },
       { 
         type: "seg", 
@@ -272,6 +302,11 @@ const LOGS = [
         type: "image",
         src: "/Assets/marton-estero.jpg",
         caption: "The estero near Marton Road — one of the last visible waterways in Canumay East, now functioning as a flood drain rather than a living creek."
+      },
+      {
+        type: "image",
+        src: "/Assets/old-canal.jpg",
+        caption: "An old canal in the area — the water has nowhere to go except down and in. This is the geometry of induced flooding: streets raised over decades, drainage walls lifted to match, and the original marsh-level homes sitting lower with each cycle."
       },
       { type: "subtitle", text: "What the City Is Doing — and Isn't" },
       { 

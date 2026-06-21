@@ -2,7 +2,7 @@ import PageHeader from "../components/PageHeader";
 
 export default function Home() {
   return (
-    <div className="page">
+    <div className="page home-page">
       <PageHeader
         eyebrow="Victoria Village · Canumay East · Valenzuela City"
         title="The"
@@ -25,10 +25,26 @@ export default function Home() {
           alt="NLEX corridor with commercial building — the industrialized landscape that replaced Canumay's wetlands"
           className="home-hero-img"
         />
-        <figcaption className="home-hero-caption">
-          The NLEX corridor at Canumay East — a commercial building now stands where wetlands and creeks once ran.
-        </figcaption>
       </figure>
+
+      <div className="home-intro-cards">
+        <div className="intro-card">
+          <span className="intro-card-label">Field Notes</span>
+          <p className="intro-card-text">Five logs reconstructing the ecological history of Victoria Village — from eleven named creeks to one concrete canal.</p>
+        </div>
+        <div className="intro-card">
+          <span className="intro-card-label">Location</span>
+          <p className="intro-card-text">Canumay East, Valenzuela City — a barangay named after a tree that no longer grows there.</p>
+        </div>
+        <div className="intro-card">
+          <span className="intro-card-label">Method</span>
+          <p className="intro-card-text">Oral testimony, barangay records, soil maps, creek etymologies, and two decades of living with the floods.</p>
+        </div>
+      </div>
+
+      <div className="home-annotation">
+        * this is a student documentary — not peer-reviewed ecology, but honest fieldwork
+      </div>
     </div>
   );
 }
