@@ -44,6 +44,11 @@ const LOGS = [
         text: "Today the city carries a real, documented list of business and governance awards. The Philippine Chamber of Commerce and Industry inducted Valenzuela into its Most Business-Friendly LGU Hall of Fame after wins in 2012, 2014, and 2015, then handed the city the award again in 2019 and 2020, with a special citation as recently as 2025. The World Bank and International Finance Corporation's 2011 ease-of-business rankings put Valenzuela first out of 25 nominated cities for Ease of Registering Property, fourth for Ease of Starting a Business, and sixth for Ease of Dealing with Construction Permits. By most economic measures, this is a success story. By the measures that matter for this project, it's the story of how a wetland got paved and faded in the recess of time." 
       },
       { type: "subtitle", text: "Canumay: The Barangay That Got Cut in Half" },
+      {
+        type: "image",
+        src: "/Assets/old-farm.jpg",
+        caption: "Old agricultural land use in the area — the kind of landscape Canumay East used to be before industrialization."
+      },
       { 
         type: "seg", 
         text: "Before the split, old Canumay was one of the largest original barangays in Valenzuela. 341 hectares combined, seven sitios, and eleven sapangs; all of the land is named after the Kanumai tree. Each sitio name was its own small piece of ecological evidence: Kaypandan for the pandan that grows at marshy edges; Bilaran for where people dried fish and crops by the water; Daang Malalim for a sunken, flood-prone road; Pinagbayanan for the old town center; Dulong Canumay for the farthest edge of the barangay; and Canumay itself, where a big tree is located." 
@@ -55,6 +60,11 @@ const LOGS = [
       { 
         type: "seg", 
         text: "Canumay East today is bounded by Lingunan and Lawang Bato to the northwest and holds two distinct internal zones: high-ground hilly zones and low-ground areas such as Victoria Village, Sitio Libis, and Marton Road. No matter how high or low their topography is, both are highly industrialized, with factories such as New Star Apa and Paper One blending with residential homes. As of the 2020 census, the barangay had a population of 14,657 (up from 12,462 in 2015, spread across 3,455 households averaging 3.61 members each); the largest single age group is 20- to 24-year-olds, just over 1,500 people. That's the paper trail: the borders, the renamings, the splits, the headcounts. Now for the part that actually matters to this project: what was living on this land before any of it happened?" 
+      },
+      {
+        type: "image",
+        src: "/Assets/barangay-map.jpg",
+        caption: "Barangay profile of Canumay East — the official document showing the split territory and its boundaries."
       },
     ],
   },
@@ -77,6 +87,11 @@ const LOGS = [
       { 
         type: "seg", 
         text: "Old Canumay sat at the meeting point of upland and wetland. Hillier ground to the north and low marsh to the south, with creeks threading the gap between them. The soil classification map prepared by Valenzuela's City Planning and Development Office and the Bureau of Soils and Water Management still places Canumay East entirely within a single soil zone: Tropudults with Tropudalfs, Tropepts, and Oxisols. Every one of those classifications independently points to the same conclusion: historically wet, poorly drained, seasonally waterlogged ground. The mix between the high elevation of the hills and the lower elevations of the marshes creates a dynamic environment. The higher hills contain a lot of trees, and when rain comes, the water drains to the lower parts of the land where the marshes exist." 
+      },
+      {
+        type: "image",
+        src: "/kangkong.jpg",
+        caption: "Ipomoea aquatica (kangkong/water spinach) — the plant that covered the low marsh zones of Victoria Village before the land was filled with adobe. Photo: Wikimedia Commons."
       },
       { type: "subtitle", text: "The Eleven Creeks" },
       { 
@@ -123,6 +138,16 @@ const LOGS = [
         type: "seg", 
         text: "I interviewed my own grandfather for this. Turns out, our house was once a kangkungan before it got dumped by adobe rocks. He confirmed three fish species live on where our house stands: hito (catfish), dalag (mudfish, an iconic wetland species whose presence alone tells you the ecosystem was functioning), and samaral (rabbit fish). On the plant side, he named kangkong, gabi (wetland variety), sedge grass, active rice paddies (palayaban), cogon grass at the wetland edges, and coconuts on the slightly drier ground near homes. And I have my own memory to add to his: tadpoles living in the kanal near our house before it was concreted over, which on its own confirms a functioning amphibian breeding habitat existed within my own lifetime, not some distant past." 
       },
+      {
+        type: "image",
+        src: "/dalag.jpg",
+        caption: "Channa striata (dalag/mudfish) — my grandfather confirmed these lived where our house now stands. Its presence alone tells you the ecosystem was once functioning. Photo: Wikimedia Commons."
+      },
+      {
+        type: "image",
+        src: "/Assets/gabi.jpg",
+        caption: "Gabi (wetland taro) — still growing in neighborhood gardens today, a living remnant of the old wetland-edge ecosystem."
+      },
       { 
         type: "seg", 
         text: "Neighbors in Victoria Village backed up his account of the old creek without my having to prompt them. About 500 meters away, residents of Sitio Libis (whose name literally just means \"low-lying area\" in Filipino) confirmed the area's water-rich history too and pointed out something I wouldn't have known to look for: guyabano trees in their yards, which prefer moist, well-drained soil close to water. A small detail, but it lines up with everything else: this whole stretch sat on a wetland-edge gradient, and the plants people chose to grow (whether they realized it or not) reflect that." 
@@ -130,6 +155,11 @@ const LOGS = [
       { 
         type: "seg", 
         text: "Sitio Libis turned out to be a bigger part of this story than I expected when I started. It's the subject of an actual peer-reviewed case study. Corrine Cash and their study \"Creating the Conditions for Climate Resilience: A Community-Based Approach in Canumay East, Philippines,\" published in the journal Urban Planning in 2021, documents a community that organized itself, more or less from scratch, against the same flooding and water problems. Libis sits on land originally owned by the Philippine Veterans Bank; residents lived there for years under the constant threat of eviction before organizing as the United Libis Homeowners Association (ULHOA), led by Theresa Carampatana, to purchase the land outright and re-block their own settlement. They did it by replanning narrow, flood-prone footpaths into a layout that could actually drain. It worked well enough that ULHOA has since been invited to speak at UN-Habitat Philippines events about community-led flood and waste management. None of that is ecology, exactly, but it's the human half of the same story: the water never left, and the people living closest to it have been doing the adapting almost entirely on their own." 
+      },
+      {
+        type: "image",
+        src: "/Assets/toLibis.jpg",
+        caption: "The path toward Sitio Libis — a community that organized itself from scratch against the same flooding and water problems the whole barangay shares."
       },
       { type: "subtitle", text: "Guesswork, But Grounded Guesswork" },
       { 
@@ -155,6 +185,16 @@ const LOGS = [
         type: "seg", 
         text: "And yet. Field walks in May 2026 turned up more survivors than I expected. Aratilis is growing wild beside the big drainage canal on D. Bonifacio Drive. Nobody planted it; it just colonized the disturbed, moist soil at the canal's edge. There also used to be an aratilis in our area before it disappeared. I still remember the sticky-sweet smell of its crushed fruit from when I was a kid. Gabi, the wetland variety of taro, is still growing in neighborhood gardens. Mango and guava trees old enough to mark where past homesteads stood — mango trees can live 100 to 300 years, so the ones still standing here were very likely planted by someone's great-grandparents. Malunggay, planted beside nearly every house, generation after generation. There are also binunga trees growing around empty lots in the land, which are known for their sticky sap. As you can see, most of the plants that thrive in the area are pioneer trees, thriving and living in areas that were once surrounded by water." 
       },
+      {
+        type: "image",
+        src: "/Assets/canal-plants.jpg",
+        caption: "Canal-edge plants along Canumay East — pioneer species colonizing the disturbed, moist soil where creeks used to flow."
+      },
+      {
+        type: "image",
+        src: "/Assets/binunga.jpg",
+        caption: "Binunga trees growing around empty lots — a pioneer species that thrives in areas once surrounded by water."
+      },
       { type: "subtitle", text: "The Full Portrait" },
       { 
         type: "seg", 
@@ -173,9 +213,19 @@ const LOGS = [
         text: "This is the log where the project stops being about what's gone and starts being about what keeps coming back, whether the city wants it to or not — we still keep getting flooded." 
       },
       { type: "subtitle", text: "The Dead Zone Where a Creek Used to Be" },
+      {
+        type: "image",
+        src: "/Assets/bonifacio-canal.jpg",
+        caption: "The drainage canal along D. Bonifacio Drive — concrete infrastructure where a living creek ecosystem once ran."
+      },
       { 
         type: "seg", 
         text: "The drainage canal running along D. Bonifacio Drive and through parts of Canumay East isn't a creek. It only looks like one if you don't know what you're looking at. A creek is a living system. It has fish, insects, birds, and plants rooted along the banks — the whole slow machinery of a wetland doing its job. A concrete canal is infrastructure. It moves water out of the area as efficiently as possible, and that's the whole job description. Almost nothing lives in it. The closest thing to life I found near the drainage near D. Bonifacio was a single aratilis tree growing wild at the canal's edge, a pioneer species colonising disturbed soil — which is not a sign of the canal supporting an ecosystem so much as a sign of how desperately moisture-loving plants will take whatever edge habitat they can get. One fish-poison tree, Barringtonia, survives behind a factory wall nearby and in a canal near the Valenzuela Gateway Centre. That's roughly the state of biodiversity along what used to be eleven living creeks: one tree behind a wall and a canal that functions, ecologically speaking, as a dead zone." 
+      },
+      {
+        type: "image",
+        src: "/barringtonia_fruit.jpg",
+        caption: "Barringtonia asiatica (Putat) — one surviving specimen found behind a factory wall near the Bonifacio canal. A remnant of the fish-poison trees that fishing communities once relied on. Photo: Wikimedia Commons."
       },
       { 
         type: "seg", 
@@ -202,6 +252,11 @@ const LOGS = [
       { 
         type: "seg", 
         text: "On top of all of that, the ground itself is slowly sinking. Valenzuela sits inside the CAMANAVA area (Caloocan, Malabon, Navotas, Valenzuela), one of the worst subsidence zones in Metro Manila. Older satellite data (2003–2011) put the CAMANAVA rate at 20 to 42 millimeters a year; more recent measurements from 2015–2019 suggest it's actually improved to roughly 10 to 20 millimeters a year, which researchers attribute to groundwater extraction restrictions inside Metro Manila proper. It's a rare piece of good news in this research, though it comes with a sharp asterisk — since the unrestricted provinces just outside the city line, Bulacan and Cavite, are still sinking at 40 millimeters a year or more. The honest, uncomfortable version of the flooding story is that it isn't primarily about heavier rain. It's that the ground is sinking faster than the sea is rising." 
+      },
+      {
+        type: "image",
+        src: "/Assets/marton-estero.jpg",
+        caption: "The estero near Marton Road — one of the last visible waterways in Canumay East, now functioning as a flood drain rather than a living creek."
       },
       { type: "subtitle", text: "What the City Is Doing — and Isn't" },
       { 
