@@ -66,7 +66,8 @@ const LOGS = [
       },
       { 
         type: "seg", 
-        text: "Before the split, old Canumay was one of the largest original barangays in Valenzuela. 341 hectares combined, seven sitios, and eleven sapangs; all of the land is named after the Kanumai tree. Each sitio name was its own small piece of ecological evidence: Kaypandan for the pandan that grows at marshy edges; Bilaran for where people dried fish and crops by the water; Daang Malalim for a sunken, flood-prone road; Pinagbayanan for the old town center; Dulong Canumay for the farthest edge of the barangay; and Canumay itself, where a big tree is located." 
+        text: "Before the split, old Canumay was one of the largest original barangays in Valenzuela. 341 hectares combined, seven sitios, and eleven sapangs; all of the land is named after the Kanumai tree. Each sitio name was its own small piece of ecological evidence: Kaypandan for the pandan that grows at marshy edges; Bilaran for where people dried fish and crops by the water; Daang Malalim for a sunken, flood-prone road; Pinagbayanan for the old town center; Dulong Canumay for the farthest edge of the barangay; and Canumay itself, where a big tree is located.",
+        marginNote: "Sitio names as ecological field data. No biologist needed — people already wrote it down."
       },
       { 
         type: "seg", 
@@ -123,6 +124,7 @@ const LOGS = [
         type: "seg", 
         text: "This is the part of the research that genuinely surprised me. Old Canumay had eleven named sapang, or creeks, and the names weren't decorative. They were functional descriptions, the kind you'd only write if you actually lived beside the water. Sapang Bulok (\"Rotten Creek\") described the stagnant, decomposing smell of healthy marsh chemistry. Sapang Pangitlogan-Bakaw, or \"Creek of the Mangrove Nesting Ground,\" confirms there were mangroves here once, with birds nesting and laying eggs along the bank. Sapang Halang Sa Araw, or \"Creek Blocked from the Sun,\" describes a canopy so thick over the water that sunlight couldn't reach it, meaning it's an old-growth forest wetland. Sapang Bangka-bangka was wide and deep enough for boat travel. Sapang Binawan was where people set fish traps. Read together, it's a descriptive way to describe the waterways of Canumay and how people depend on and co-exist with them." 
       },
+      { type: "sapang-glossary" },
       { type: "subtitle", text: "The Heart of It: One Big Tree in the Middle" },
       { 
         type: "seg", 
@@ -166,7 +168,8 @@ const LOGS = [
       { type: "subtitle", text: "Testimonials: What Lolo Remembers" },
       { 
         type: "seg", 
-        text: "I interviewed my own grandfather for this. Turns out, our house was once a kangkungan before it got dumped by adobe rocks. He confirmed three fish species live on where our house stands: hito (catfish), dalag (mudfish, an iconic wetland species whose presence alone tells you the ecosystem was functioning), and samaral (rabbit fish). On the plant side, he named kangkong, gabi (wetland variety), sedge grass, active rice paddies (palayaban), cogon grass at the wetland edges, and coconuts on the slightly drier ground near homes. And I have my own memory to add to his: tadpoles living in the kanal near our house before it was concreted over, which on its own confirms a functioning amphibian breeding habitat existed within my own lifetime, not some distant past." 
+        text: "I interviewed my own grandfather for this. Turns out, our house was once a kangkungan before it got dumped by adobe rocks. He confirmed three fish species live on where our house stands: hito (catfish), dalag (mudfish, an iconic wetland species whose presence alone tells you the ecosystem was functioning), and samaral (rabbit fish). On the plant side, he named kangkong, gabi (wetland variety), sedge grass, active rice paddies (palayaban), cogon grass at the wetland edges, and coconuts on the slightly drier ground near homes. And I have my own memory to add to his: tadpoles living in the kanal near our house before it was concreted over, which on its own confirms a functioning amphibian breeding habitat existed within my own lifetime, not some distant past.",
+        marginNote: "He told me this over dinner. He didn't think it was important. That's the whole problem."
       },
       {
         type: "image",
@@ -324,7 +327,8 @@ const LOGS = [
       },
       { 
         type: "seg", 
-        text: "We covered the kangkungan with adobe. We made canals. The eleven sapang were buried or built over without ever being formally recorded as gone. Every single one of those was a decision to bury the water instead of living with it. And every rain, without fail, the water finds its way back anyway. Not because anything is broken, but because nothing about the land's original shape ever actually changed. We didn't just build on a marsh. We built on a marsh that is sinking, sealed the well that used to tell us exactly how close the water always was, and hoped concrete would be enough." 
+        text: "We covered the kangkungan with adobe. We made canals. The eleven sapang were buried or built over without ever being formally recorded as gone. Every single one of those was a decision to bury the water instead of living with it. And every rain, without fail, the water finds its way back anyway. Not because anything is broken, but because nothing about the land's original shape ever actually changed. We didn't just build on a marsh. We built on a marsh that is sinking, sealed the well that used to tell us exactly how close the water always was, and hoped concrete would be enough.",
+        marginNote: "This is the argument. Everything else in these logs is just evidence for this sentence."
       },
       { type: "seg", text: "It wasn't." },
     ],

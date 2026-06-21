@@ -1074,6 +1074,237 @@ body {
   border-bottom-color: var(--water);
 }
 
+/* ── Reading progress bar ── */
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--rust);
+  opacity: 0.6;
+  z-index: 9999;
+  transition: width 0.1s linear;
+  pointer-events: none;
+}
+
+/* ── Sapang Glossary card ── */
+.sapang-card {
+  margin: 2.5rem 0;
+  border: 1.5px dashed var(--paper-deep);
+  border-radius: 3px;
+  background: #fdf8f1;
+  position: relative;
+  overflow: hidden;
+}
+
+.sapang-card::before {
+  content: 'INSERT';
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.45rem;
+  letter-spacing: 0.2em;
+  color: var(--ink-muted);
+  opacity: 0.35;
+}
+
+.sapang-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.sapang-toggle:hover { background: rgba(140, 90, 50, 0.04); }
+
+.sapang-toggle-icon {
+  font-size: 0.6rem;
+  color: var(--rust);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.sapang-toggle-label {
+  font-family: 'Caveat', cursive;
+  font-size: 1.15rem;
+  color: var(--ink-dark);
+  flex: 1;
+}
+
+.sapang-toggle-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.48rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.sapang-body {
+  padding: 0 1.25rem 1.25rem;
+  border-top: 1px dashed var(--paper-deep);
+  animation: fadeInUp 0.3s ease both;
+}
+
+.sapang-intro {
+  font-family: 'Spectral', serif;
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  margin: 0.9rem 0 1.2rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.sapang-list { display: flex; flex-direction: column; gap: 0; }
+
+.sapang-item {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.4rem;
+  border-bottom: 1px solid rgba(140, 90, 50, 0.1);
+  cursor: default;
+  transition: background 0.15s;
+  position: relative;
+  border-radius: 2px;
+}
+
+.sapang-item:last-child { border-bottom: none; }
+.sapang-item-hovered { background: rgba(140, 90, 50, 0.05); }
+
+.sapang-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.52rem;
+  color: var(--rust);
+  opacity: 0.5;
+}
+
+.sapang-names {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.sapang-tagalog {
+  font-family: 'Lora', serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-dark);
+}
+
+.sapang-english {
+  font-family: 'Spectral', serif;
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+.sapang-note {
+  grid-column: 1 / -1;
+  font-family: 'Caveat', cursive;
+  font-size: 0.88rem;
+  color: var(--water);
+  padding: 0.3rem 0.2rem 0.1rem 2.6rem;
+  animation: fadeInUp 0.2s ease both;
+  line-height: 1.4;
+}
+
+.sapang-footer {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.52rem;
+  letter-spacing: 0.1em;
+  color: var(--rust);
+  opacity: 0.6;
+  text-align: center;
+  margin: 1rem 0 0.3rem;
+  text-transform: uppercase;
+}
+
+/* ── Margin notes ── */
+.doc-seg-wrap {
+  position: relative;
+}
+
+.margin-note-wrap {
+  position: absolute;
+  left: -2.5rem;
+  top: 0.15rem;
+}
+
+.margin-note-trigger {
+  background: none;
+  border: 1px solid var(--rust);
+  color: var(--rust);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  font-size: 0.65rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.45;
+  transition: opacity 0.15s, background 0.15s;
+  line-height: 1;
+  padding: 0;
+}
+
+.margin-note-trigger:hover,
+.margin-note-trigger.open {
+  opacity: 1;
+  background: var(--rust);
+  color: #fff;
+}
+
+.margin-note-popup {
+  position: absolute;
+  left: 1.7rem;
+  top: -0.2rem;
+  width: 200px;
+  background: #fff9ee;
+  border: 1.5px solid var(--paper-deep);
+  border-radius: 3px;
+  padding: 0.55rem 0.65rem;
+  box-shadow: 2px 4px 12px rgba(36,24,16,0.12);
+  z-index: 20;
+  animation: fadeInUp 0.18s ease both;
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+.margin-note-text {
+  font-family: 'Caveat', cursive;
+  font-size: 0.9rem;
+  color: var(--ink-dark);
+  line-height: 1.35;
+  flex: 1;
+}
+
+.margin-note-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  padding: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  opacity: 0.5;
+  transition: opacity 0.1s;
+}
+.margin-note-close:hover { opacity: 1; }
+
 /* ── Home handwriting annotation ── */
 .home-annotation {
   margin-top: 2rem;
