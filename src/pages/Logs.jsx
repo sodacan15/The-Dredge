@@ -9,6 +9,7 @@ const LOGS = [
     date: "— FIELD NOTES, MAY 2026 —",
     blocks: [
       { type: "title", text: "The Brief History of Valenzuela and Canumay East" },
+      { type: "quote", text: "This land was already written. Eleven creeks, eleven names. We just stopped reading it." },
       { type: "subtitle", text: "Valenzuela: An Island That Wasn't Quite an Island" },
       { 
         type: "seg", 
@@ -135,6 +136,7 @@ const LOGS = [
         type: "seg", 
         text: "By most accounts, there used to be one especially large Kanumai standing more or less at the center of old Canumay — the kind of tree a whole community could use to find its way home. It's gone now. Not relocated, not replaced, just gone. The species that gave the barangay its name no longer exists anywhere, at least not in what I know in Canumay East." 
       },
+      { type: "quote", text: "A barangay named after a tree that no longer grows there. The whole archive is right there, in that one sentence." },
       { type: "subtitle", text: "What's Left Today" },
       { 
         type: "seg", 
@@ -176,6 +178,7 @@ const LOGS = [
         text: "If Log 2 was about the official records (barangay profiles, soil maps, place names), this log is about the people who actually remember the water and the image it forms of the barangay." 
       },
       { type: "subtitle", text: "Testimonials: What Lolo Remembers" },
+      { type: "quote", text: "He said it the way you'd say 'we used to have a dog.' Like it was just a fact. Like the fish weren't gone — just elsewhere." },
       { 
         type: "seg", 
         text: "I interviewed my own grandfather for this. Turns out, our house was once a kangkungan before it got dumped by adobe rocks. He confirmed three fish species live on where our house stands: hito (catfish), dalag (mudfish, an iconic wetland species whose presence alone tells you the ecosystem was functioning), and samaral (rabbit fish). On the plant side, he named kangkong, gabi (wetland variety), sedge grass, active rice paddies (palayaban), cogon grass at the wetland edges, and coconuts on the slightly drier ground near homes. And I have my own memory to add to his: tadpoles living in the kanal near our house before it was concreted over, which on its own confirms a functioning amphibian breeding habitat existed within my own lifetime, not some distant past.",
@@ -341,6 +344,7 @@ const LOGS = [
         src: "/Assets/old-canal.jpg",
         caption: "An old canal in the area — the water has nowhere to go except down and in. This is the geometry of induced flooding: streets raised over decades, drainage walls lifted to match, and the original marsh-level homes sitting lower with each cycle."
       },
+      { type: "quote", text: "The city dredged the creek that flooded the highway. Nobody dredged the creek that just flooded the houses." },
       { type: "subtitle", text: "What the City Is Doing — and Isn't" },
       { 
         type: "seg", 

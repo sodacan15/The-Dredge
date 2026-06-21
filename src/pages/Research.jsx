@@ -171,6 +171,69 @@ const SECTIONS = [
     ]
   },
   {
+    id: "species",
+    label: "Species & Ecology",
+    eyebrow: "Field Reference",
+    entries: [
+      {
+        title: "Diospyros canomoi A. DC. — Kanumai (Ebenaceae)",
+        url: "https://www.stuartxchange.org/Kanumai.html",
+        urlLabel: "Stuart Xchange Philippine Medicinal Plants",
+        finding: "The Named Absence",
+        body: "The tree the barangay is named after. Classified within the ebony family (Ebenaceae), favoring lowland thickets and riverine zones at low to medium altitude — a habitat profile that perfectly matches Canumay's original wetland-edge topography. Bark and fruit were used as fish poison, confirming this was a waterside species living beside a fish-bearing system. Its total local extinction is the core premise of this project. No living specimen has been documented anywhere in Canumay East or its immediate vicinity."
+      },
+      {
+        title: "Channa striata (Bloch, 1793) — Dalag / Striped Snakehead (Channidae)",
+        url: "https://www.fishbase.se/summary/Channa-striata.html",
+        urlLabel: "FishBase Global Reference",
+        finding: "The Wetland Indicator",
+        body: "The mudfish my grandfather named when describing what lived under our house before it was filled with adobe. Channa striata is a classic lowland wetland indicator: it can breathe atmospheric air through a suprabranchial organ, allowing it to survive in oxygen-depleted swamps, rice paddies, and seasonally flooded mudflats — exactly the marsh conditions oral testimony places in Victoria Village. Its confirmed presence in living memory establishes that the wetland was biologically functioning, not just topographically wet."
+      },
+      {
+        title: "Clarias batrachus (Linnaeus, 1758) — Hito / Walking Catfish (Clariidae)",
+        url: "https://www.fishbase.se/summary/Clarias-batrachus.html",
+        urlLabel: "FishBase Global Reference",
+        finding: "The Mudflat Fish",
+        body: "The second fish my grandfather named — hito, or walking catfish. Like dalag, C. batrachus is a wetland-specialist air breather, confirmed in rice paddies, flood plains, swamps, and muddy ponds. It is listed as a food fish across Philippine wetland communities; its former presence confirms a productive, year-round wetland system rather than a seasonally waterlogged field."
+      },
+      {
+        title: "Siganus sp. — Samaral / Rabbitfish (Siganidae)",
+        url: "https://www.fishbase.se/identification/SpeciesList.php?famcode=430",
+        urlLabel: "FishBase — Siganidae",
+        finding: "The Estuarine Reach",
+        body: "The third species my grandfather confirmed. Samaral (rabbitfish) are primarily brackish-water and estuarine fish — their presence in the oral record suggests the creek system of old Canumay had tidal or estuarine reach, connecting freshwater marsh with Manila Bay influence. If samaral were being caught here, the waterway was not a closed drainage channel but an active, tidally influenced estuary."
+      },
+      {
+        title: "Ipomoea aquatica Forssk. — Kangkong / Water Spinach (Convolvulaceae)",
+        url: "https://www.stuartxchange.org/Kangkong.html",
+        urlLabel: "Stuart Xchange Philippine Medicinal Plants",
+        finding: "The Buried Plant",
+        body: "My grandfather confirmed the ground under our house was once a kangkungan — a kangkong marsh — before it was buried under adobe fill. Ipomoea aquatica is a floating or semi-aquatic creeping plant that colonizes shallow freshwater marshes, ditch edges, and rice paddy margins, rooting directly into wet soil. Its presence requires standing or slow-moving water, confirmed by barangay soil classification data: Tropudults and Tropudalfs, both inherently poorly drained. The kangkungan is gone. The soil conditions that produced it are not."
+      },
+      {
+        title: "Macaranga tanarius (L.) Müll. Arg. — Binunga / Parasol Leaf Tree (Euphorbiaceae)",
+        url: "https://www.stuartxchange.org/Binunga.html",
+        urlLabel: "Stuart Xchange Philippine Medicinal Plants",
+        finding: "The Pioneer Witness",
+        body: "A fast-growing pioneer species that colonizes disturbed and formerly waterlogged ground — exactly the ground Canumay East has become. Binunga trees were documented in Google Street View imagery from 2014 growing on empty lots in the barangay, before those lots were built over. They continue to appear in field walks today, particularly around VGC and along D. Bonifacio Drive. Binunga's preference for moist, disturbed soil makes every specimen here an ecological marker: it is growing where the wetland used to be, finding the moisture the concrete couldn't completely seal off."
+      },
+      {
+        title: "Barringtonia asiatica (L.) Kurz — Putat (Lecythidaceae)",
+        url: "https://www.stuartxchange.org/Putat.html",
+        urlLabel: "Stuart Xchange Philippine Medicinal Plants",
+        finding: "The Last Survivor",
+        body: "A coastal and freshwater shoreline tree whose bark, leaves, and fruit were used as fish poison — the same ecological function as the Kanumai. One surviving Barringtonia specimen was located during May 2026 field walks, growing behind a factory wall near the Bonifacio canal. A second individual appears near the Valenzuela Gateway Centre canal. These two specimens are among the last living physical evidence of the fish-poison tree culture that operated along this creek system within living memory."
+      },
+      {
+        title: "Muntingia calabura L. — Aratilis / Jamaica Cherry (Muntingiaceae)",
+        url: "https://en.wikipedia.org/wiki/Muntingia_calabura",
+        urlLabel: "Wikipedia — Muntingia calabura",
+        finding: "The Canal-Edge Colonist",
+        body: "A pioneer fruit tree that the author remembers from childhood along the old kanal before it was concreted. One wild specimen was located in May 2026 growing at the edge of the D. Bonifacio drainage canal — nobody planted it; it self-seeded into the moist disturbed soil at the concrete edge. Aratilis is one of the few trees that can establish itself on minimal, compacted soils beside active drainage infrastructure. Its presence marks exactly where the old wetland edge ran."
+      },
+    ]
+  },
+  {
     id: "laws",
     label: "Laws & Legislation",
     eyebrow: "Legal Record",

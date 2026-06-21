@@ -11,7 +11,6 @@ export default function Author() {
       <p className="author-tagline">An armchair archaeologist, digging through what's left.</p>
 
       <div className="author-layout">
-        {/* Left column — photo + quick facts */}
         <div className="author-left">
           <div className="author-photo-wrap">
             <img src="/author-photo.png" alt="Reinwald Marone Valeza" className="author-photo" />
@@ -21,56 +20,74 @@ export default function Author() {
             <p className="author-facts-label">Quick Facts</p>
             <ul className="author-facts-list">
               <li>Reinwald Marone Valeza</li>
-              <li>Born October 15, 2005, Caloocan City</li>
+              <li>Born October 15, 2005 · Caloocan City</li>
               <li>Libra · Wooden Rooster</li>
-              <li>Filipino — lived in Canumay East almost his whole life</li>
-              <li>Studying Computer Science, with a soft spot for UI/UX and system design</li>
-              <li>Hobbies: music, drawing, eating, roleplaying, gossip and story</li>
+              <li>Canumay East resident, basically his whole life</li>
+              <li>Computer Science — UI/UX &amp; system design</li>
+              <li>Music · drawing · eating · roleplaying · gossip &amp; story</li>
               <li>Motto: <em>"F*ck it"</em></li>
             </ul>
           </div>
+
+          <div className="author-callout">
+            "I'm not an ecologist. I'm a guy who grew up staring into a canal and eventually decided to look it up."
+          </div>
         </div>
 
-        {/* Right column — bio sections */}
         <div className="author-right">
           <section className="author-section">
             <h3 className="author-section-title">Who I Am</h3>
             <p className="author-section-body">
-              I'm a computer science student, not an ecologist, not a historian, and definitely not someone with a degree that qualifies me to read a soil classification map. What I do like is UI/UX and system design, work where everything has a clear architecture and a reason it sits where it sits. None of that prepared me for knocking on a barangay office window or sitting my own grandfather down with a notebook. That gap — between what I'm trained to do and what this project actually needed — is basically the whole reason The Dredge exists.
+              Twenty years old. Computer science student. Born in Caloocan and deposited in Canumay East before I was old enough to have an opinion about it, and I've been here since. I like UI/UX and system design — things with clear architecture, where everything has a reason it sits where it sits, and you can trace the logic backward from any decision. The Dredge is the opposite of all of that. There's no clean structure to a wetland that got paved over and half-forgotten. The data is oral, the maps are decades out of date, and the eleven creeks I'm trying to account for don't appear anywhere in Valenzuela City's current waterway database.
+            </p>
+            <p className="author-section-body">
+              I'm also not a scientist, a historian, a geographer, or a journalist. I'm someone who grew up on this specific patch of earth, got curious about what was under it, and wrote it all down. That's the complete description.
             </p>
           </section>
 
           <section className="author-section">
             <h3 className="author-section-title">Why This Project</h3>
             <p className="author-section-body">
-              I almost wrote about somewhere else entirely. The original plan was the lagoon inside PUP Manila's campus, but there was not much of an ecosystem left to dig into, so I turned the lens toward home instead. And home has always been tangled up with water, whether I noticed it growing up or not. My house used to be a kangkungan before it got buried under fill. I spent a lot of my childhood staring into the canals near our house, back when we did not have internet at home and the water was basically the entertainment. Those same canals still get dirty and still overflow, and the rain still finds its way into our streets like it remembers something we forgot.
+              I almost wrote about somewhere else. The original plan was the lagoon inside PUP Manila's main campus — I did early research, liked the direction — but there wasn't much of an ecosystem left to write about, which, now that I think about it, was probably worth writing about in itself. Instead I turned the lens toward home, which has always been tangled up with water whether I thought about it or not.
             </p>
             <p className="author-section-body">
-              The flooding of 2025 is what actually pushed me to start digging for real. It was scary, genuinely anxiety inducing, especially coming right after 2024, when a lot of our things got destroyed. We were much more ready the second time around, but "more ready for the flood" is still a strange kind of preparedness to need every year. I wanted to know why this keeps happening, not just to my street but to the whole barangay, so I started asking around.
+              Before we had consistent internet at home, I spent a significant portion of my childhood staring into the canal near our house. There were tadpoles in it once, before it got concreted. I didn't think about that for years. Then I was looking at a soil classification map for this project, and it just clicked: the water was supposed to be there. The concrete was the recent decision. The marsh was the original architecture. And once you start thinking about it that way, you can't really stop.
+            </p>
+            <p className="author-section-body">
+              The 2024 flooding destroyed some of our things. 2025 came and we handled it better — "better" meaning nothing was destroyed that time, not that the problem is solved. That distinction matters. This project started when I got tired of treating the flooding like weather and started treating it like evidence.
             </p>
           </section>
 
           <section className="author-section">
-            <h3 className="author-section-title">How the Dredge Got Made</h3>
+            <h3 className="author-section-title">The Grandfather Interview</h3>
             <p className="author-section-body">
-              The short version: I used what was available to me through the 3S centers, found the nerve to actually sit my grandfather down and interview him properly, and spent a lot of afternoons just walking around Canumay East talking to whoever would talk back. Written out like that it sounds simple, and most of it was — just slower and more enjoyable than I expected going in. The full methodology, sources, and citations live on the Research page. This is the human version of it.
+              I'll be honest: I'm scared of my grandfather. He's not a cruel man, but he's the kind of person you go quiet around — you don't push, you don't ask much, you read the room and adjust. We don't have the kind of relationship where I'd bring out a notebook and start asking questions out of curiosity. For this project, I did exactly that.
+            </p>
+            <p className="author-section-body">
+              He told me, without much ceremony, that the ground under our house used to hold hito, dalag, and samaral. He named the plants — kangkong, gabi, cogon at the edges. He confirmed the water table was close enough that you could dig a well from inside the living room floor and find it. He described a functioning wetland from memory, and he thought he was just answering a question about old times. I was writing down primary ecological evidence and trying not to let it show on my face.
+            </p>
+            <p className="author-section-body">
+              That gap — between what people carry casually and what counts as historical record — is the whole problem The Dredge is trying to address.
             </p>
           </section>
 
           <section className="author-section">
             <h3 className="author-section-title">What Surprised Me</h3>
             <p className="author-section-body">
-              Two things stuck with me past the point of being just research notes. The first is hearing, in plain terms from my own grandfather, that the ground under my house used to be a marsh before anyone in my family lived there. You grow up on a piece of land and you just assume it has always been land.
+              The creek names were still in the barangay profile. Eleven sapang, all listed, with names like "Creek Blocked from the Sun" and "Creek of the Mangrove Nesting Ground." Someone put those into an official document. Nobody followed up on them — not the city government, not DENR, not anyone. They sit in a physical file in the barangay hall, doing nothing. That's not an accusation, it's just what happened, and it's strange to look at.
             </p>
             <p className="author-section-body">
-              The second is the Kanumai tree, the one the entire barangay is named after. The last one anyone can point to stood roughly where the NLEX overpass sits now, before it disappeared along with everything else that got paved over. As far as I can tell, there is not a single living Kanumai tree left anywhere near here. The barangay carries the name of a species that, locally, no longer exists at all.
+              The second thing: how much I still don't want to leave this place, even after learning everything I've learned about it. Log ??? covers this more honestly than I can here. But there's something uncomfortable about researching a place this thoroughly and coming out the other end understanding it more — not less. Understanding a thing and staying in it are different from understanding it and needing to leave. I'm still figuring out which one I'm doing.
             </p>
           </section>
 
           <section className="author-section">
-            <h3 className="author-section-title">About the Name "The Dredge"</h3>
+            <h3 className="author-section-title">About the Name</h3>
             <p className="author-section-body">
-              Dredging is a literal thing first: clearing silt and debris out of a waterway so it can move again, the same operation the city ran on eleven priority creeks in 2025 once the flooding got bad enough to force it. But it is also what this whole project has been doing in a smaller, slower way: pulling old, buried history back up to the surface, one interview and one soil map at a time. If you landed on this page before you landed on Home, that is more or less what The Dredge means either way.
+              Dredging is what you do when a waterway fills with silt and you need it to move again. Valenzuela City ran actual dredging operations on eleven priority creeks in August 2025, after the NLEX flooded and couldn't be ignored. This project does the same thing slower, and without the excavator: pulling what's buried back to the surface, one interview and one soil map at a time.
+            </p>
+            <p className="author-section-body">
+              It started as a CS final project. It became harder to categorize. I'm going to call it an archive, leave it at that, and not overthink the label.
             </p>
           </section>
         </div>

@@ -1724,6 +1724,229 @@ body {
   flex-shrink: 0;
 }
 
+/* ── Home: grand quote ── */
+.home-grand-quote {
+  font-family: 'Spectral', serif;
+  font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--rust);
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  margin: 2rem 0 2.5rem;
+  line-height: 1.45;
+}
+
+/* ── Home: sticker cluster ── */
+.home-sticker-cluster {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 0 2.5rem;
+  animation: fadeInUp 0.5s ease 0.2s both;
+}
+
+.home-sticker {
+  background: #f5e97a;
+  padding: 0.75rem 1rem;
+  font-family: 'Caveat', cursive;
+  font-size: 1.05rem;
+  color: #2a1f00;
+  box-shadow: 2px 3px 10px rgba(36,24,16,0.14);
+  transform: rotate(var(--r, -2deg));
+  line-height: 1.5;
+  position: relative;
+}
+
+.home-sticker::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 11px;
+  background: var(--tape-color);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.home-sticker strong {
+  font-size: 1.4rem;
+  display: block;
+  line-height: 1.2;
+}
+
+.home-sticker-green { background: #c8e6a0; }
+.home-sticker-blue  { background: #b8d8ea; }
+
+.home-field-stamp {
+  width: 76px;
+  height: 76px;
+  border: 2px solid var(--rust);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.44rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: var(--rust);
+  opacity: 0.3;
+  transform: rotate(-8deg);
+  flex-shrink: 0;
+  line-height: 1.55;
+}
+
+/* ── Home: double image layout ── */
+.home-double-image {
+  display: grid;
+  grid-template-columns: 3fr 1.2fr;
+  gap: 1.25rem;
+  align-items: start;
+  margin: 2.25rem 0 0.25rem;
+  animation: fadeInUp 0.5s ease 0.15s both;
+}
+
+.home-polaroid-small {
+  background: #fff;
+  border: 1px solid rgba(200,185,160,0.4);
+  padding: 6px 6px 22px;
+  box-shadow: 2px 4px 14px rgba(36,24,16,0.1);
+  transform: rotate(2.5deg);
+  position: relative;
+  animation: dropIn 0.6s ease 0.3s both;
+  --tilt: 2.5deg;
+}
+
+.home-polaroid-small::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 10px;
+  background: var(--tape-color);
+  border-radius: 2px;
+}
+
+.home-polaroid-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  filter: sepia(0.12) contrast(0.9);
+}
+
+.home-polaroid-caption {
+  font-family: 'Caveat', cursive;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  text-align: center;
+  margin-top: 7px;
+  line-height: 1.3;
+}
+
+/* ── Home: annotate label below images ── */
+.home-annotate {
+  font-family: 'Caveat', cursive;
+  font-size: 0.95rem;
+  color: var(--rust-soft);
+  opacity: 0.65;
+  transform: rotate(-0.3deg);
+  margin: 0.4rem 0 1.5rem;
+  display: block;
+}
+
+/* ── Home: closing sentimental section ── */
+.home-closing-note {
+  margin-top: 3.5rem;
+  padding: 2rem 2rem 1.5rem;
+  background: var(--paper-warm);
+  border: 1px solid var(--paper-deep);
+  border-radius: var(--radius);
+  position: relative;
+  animation: fadeInUp 0.5s ease 0.4s both;
+}
+
+.home-closing-note::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 2.5rem;
+  width: 50px;
+  height: 14px;
+  background: var(--tape-color);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.home-closing-body {
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.85;
+  margin-bottom: 0.85rem;
+}
+
+.home-closing-body:last-of-type {
+  margin-bottom: 1.25rem;
+}
+
+.home-closing-sticker {
+  font-family: 'Caveat', cursive;
+  font-size: 1.05rem;
+  color: #2a1f00;
+  background: #f5e97a;
+  display: inline-block;
+  padding: 0.6rem 0.85rem;
+  transform: rotate(-1.5deg);
+  box-shadow: 2px 3px 8px rgba(36,24,16,0.12);
+  line-height: 1.4;
+  position: relative;
+}
+
+.home-closing-sticker::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 9px;
+  background: var(--tape-color);
+  border-radius: 2px;
+}
+
+/* ── Author: callout sticky note ── */
+.author-callout {
+  background: #f5e97a;
+  font-family: 'Caveat', cursive;
+  font-size: 1rem;
+  color: #2a1f00;
+  padding: 1rem 1.1rem;
+  line-height: 1.55;
+  transform: rotate(-1.2deg);
+  box-shadow: 2px 3px 10px rgba(36,24,16,0.13);
+  position: relative;
+}
+
+.author-callout::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 11px;
+  background: var(--tape-color);
+  border-radius: 2px;
+}
+
 /* ── Responsive ── */
 @media (max-width: 860px) {
   .gallery-grid-photos {

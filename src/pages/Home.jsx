@@ -15,17 +15,45 @@ export default function Home() {
         of what erased them, and what remains despite everything.
       </p>
 
-      <p className="hero-quote">
+      <blockquote className="home-grand-quote">
         "Every rain, it comes back."
-      </p>
+      </blockquote>
 
-      <figure className="home-hero-figure">
-        <img
-          src="/supermarket.jpg"
-          alt="NLEX corridor with commercial building — the industrialized landscape that replaced Canumay's wetlands"
-          className="home-hero-img"
-        />
-      </figure>
+      <div className="home-sticker-cluster">
+        <div className="home-sticker" style={{ '--r': '-3deg' }}>
+          11 creeks.<br />
+          <strong>0</strong> remaining.
+        </div>
+        <div className="home-sticker home-sticker-green" style={{ '--r': '1.8deg' }}>
+          1 tree that named<br />a barangay.<br />Also gone.
+        </div>
+        <div className="home-sticker home-sticker-blue" style={{ '--r': '-1.2deg' }}>
+          A CS student.<br />A flooded sala.<br />A notebook.
+        </div>
+        <div className="home-field-stamp">
+          <span>CANUMAY<br />EAST<br />·<br />MAY<br />2026</span>
+        </div>
+      </div>
+
+      <div className="home-double-image">
+        <figure className="home-hero-figure" style={{ margin: 0 }}>
+          <img
+            src="/supermarket.jpg"
+            alt="NLEX corridor with commercial building — the industrialized landscape that replaced Canumay's wetlands"
+            className="home-hero-img"
+          />
+        </figure>
+        <div className="home-polaroid-small">
+          <img
+            src="/canumai_reimagined.png"
+            alt="The Kanumai tree — author's rendition"
+            className="home-polaroid-img"
+          />
+          <p className="home-polaroid-caption">the kanumai<br />as it might<br />have looked</p>
+        </div>
+      </div>
+
+      <span className="home-annotate">↑ the highway replaced this. both of these, actually.</span>
 
       <div className="home-intro-cards">
         <div className="intro-card">
@@ -61,6 +89,18 @@ export default function Home() {
         >
           View on OpenStreetMap →
         </a>
+      </div>
+
+      <div className="home-closing-note">
+        <p className="home-closing-body">
+          The eleven sapang of old Canumay had names. Every name was a description — the smell of the water, the depth of the channel, what people caught there, what flew overhead. No survey made them. The people who lived beside them did.
+        </p>
+        <p className="home-closing-body">
+          This project is an attempt to put those names back on the map — even if the creeks themselves are gone, and even if the only people who remember them are running out of time to tell us.
+        </p>
+        <div className="home-closing-sticker">
+          every name was<br />someone's evidence
+        </div>
       </div>
 
       <div className="home-annotation">
