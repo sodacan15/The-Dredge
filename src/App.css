@@ -2045,6 +2045,114 @@ body {
   margin: 0;
 }
 
+/* ── Image orientation (EXIF-aware) ── */
+img { image-orientation: from-image; }
+
+/* ── Doc: inline timeline (Log 1) ── */
+.doc-timeline {
+  margin: 2rem 0 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(139,90,60,0.04);
+  border-left: 2px solid color-mix(in srgb, var(--rust) 25%, transparent);
+}
+
+.doc-timeline-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  opacity: 0.6;
+  margin-bottom: 1.25rem;
+}
+
+.doc-timeline-track {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-left: 1px solid color-mix(in srgb, var(--rust) 22%, transparent);
+  margin-left: 0.25rem;
+}
+
+.doc-timeline-item {
+  display: grid;
+  grid-template-columns: 2.8rem 0.75rem 1fr;
+  align-items: baseline;
+  gap: 0 0.6rem;
+  padding: 0.45rem 0;
+}
+
+.doc-timeline-year {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--rust);
+  opacity: 0.8;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.doc-timeline-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rust);
+  opacity: 0.35;
+  position: relative;
+  left: -3.5px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.doc-timeline-text {
+  font-family: 'Lora', serif;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── Research: search ── */
+.research-search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.research-search {
+  flex: 1;
+  font-family: 'Lora', serif;
+  font-size: 0.85rem;
+  color: var(--ink);
+  background: rgba(139,90,60,0.04);
+  border: 1px solid rgba(139,90,60,0.18);
+  border-radius: 3px;
+  padding: 0.5rem 0.75rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.research-search:focus {
+  border-color: color-mix(in srgb, var(--rust) 50%, transparent);
+}
+
+.research-search-count {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--rust);
+  opacity: 0.75;
+  white-space: nowrap;
+}
+
+.research-no-results {
+  font-family: 'Lora', serif;
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  opacity: 0.6;
+  padding: 1rem 0;
+}
+
 /* ── Responsive ── */
 @media (max-width: 860px) {
   .gallery-grid-photos {

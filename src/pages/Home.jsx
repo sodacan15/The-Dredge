@@ -11,7 +11,7 @@ export default function Home() {
 
       <p className="hero-body">
         Digging what's left in the waters. A reconstruction of what was once
-        here — the creeks, the marshes, the trees, the fish — and a record
+        here: the creeks, the marshes, the trees, the fish: and a record
         of what erased them, and what remains despite everything.
       </p>
 
@@ -39,14 +39,14 @@ export default function Home() {
         <figure className="home-hero-figure" style={{ margin: 0 }}>
           <img
             src="/supermarket.jpg"
-            alt="NLEX corridor with commercial building — the industrialized landscape that replaced Canumay's wetlands"
+            alt="NLEX corridor with commercial building: the industrialized landscape that replaced Canumay's wetlands"
             className="home-hero-img"
           />
         </figure>
         <div className="home-polaroid-small">
           <img
             src="/canumai_reimagined.png"
-            alt="The Kanumai tree — author's rendition"
+            alt="The Kanumai tree: author's rendition"
             className="home-polaroid-img"
           />
           <p className="home-polaroid-caption">the kanumai<br />as it might<br />have looked</p>
@@ -80,14 +80,14 @@ export default function Home() {
         <p className="home-timeline-label">Administrative &amp; Ecological Timeline</p>
         <div className="home-timeline-track">
           {[
-            { year: "1571", text: "Battle of Bangkusay — Spanish conquest reaches the area" },
+            { year: "1571", text: "Battle of Bangkusay: Spanish conquest reaches the area" },
             { year: "1623", text: "Polo established as independent town from Catangalan" },
             { year: "1887", text: "Pío Valenzuela born in Polo" },
-            { year: "1898", text: "Revolution — Pío Valenzuela elected first municipal mayor" },
+            { year: "1898", text: "Revolution: Pío Valenzuela elected first municipal mayor" },
             { year: "1960", text: "EO 401 separates Polo and Valenzuela; Canumay placed under Valenzuela" },
-            { year: "1966", text: "NLEX construction begins — physically divides Canumay east and west" },
+            { year: "1966", text: "NLEX construction begins: physically divides Canumay east and west" },
             { year: "1975", text: "Jurisdiction transferred to Metro Manila; rapid industrialization begins" },
-            { year: "1998", text: "Republic Act 8526 — Valenzuela granted cityhood" },
+            { year: "1998", text: "Republic Act 8526: Valenzuela granted cityhood" },
             { year: "2017", text: "RA 10958 formalizes Canumay East / Canumay West split" },
             { year: "2025", text: "State of calamity after three typhoons; emergency dredging excludes Canumay East's internal waterways" },
             { year: "2026", text: "Polo Riverwalk opens. This project's field research conducted." },
@@ -103,10 +103,10 @@ export default function Home() {
 
       <div className="home-closing-note">
         <p className="home-closing-body">
-          The eleven sapang of old Canumay had names. Every name was a description — the smell of the water, the depth of the channel, what people caught there, what flew overhead. No survey made them. The people who lived beside them did.
+          This started as a CS final project. It became something harder to categorize. A reconstruction of a wetland nobody thought to write down while it was still there, built from creek names, soil data, and my grandfather's memory of the fish that used to live under our house.
         </p>
         <p className="home-closing-body">
-          This project is an attempt to put those names back on the map — even if the creeks themselves are gone, and even if the only people who remember them are running out of time to tell us.
+          The eleven creeks are in Log 2. The people who remember them are in Log 3. The reason we keep flooding is in Log 4. Everything is still connected, underground, the way water always is.
         </p>
         <div className="home-closing-sticker">
           every name was<br />someone's evidence
@@ -114,7 +114,7 @@ export default function Home() {
       </div>
 
       <div className="home-annotation">
-        * this is a student documentary — not peer-reviewed ecology, but honest fieldwork
+        * this is a student documentary: not peer-reviewed ecology, but honest fieldwork
       </div>
     </div>
   );

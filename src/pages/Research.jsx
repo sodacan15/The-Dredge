@@ -326,8 +326,19 @@ const SECTIONS = [
 
 export default function Research() {
   const [active, setActive] = useState(SECTIONS[0].id);
+  const [query, setQuery] = useState("");
   const current = SECTIONS.find(s => s.id === active);
   const isOral = current?.id === "oral";
+
+  const q = query.trim().toLowerCase();
+  const filteredEntries = q
+    ? (current?.entries || []).filter(e =>
+        (e.title || "").toLowerCase().includes(q) ||
+        (e.body || "").toLowerCase().includes(q) ||
+        (e.finding || "").toLowerCase().includes(q) ||
+        (e.quote || "").toLowerCase().includes(q)
+      )
+    : (current?.entries || []);
 
   return (
     <div className="page research-page">
@@ -346,7 +357,7 @@ export default function Research() {
             <button
               key={s.id}
               className={`research-nav-btn${active === s.id ? " active" : ""}`}
-              onClick={() => setActive(s.id)}
+              onClick={() => { setActive(s.id); setQuery(""); }}
             >
               {s.label}
             </button>
@@ -358,8 +369,26 @@ export default function Research() {
             <>
               <p className="research-eyebrow">{current.eyebrow}</p>
               <h2 className="research-heading">{current.label}</h2>
+
+              <div className="research-search-wrap">
+                <input
+                  type="search"
+                  className="research-search"
+                  placeholder={`Search ${current.label.toLowerCase()}...`}
+                  value={query}
+                  onChange={e => setQuery(e.target.value)}
+                />
+                {q && (
+                  <span className="research-search-count">
+                    {filteredEntries.length} result{filteredEntries.length !== 1 ? "s" : ""}
+                  </span>
+                )}
+              </div>
+
               <div className="research-entries">
-                {current.entries.map((entry, i) => (
+                {filteredEntries.length === 0 ? (
+                  <p className="research-no-results">No matches for "{query}"</p>
+                ) : filteredEntries.map((entry, i) => (
                   isOral ? (
                     <div
                       key={i}
@@ -369,7 +398,7 @@ export default function Research() {
                       <p className="oral-speaker">{entry.speaker}</p>
                       <h3 className="entry-title">{entry.title}</h3>
                       {entry.finding && (
-                        <p className="entry-finding">— {entry.finding}</p>
+                        <p className="entry-finding">{entry.finding}</p>
                       )}
                       {entry.quote && (
                         <p className="oral-quote">"{entry.quote}"</p>
@@ -386,7 +415,7 @@ export default function Research() {
                         }
                       </div>
                       {entry.finding && (
-                        <p className="entry-finding">— {entry.finding}</p>
+                        <p className="entry-finding">{entry.finding}</p>
                       )}
                       <p className="entry-body">{entry.body}</p>
                     </div>

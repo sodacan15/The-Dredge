@@ -216,6 +216,23 @@ export function RenderedDoc({ blocks }) {
                 <SapangGlossary />
               </Reveal>
             );
+          case "timeline":
+            return (
+              <Reveal key={i} delay={0}>
+                <div className="doc-timeline">
+                  <p className="doc-timeline-label">Administrative &amp; Ecological Timeline</p>
+                  <div className="doc-timeline-track">
+                    {(block.events || []).map(({ year, text }) => (
+                      <div key={year} className="doc-timeline-item">
+                        <span className="doc-timeline-year">{year}</span>
+                        <span className="doc-timeline-dot" />
+                        <p className="doc-timeline-text">{text}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </Reveal>
+            );
           case "margin-note":
             return null;
           default:
