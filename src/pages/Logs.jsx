@@ -78,7 +78,7 @@ const LOGS = [
       {
         type: "image",
         src: "/Assets/old-farm.jpg",
-        caption: "Old agricultural land use in the area, the kind of landscape Canumay East used to be before industrialization."
+        caption: "Agricultural land use typical of old Canumay, the kind of open-field, water-adjacent landscape that preceded industrialization in the area. Source: historical archive photograph."
       },
       {
         type: "image",
@@ -106,7 +106,7 @@ const LOGS = [
       {
         type: "image",
         src: "/Assets/barangay-map.jpg",
-        caption: "Road Map of Barangay Canumay East, the official map showing the NLEX diagonal cut on the left, the named roads, and the waterway lines that represent what used to be eleven living creeks. Note for reference purposes only, drawn not to scale."
+        caption: "Road Map of Barangay Canumay East, the official map showing the NLEX diagonal cut on the left, the named roads, and the waterway lines that represent what used to be eleven living creeks. Note: for reference purposes only, not to scale. Source: Barangay Hall of Canumay East, official records."
       },
     ],
   },
@@ -157,7 +157,7 @@ const LOGS = [
       },
       { 
         type: "seg", 
-        text: "This is the part of the research that genuinely surprised me. Old Canumay had eleven named sapang, or creeks, and the names weren't decorative. They were functional descriptions, the kind you'd only write if you actually lived beside the water. Sapang Bulok (\"Rotten Creek\") described the stagnant, decomposing smell of healthy marsh chemistry. Sapang Pangitlogan-Bakaw, or \"Creek of the Mangrove Nesting Ground,\" confirms there were mangroves here once, with birds nesting and laying eggs along the bank. Sapang Halang Sa Araw, or \"Creek Blocked from the Sun,\" describes a canopy so thick over the water that sunlight couldn't reach it, meaning it's an old-growth forest wetland. Sapang Bangka-bangka was wide and deep enough for boat travel. Sapang Binawan was where people set fish traps. Read together, it's a descriptive way to describe the waterways of Canumay and how people depend on and co-exist with them." 
+        text: "Sapang Bulok (\"Rotten Creek\") described the stagnant, decomposing smell of healthy marsh chemistry. Sapang Pangitlogan-Bakaw, or \"Creek of the Mangrove Nesting Ground,\" confirms there were mangroves here once, with birds nesting and laying eggs along the bank. Sapang Halang Sa Araw, or \"Creek Blocked from the Sun,\" describes a canopy so thick over the water that sunlight couldn't reach it, meaning it's an old-growth forest wetland. Sapang Bangka-bangka was wide and deep enough for boat travel. Sapang Binawan was where people set fish traps. Read together, it's a descriptive way to describe the waterways of Canumay and how people depend on and co-exist with them." 
       },
       { type: "sapang-glossary" },
       { type: "subtitle", text: "The Heart of It: One Big Tree in the Middle" },
@@ -216,7 +216,7 @@ const LOGS = [
       {
         type: "image",
         src: "/Assets/gabi.jpg",
-        caption: "Gabi (wetland taro), still growing in neighborhood gardens today, a living remnant of the old wetland-edge ecosystem."
+        caption: "Colocasia esculenta (gabi, wetland taro), still growing in neighborhood gardens today, a living remnant of the old wetland-edge ecosystem. Field photograph, May 2026."
       },
       { 
         type: "seg", 
@@ -229,7 +229,7 @@ const LOGS = [
       {
         type: "image",
         src: "/Assets/toLibis.jpg",
-        caption: "The path toward Sitio Libis, a community that organized itself from scratch against the same flooding and water problems the whole barangay shares."
+        caption: "The path toward Sitio Libis, a community that organized itself from scratch against the same flooding problems the whole barangay shares. They eventually purchased the land and re-blocked the settlement entirely. Field photograph, May 2026."
       },
       { type: "subtitle", text: "Guesswork, But Grounded Guesswork" },
       { 
@@ -243,7 +243,7 @@ const LOGS = [
       {
         type: "image",
         src: "/Assets/vgc-fruit.jpg",
-        caption: "An unidentified fruiting tree inside VGC, likely planted as an ornamental, but possibly a relative of the old wetland-edge species. Its fruit is still collected by neighbors."
+        caption: "An unidentified fruiting tree inside VGC, likely planted as an ornamental, but possibly a relative of the old wetland-edge flora. Its fruit is still collected by neighbors. Field photograph, May 2026."
       },
       { type: "subtitle", text: "What Must Have Lived Here Too" },
       { 
@@ -263,27 +263,27 @@ const LOGS = [
       {
         type: "image",
         src: "/aratilis.jpg",
-        caption: "Aratilis growing over a concrete wall on D. Bonifacio Drive, nobody planted it here. It colonized the moist, disturbed soil at the canal's edge on its own. This exact tree is the one mentioned in the log. Photo: D. Bonifacio, May 2026."
+        caption: "Aratilis growing over a concrete wall on D. Bonifacio Drive. Nobody planted it here. It colonized the moist, disturbed soil at the canal's edge on its own. This exact tree is the one mentioned in the log. Field photograph, D. Bonifacio Drive, May 2026."
       },
       {
         type: "image",
         src: "/canumay-east-street.png",
-        caption: "A street corner in Canumay East, pioneer trees growing over a perforated block wall beside an 'I ❤️ Canumay East' marker on a utility pole. This is what the whole barangay looks like at eye level now: persistent green pushing through whatever gap the concrete left open."
+        caption: "A street corner in Canumay East. Pioneer trees growing over a perforated block wall beside an 'I ❤️ Canumay East' marker on a utility pole. This is what the whole barangay looks like at eye level now: persistent green through whatever gap the concrete left open. Field photograph, May 2026."
       },
       {
         type: "image",
         src: "/Assets/mangoxguava.jpg",
-        caption: "A mango tree growing alongside a guava beside a neighborhood home in Canumay East, mango trees can live 100 to 300 years. The ones still standing here were almost certainly planted by someone's great-grandparents."
+        caption: "A mango tree alongside a guava beside a neighborhood home in Canumay East. Mango trees live 100 to 300 years — the ones still standing were almost certainly planted by someone's great-grandparents. Field photograph, May 2026."
       },
       {
         type: "image",
         src: "/Assets/canal-plants.jpg",
-        caption: "Canal-edge plants along Canumay East, pioneer species colonizing the disturbed, moist soil where creeks used to flow."
+        caption: "Canal-edge vegetation along Canumay East, pioneer species colonizing the disturbed, moist soil where creeks used to flow. Field photograph, May 2026."
       },
       {
         type: "image",
         src: "/Assets/binunga.jpg",
-        caption: "Binunga trees growing around empty lots, a pioneer species that thrives in areas once surrounded by water. The sticky sap is a distinctive field marker."
+        caption: "Macaranga tanarius (binunga) growing around empty lots, a pioneer species that thrives in areas once surrounded by water. The sticky sap is a distinctive field marker. Field photograph, May 2026."
       },
       { type: "subtitle", text: "The Full Portrait" },
       { 
@@ -306,7 +306,7 @@ const LOGS = [
       {
         type: "image",
         src: "/Assets/bonifacio-canal.jpg",
-        caption: "The drainage canal along D. Bonifacio Drive, concrete infrastructure where a living creek ecosystem once ran."
+        caption: "The drainage canal along D. Bonifacio Drive, concrete infrastructure where a living creek ecosystem once ran. Almost nothing lives in it. Field photograph, May 2026."
       },
       { 
         type: "seg", 
@@ -319,18 +319,18 @@ const LOGS = [
       },
       { 
         type: "seg", 
-        text: "And the dead zone doesn't stay local. Victoria Village's kanal drains into Canumay East's unnamed waterways, which drain into the Meycauayan River, which drains into Manila Bay. It then connects, however loosely, to the much larger Pampanga River watershed reaching back to the Sierra Madre. We sealed the kangkungan with concrete and mostly forgot. The Meycauayan River itself isn't a footnote here. As part of the Marilao-Meycauayan-Obando River System, it was named to the Blacksmith Institute's 2007 \"Dirty Thirty\" list of the world's most polluted places, and multiple peer-reviewed water studies independently describe it as one of the most severely polluted rivers in the Philippines. Downstream dissolved oxygen has been measured as low as 0.49 parts per million in published water quality research; fish need a minimum of about 5 ppm just to survive. The contamination includes lead from battery recycling, hexavalent chromium from leather tanning, mercury, and nickel, and despite all of that, the river still serves as a domestic and agricultural water source for roughly 250,000 people. The nearby Tullahan River, which forms Valenzuela's southern border, is in even worse shape: functionally biologically dead and one of seven Philippine rivers identified as major contributors of plastic waste to the world's oceans. It's worth sitting with the irony in its name: \"Tullahan\" comes from \"tulya,\" meaning clam, because the river was once so full of shellfish that people named it after them." 
+        text: "And the dead zone doesn't stay local. Victoria Village's kanal drains into Canumay East's unnamed waterways, which drain into the Meycauayan River, which drains into Manila Bay. It then connects, however loosely, to the much larger Pampanga River watershed reaching back to the Sierra Madre. We sealed the kangkungan with concrete and mostly forgot. The Meycauayan River itself isn't a footnote here. As part of the Marilao-Meycauayan-Obando River System, it was named to the Blacksmith Institute's 2007 \"Dirty Thirty\" list of the world's most polluted places, and multiple peer-reviewed water studies independently describe it as one of the most severely polluted rivers in the Philippines. Downstream dissolved oxygen has been measured as low as 0.49 parts per million in published water quality research (vs. a fish survival minimum of about 5 ppm); the contamination includes lead from battery recycling, hexavalent chromium from leather tanning, mercury, and nickel, and despite all of that, the river still serves as a domestic and agricultural water source for roughly 250,000 people (GAIA / Blacksmith Institute, 2007). The nearby Tullahan River, which forms Valenzuela's southern border, is in even worse shape: functionally biologically dead and one of seven Philippine rivers identified as major contributors of plastic waste to the world's oceans. It's worth sitting with the irony in its name: \"Tullahan\" comes from \"tulya,\" meaning clam, because the river was once so full of shellfish that people named it after them." 
       },
       {
         type: "image",
         src: "/Assets/vgc-canal.jpg",
-        caption: "A canal running through VGC, water moves, but nothing lives in it. This is what replaced the Sapang Bangka-bangka, where people once traveled by boat."
+        caption: "A canal running through VGC. Water moves, but nothing lives in it. This is what replaced the Sapang Bangka-bangka, where people once traveled by boat. Field photograph, May 2026."
       },
       { type: "subtitle", text: "Flooding: The Water Remembers Where It Used to Be" },
       {
         type: "image",
         src: "/nlex_east2west.jpg",
-        caption: "Looking east to west along the NLEX, the physical divide that split old Canumay in 1966. The highway was built over and beside the original creek corridor, flooding here in 2025 shut it down for five hours."
+        caption: "Looking east to west along the NLEX, the physical divide that split old Canumay in 1966. The highway was built over and beside the original creek corridor. In July 2025, flooding along this section shut it down for five hours. Field photograph, May 2026."
       },
       { 
         type: "seg", 
@@ -347,26 +347,26 @@ const LOGS = [
       {
         type: "image",
         src: "/im_wet2.jpg",
-        caption: "Not the 2025 flood, one before it. The expression says everything about how this becomes ordinary. You clean the same thing twice and stop expecting it to stop."
+        caption: "Not the 2025 flood, one before it. The expression says everything about how this becomes ordinary. You clean the same thing twice and stop expecting it to stop. Valeza family archive."
       },
       {
         type: "image",
         src: "/nlex-dusk.jpg",
-        caption: "The NLEX corridor at dusk, motorbikes in rain gear, the 'Maganda sa Valenzuela' sign visible through the overcast. This is what the highway looked like just before the 2025 floods submerged it for five hours."
+        caption: "The NLEX corridor at dusk. Motorbikes in rain gear, the 'Maganda sa Valenzuela' sign visible through the overcast. This is what the highway looked like just before the 2025 floods submerged it for five hours. Field photograph, May 2026."
       },
       { 
         type: "seg", 
-        text: "On top of all of that, the ground itself is slowly sinking. Valenzuela sits inside the CAMANAVA area (Caloocan, Malabon, Navotas, Valenzuela), one of the worst subsidence zones in Metro Manila. Older satellite data (2003–2011) put the CAMANAVA rate at 20 to 42 millimeters a year; more recent measurements from 2015–2019 suggest it's actually improved to roughly 10 to 20 millimeters a year, which researchers attribute to groundwater extraction restrictions inside Metro Manila proper. It's a rare piece of good news in this research, though it comes with a sharp asterisk, since the unrestricted provinces just outside the city line, Bulacan and Cavite, are still sinking at 40 millimeters a year or more. The honest, uncomfortable version of the flooding story is that it isn't primarily about heavier rain. It's that the ground is sinking faster than the sea is rising." 
+        text: "On top of all of that, the ground itself is slowly sinking. Valenzuela sits inside the CAMANAVA area (Caloocan, Malabon, Navotas, Valenzuela), one of the worst subsidence zones in Metro Manila. Older satellite data (2003–2011) put the CAMANAVA rate at 20 to 42 millimeters a year (Raucoules et al., 2013); more recent measurements from 2015–2019 suggest it's actually improved to roughly 10 to 20 millimeters a year, which researchers attribute to groundwater extraction restrictions inside Metro Manila proper. It's a rare piece of good news in this research, though it comes with a sharp asterisk, since the unrestricted provinces just outside the city line, Bulacan and Cavite, are still sinking at 40 millimeters a year or more (Abidin et al., 2011). The honest, uncomfortable version of the flooding story is that it isn't primarily about heavier rain. It's that the ground is sinking faster than the sea is rising." 
       },
       {
         type: "image",
         src: "/Assets/marton-estero.jpg",
-        caption: "The estero near Marton Road, one of the last visible waterways in Canumay East, now functioning as a flood drain rather than a living creek."
+        caption: "The estero near Marton Road, one of the last visible waterways in Canumay East, now functioning as a flood drain rather than a living creek. Field photograph, May 2026."
       },
       {
         type: "image",
         src: "/Assets/old-canal.jpg",
-        caption: "An old canal in the area, the water has nowhere to go except down and in. This is the geometry of induced flooding: streets raised over decades, drainage walls lifted to match, and the original marsh-level homes sitting lower with each cycle."
+        caption: "A canal in Canumay East. The water has nowhere to go except down and in. This is the geometry of induced flooding: streets raised over decades, drainage walls lifted to match, and the original marsh-level homes sitting lower with each cycle. Field photograph, May 2026."
       },
       { type: "quote", text: "The city dredged the creek that flooded the highway. Nobody dredged the creek that just flooded the houses." },
       { type: "subtitle", text: "What the City Is Doing, and Isn't" },
@@ -395,7 +395,7 @@ const LOGS = [
       {
         type: "image",
         src: "/im_wet.jpg",
-        caption: "Knee-deep in the sala during the 2025 floods. We were much more ready the second time around."
+        caption: "Knee-deep in the sala during the 2025 floods. We were more ready the second time around. Valeza family archive."
       },
       { type: "seg", text: "I never really know what to feel about this place." },
       { type: "seg", text: "In my twenty years of existing, I just accepted it: this is where I live, the place that decided what kind of person I'd turn out to be. It feels special and containing at the same time, like being held and being held down use the same hands." },
@@ -471,40 +471,18 @@ export default function Logs() {
           {/* Main Log Contents Rendered */}
           <RenderedDoc blocks={current.blocks} />
 
-          {/* New Bottom Tab Footer Navigation Links */}
-          <div 
-            className="log-nav-footer" 
-            style={{ 
-              display: "flex", 
-              justifyContent: "space-between", 
-              marginTop: "4rem",
-              paddingTop: "1.5rem",
-              borderTop: "1px solid rgba(0,0,0,0.1)"
-            }}
-          >
+          {/* Log prev/next footer navigation */}
+          <div className="log-nav-footer">
             {prevLog ? (
-              <button 
-                className="log-nav-btn prev"
-                onClick={() => setActive(prevLog.id)}
-                style={{ cursor: "pointer", background: "none", border: "none", opacity: 0.7 }}
-              >
-                ← Previous: {prevLog.label}
+              <button className="log-nav-btn prev" onClick={() => setActive(prevLog.id)}>
+                ← {prevLog.label}
               </button>
-            ) : (
-              <div className="spacer" /> 
-            )}
-
+            ) : <span />}
             {nextLog ? (
-              <button 
-                className="log-nav-btn next"
-                onClick={() => setActive(nextLog.id)}
-                style={{ cursor: "pointer", background: "none", border: "none", opacity: 0.7 }}
-              >
-                Next: {nextLog.label} →
+              <button className="log-nav-btn next" onClick={() => setActive(nextLog.id)}>
+                {nextLog.label} →
               </button>
-            ) : (
-              <div className="spacer" />
-            )}
+            ) : <span />}
           </div>
         </>
       )}
