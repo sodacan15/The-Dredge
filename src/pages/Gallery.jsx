@@ -1,39 +1,205 @@
 import { useState, useMemo } from "react";
 
-/**
- * ITEMS array mapping all 27 filenames inside your public/Assets/ folder.
- */
 const ITEMS = [
-  { filename: "barangay-map", wide: true, alt: "Barangay Map", tag: "archival", caption: "this is a caption" },
-  { filename: "barangay-profile", wide: false, alt: "Barangay Profile", tag: "archival", caption: "this is a caption" },
-  { filename: "Baringtonia", wide: false, alt: "Baringtonia", tag: "flora", caption: "this is a caption" },
-  { filename: "binunga", wide: false, alt: "Binunga", tag: "flora", caption: "this is a caption" },
-  { filename: "binunga2014", wide: false, alt: "Binunga 2014", tag: "archival", caption: "this is a caption" },
-  { filename: "binungapt2", wide: false, alt: "Binunga Part 2", tag: "flora", caption: "this is a caption" },
-  { filename: "bonifacio-canal", wide: true, alt: "Bonifacio Canal", tag: "infrastructure", caption: "this is a caption" },
-  { filename: "canal-plants", wide: false, alt: "Canal Plants", tag: "flora", caption: "this is a caption" },
-  { filename: "emptylot", wide: false, alt: "Empty Lot", tag: "infrastructure", caption: "this is a caption" },
-  { filename: "emptylot2014", wide: false, alt: "Empty Lot 2014", tag: "archival", caption: "this is a caption" },
-  { filename: "empyt-lot-to-upper-canumay", wide: true, alt: "Empty Lot to Upper Canumay", tag: "infrastructure", caption: "this is a caption" },
-  { filename: "empyt-lot-to-upper-canumay part 2", wide: false, alt: "Empty Lot to Upper Canumay Part 2", tag: "infrastructure", caption: "this is a caption" },
-  { filename: "gabi", wide: false, alt: "Gabi", tag: "flora", caption: "this is a caption" },
-  { filename: "mangoxguava", wide: false, alt: "Mango x Guava", tag: "flora", caption: "this is a caption" },
-  { filename: "marton-coconuts", wide: false, alt: "Marton Coconuts", tag: "flora", caption: "this is a caption" },
-  { filename: "marton-estero", wide: true, alt: "Marton Estero", tag: "infrastructure", caption: "this is a caption" },
-  { filename: "nlex", wide: false, alt: "NLEX Corridor", tag: "infrastructure", caption: "this is a caption" },
-  { filename: "nlex-east2west", wide: false, alt: "NLEX East to West", tag: "infrastructure", caption: "this is a caption" },
-  { filename: "nlex-east2westpart2", wide: false, alt: "NLEX East to West Part 2", tag: "infrastructure", caption: "this is a caption" },
-  { filename: "old-canal", wide: false, alt: "Old Canal", tag: "infrastructure", caption: "this is a caption" },
-  { filename: "old-farm", wide: false, alt: "Old Farm", tag: "archival", caption: "this is a caption" },
-  { filename: "old-mango-tree", wide: false, alt: "Old Mango Tree", tag: "flora", caption: "this is a caption" },
-  { filename: "toLibis", wide: false, alt: "To Libis", tag: "infrastructure", caption: "this is a caption" },
-  { filename: "vgc", wide: false, alt: "VGC Entrance", tag: "infrastructure", caption: "this is a caption" },
-  { filename: "vgc-canal", wide: true, alt: "VGC Canal", tag: "infrastructure", caption: "this is a caption" },
-  { filename: "vgc-fruit", wide: false, alt: "VGC Fruit", tag: "flora", caption: "this is a caption" },
-  { filename: "vgc-fruit-2", wide: false, alt: "VGC Fruit 2", tag: "flora", caption: "this is a caption" }
+  {
+    filename: "barangay-map",
+    wide: true,
+    alt: "Barangay Map",
+    tag: "archival",
+    caption: "Hand-drawn boundary map of Barangay Victoria Village, Canumay East. The canal lines are still visible along the southern edge."
+  },
+  {
+    filename: "barangay-profile",
+    wide: false,
+    alt: "Barangay Profile",
+    tag: "archival",
+    caption: "Official barangay profile document. Population figures date to the last census before major land reclamation along the estero."
+  },
+  {
+    filename: "Baringtonia",
+    wide: false,
+    alt: "Baringtonia",
+    tag: "flora",
+    caption: "Baringtonia asiatica — found near the old drainage line. Locals call it putat. It still fruits here despite the concrete embankment."
+  },
+  {
+    filename: "binunga",
+    wide: false,
+    alt: "Binunga",
+    tag: "flora",
+    caption: "Macaranga tanarius (binunga) — a pioneer species that colonizes disturbed ground. Its presence marks where the old field edge was."
+  },
+  {
+    filename: "binunga2014",
+    wide: false,
+    alt: "Binunga, 2014",
+    tag: "archival",
+    caption: "The same stand of binunga photographed in 2014. The lot behind it has since been converted to a warehouse site."
+  },
+  {
+    filename: "binungapt2",
+    wide: false,
+    alt: "Binunga (detail)",
+    tag: "flora",
+    caption: "Understorey detail — the broad leaves trap moisture and shade out competing grass. A small ecosystem in a crack in the wall."
+  },
+  {
+    filename: "bonifacio-canal",
+    wide: true,
+    alt: "Bonifacio Canal",
+    tag: "infrastructure",
+    caption: "The Bonifacio Canal looking east. Concrete-lined since the early 2000s, but water hyacinth still masses along the banks every rainy season."
+  },
+  {
+    filename: "canal-plants",
+    wide: false,
+    alt: "Canal Plants",
+    tag: "flora",
+    caption: "Aquatic vegetation at the canal margin — water lettuce, hyacinth, and a few sedges. Indicators of slow, nutrient-rich water."
+  },
+  {
+    filename: "emptylot",
+    wide: false,
+    alt: "Empty Lot",
+    tag: "infrastructure",
+    caption: "A vacant lot at the village edge, still seasonally flooded. The soil here is dark and silty — old floodplain memory."
+  },
+  {
+    filename: "emptylot2014",
+    wide: false,
+    alt: "Empty Lot, 2014",
+    tag: "archival",
+    caption: "Same lot, 2014. The willows along the rear fence are gone now. The standing water then was deeper and stayed longer."
+  },
+  {
+    filename: "empyt-lot-to-upper-canumay",
+    wide: true,
+    alt: "Empty Lot to Upper Canumay",
+    tag: "infrastructure",
+    caption: "Panoramic from the vacant lot toward Upper Canumay. The slight depression in the middle ground traces the old creek bed."
+  },
+  {
+    filename: "empyt-lot-to-upper-canumay part 2",
+    wide: false,
+    alt: "To Upper Canumay (cont.)",
+    tag: "infrastructure",
+    caption: "Continuation of the panoramic. The NLEX embankment cuts across the far distance — the canal was redirected when the highway was built."
+  },
+  {
+    filename: "gabi",
+    wide: false,
+    alt: "Gabi (Taro)",
+    tag: "flora",
+    caption: "Colocasia esculenta — gabi — growing at the canal edge. Cultivated here for generations; the tubers are still harvested informally."
+  },
+  {
+    filename: "mangoxguava",
+    wide: false,
+    alt: "Mango × Guava",
+    tag: "flora",
+    caption: "A mango and a guava growing from the same break in the concrete. No one planted them here. They arrived on their own."
+  },
+  {
+    filename: "marton-coconuts",
+    wide: false,
+    alt: "Marton Coconuts",
+    tag: "flora",
+    caption: "Coconut palms along the Marton road. Old-growth, probably planted before the village was subdivided. The oldest one leans toward the canal."
+  },
+  {
+    filename: "marton-estero",
+    wide: true,
+    alt: "Marton Estero",
+    tag: "infrastructure",
+    caption: "The Marton estero at low tide. The concrete casing was added in the 1990s. Beneath it, the original earthen channel is still intact."
+  },
+  {
+    filename: "nlex",
+    wide: false,
+    alt: "NLEX Corridor",
+    tag: "infrastructure",
+    caption: "Looking north along the NLEX right-of-way. The service road here runs over what was once a seasonal flood channel draining to the Tullahan."
+  },
+  {
+    filename: "nlex-east2west",
+    wide: false,
+    alt: "NLEX, East to West",
+    tag: "infrastructure",
+    caption: "East-to-west view of the NLEX embankment. The raised highway effectively severed the wetland from its upstream drainage catchment."
+  },
+  {
+    filename: "nlex-east2westpart2",
+    wide: false,
+    alt: "NLEX East to West (cont.)",
+    tag: "infrastructure",
+    caption: "Continuation. The scrubland on the right occupies the former right-of-way of the old farm road that predated the expressway."
+  },
+  {
+    filename: "old-canal",
+    wide: false,
+    alt: "Old Canal",
+    tag: "infrastructure",
+    caption: "The old irrigation canal — now partially silted. Locals remember it as knee-deep in summer and waist-deep after typhoons."
+  },
+  {
+    filename: "old-farm",
+    wide: false,
+    alt: "Old Farm",
+    tag: "archival",
+    caption: "Archival photograph of the farm that occupied this land before subdivision. The tree line at the rear still exists in part."
+  },
+  {
+    filename: "old-mango-tree",
+    wide: false,
+    alt: "Old Mango Tree",
+    tag: "flora",
+    caption: "The old mango at the corner of the lot — too large and too rooted to remove. It has outlasted three different households beneath it."
+  },
+  {
+    filename: "toLibis",
+    wide: false,
+    alt: "Toward Libis",
+    tag: "infrastructure",
+    caption: "The road leading toward Libis, Quezon City. The elevation drops noticeably here — water drains this way during heavy rain."
+  },
+  {
+    filename: "vgc",
+    wide: false,
+    alt: "VGC Entrance",
+    tag: "infrastructure",
+    caption: "Victoria Village Club entrance. The original gatehouse stood on what was formerly an elevated dike separating two rice fields."
+  },
+  {
+    filename: "vgc-canal",
+    wide: true,
+    alt: "VGC Canal",
+    tag: "infrastructure",
+    caption: "The canal running along the VGC perimeter. During heavy rain it overflows onto the road — the drainage was designed for a different era."
+  },
+  {
+    filename: "vgc-fruit",
+    wide: false,
+    alt: "VGC Fruit Tree",
+    tag: "flora",
+    caption: "An unidentified fruiting tree in the VGC interior. Likely planted as an ornamental, it now produces enough that neighbors collect the fruit."
+  },
+  {
+    filename: "vgc-fruit-2",
+    wide: false,
+    alt: "VGC Fruit (detail)",
+    tag: "flora",
+    caption: "Close detail of the fruit cluster. Possibly a species of Ficus — the fig wasps that pollinate it would need their own field log entry."
+  }
 ];
 
-const ITEMS_PER_PAGE = 6;
+const FILTERS = [
+  { id: "all",            label: "All" },
+  { id: "archival",       label: "Maps & Archival" },
+  { id: "flora",          label: "Flora" },
+  { id: "infrastructure", label: "Waterways & Infrastructure" },
+];
+
+const ITEMS_PER_PAGE = 9;
 
 export default function Gallery() {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -46,118 +212,96 @@ export default function Gallery() {
   }, [activeFilter]);
 
   const paginatedItems = useMemo(() => {
-    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-    return filteredItems.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+    return filteredItems.slice(start, start + ITEMS_PER_PAGE);
   }, [filteredItems, currentPage]);
 
   const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE);
 
+  function imgSrc(filename) {
+    return `/Assets/${encodeURIComponent(filename)}.jpg`;
+  }
+
   return (
-    <div className="page" style={{ maxWidth: "1100px", fontFamily: "sans-serif", padding: "20px" }}>
-      <p className="page-eyebrow" style={{ textTransform: "uppercase", fontSize: "12px", letterSpacing: "1.5px", color: "#8c7a6b", margin: "0 0 5px 0" }}>
-        Field Photography
-      </p>
-      <h1 className="page-title" style={{ fontSize: "32px", fontWeight: "700", color: "#2c2520", margin: "0 0 10px 0" }}>
-        Gallery
-      </h1>
-      <p className="page-subtitle" style={{ fontSize: "15px", color: "#594e46", margin: "0 0 25px 0", lineHeight: "1.5" }}>
-        Photos from the field walks, May 2026 — surviving plants, buried creeks, factory walls, and the margins where things still grow. Click any Polaroid frame to zoom into the details.
+    <div className="page gallery-page">
+      <p className="page-eyebrow">Field Photography</p>
+      <h1 className="page-title">Gallery</h1>
+      <p className="page-subtitle">
+        Photos from the field walks, May 2026 — surviving plants, buried creeks,
+        factory walls, and the margins where things still grow.
       </p>
 
-      {/* Tabs */}
-      <div className="filter-bar" style={{ display: "flex", gap: "10px", marginBottom: "30px", flexWrap: "wrap", borderBottom: "1px solid #e3ded9", paddingBottom: "12px" }}>
-        {[
-          { id: "all", label: "All Items" },
-          { id: "archival", label: "Maps & Archival" },
-          { id: "flora", label: "Botanical / Flora" },
-          { id: "infrastructure", label: "Waterways & Infrastructure" }
-        ].map(tab => (
+      <div className="gallery-filters">
+        {FILTERS.map(f => (
           <button
-            key={tab.id}
-            onClick={() => { setActiveFilter(tab.id); setCurrentPage(1); }}
-            style={{
-              padding: "8px 16px",
-              fontSize: "13px",
-              fontWeight: activeFilter === tab.id ? "600" : "400",
-              color: activeFilter === tab.id ? "#ffffff" : "#594e46",
-              backgroundColor: activeFilter === tab.id ? "#8c7a6b" : "transparent",
-              border: activeFilter === tab.id ? "1px solid #8c7a6b" : "1px solid #d9d2c9",
-              borderRadius: "20px",
-              cursor: "pointer"
-            }}
+            key={f.id}
+            className={`gallery-filter-btn${activeFilter === f.id ? " active" : ""}`}
+            onClick={() => { setActiveFilter(f.id); setCurrentPage(1); }}
           >
-            {tab.label}
+            {f.label}
           </button>
         ))}
       </div>
 
-      {/* Grid */}
-      <div className="gallery-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "28px" }}>
-        {paginatedItems.map((item, index) => {
-          const srcPath = `/Assets/${item.filename}.jpg`;
-
-          return (
-            <div
-              key={index}
-              onClick={() => setSelectedItem({ ...item, src: srcPath })}
-              style={{
-                gridColumn: item.wide ? "span 2" : "span 1",
-                backgroundColor: "#fdfdfb",
-                border: "1px solid #ebd2c9",
-                padding: "16px 16px 24px 16px",
-                boxShadow: "0 4px 10px rgba(44, 37, 32, 0.05)",
-                cursor: "pointer",
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <div style={{ width: "100%", height: item.wide ? "340px" : "260px", backgroundColor: "#eae4de", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <img 
-                  src={srcPath} 
-                  alt={item.alt}
-                  style={{ width: "100%", height: "100%", objectFit: "cover", filter: "contrast(1.01) sepia(0.04)" }}
-                />
-              </div>
-              <p style={{ fontFamily: "Georgia, serif", fontSize: "13px", color: "#40352e", marginTop: "16px", marginBottom: "0", lineHeight: "1.45", fontStyle: "italic", borderLeft: "2px solid #8c7a6b", paddingLeft: "10px" }}>
-                {item.caption}
-              </p>
+      <div className="gallery-grid-photos">
+        {paginatedItems.map((item, i) => (
+          <div
+            key={i}
+            className={`photo-card${item.wide ? " wide" : ""}`}
+            onClick={() => setSelectedItem({ ...item, src: imgSrc(item.filename) })}
+          >
+            <div className="photo-frame">
+              <img
+                src={imgSrc(item.filename)}
+                alt={item.alt}
+                className="photo-img"
+                loading="lazy"
+              />
             </div>
-          );
-        })}
+            <p className="photo-caption">{item.caption}</p>
+            <span className="photo-tag">{item.tag}</span>
+          </div>
+        ))}
       </div>
 
-      {/* Pagination */}
       {totalPages > 1 && (
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "15px", marginTop: "40px" }}>
+        <div className="gallery-pagination">
           <button
+            className="page-btn"
             disabled={currentPage === 1}
-            onClick={() => setCurrentPage(prev => prev - 1)}
-            style={{ padding: "6px 14px", fontSize: "12px", border: "1px solid #d9d2c9", cursor: "pointer" }}
+            onClick={() => setCurrentPage(p => p - 1)}
           >
-            Previous
+            ← prev
           </button>
-          <span style={{ fontSize: "13px", color: "#594e46" }}>Page {currentPage} of {totalPages}</span>
+          <span className="page-indicator">
+            {currentPage} / {totalPages}
+          </span>
           <button
+            className="page-btn"
             disabled={currentPage === totalPages}
-            onClick={() => setCurrentPage(prev => prev + 1)}
-            style={{ padding: "6px 14px", fontSize: "12px", border: "1px solid #d9d2c9", cursor: "pointer" }}
+            onClick={() => setCurrentPage(p => p + 1)}
           >
-            Next
+            next →
           </button>
         </div>
       )}
 
-      {/* Lightbox Modal */}
       {selectedItem && (
-        <div onClick={() => setSelectedItem(null)} style={{ position: "fixed", top: 0, left: 0, width: "100vw", height: "100vh", backgroundColor: "rgba(44, 37, 32, 0.88)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 1000 }}>
-          <div onClick={(e) => e.stopPropagation()} style={{ backgroundColor: "#fdfdfb", padding: "24px", maxWidth: "850px", width: "100%" }}>
-            <img src={selectedItem.src} alt={selectedItem.alt} style={{ width: "100%", maxHeight: "65vh", objectFit: "contain" }} />
-            <div style={{ marginTop: "20px", display: "flex", justifyContent: "space-between" }}>
+        <div className="lightbox-overlay" onClick={() => setSelectedItem(null)}>
+          <div className="lightbox-card" onClick={e => e.stopPropagation()}>
+            <img
+              src={selectedItem.src}
+              alt={selectedItem.alt}
+              className="lightbox-img"
+            />
+            <div className="lightbox-meta">
               <div>
-                <h3 style={{ margin: "0 0 6px 0", color: "#2c2520" }}>{selectedItem.alt}</h3>
-                <p style={{ margin: 0, fontFamily: "Georgia, serif", fontStyle: "italic" }}>{selectedItem.caption}</p>
+                <p className="lightbox-title">{selectedItem.alt}</p>
+                <p className="lightbox-caption">{selectedItem.caption}</p>
               </div>
-              <button onClick={() => setSelectedItem(null)} style={{ border: "1px solid #d9d2c9", padding: "6px 14px", cursor: "pointer" }}>Close</button>
+              <button className="lightbox-close" onClick={() => setSelectedItem(null)}>
+                close
+              </button>
             </div>
           </div>
         </div>
