@@ -93,6 +93,11 @@ const LOGS = [
         type: "seg", 
         text: "Here's where it gets a little eerie. I asked a barangay worker I happened to run into while getting my aunt's PWD rice ticket. I asked her if she knows where the giant Kanumai tree that gave our barangay their name is located. She told me that the tree used to stand on the NLEX overpass bridge, the same bridge that physically split Canumay East from Canumay West back in 1966 (barangay office staff, personal communication, May 2026). There's no Kanumai standing anywhere in the vicinity today — no original, no descendant, and no second-generation tree. Just highway. But on that highway was also a bridge: one traversable by foot and by motorcycle that bridges the two barangays." 
       },
+      {
+        type: "image",
+        src: "/nlex_bridge.jpg",
+        caption: "The NLEX overpass at Canumay — built over the exact spot where the last Kanumai tree stood. Google Street View, Apr 2025."
+      },
       { 
         type: "seg", 
         text: "As for the eleven creeks, there aren't any left, not really, and the research bears out exactly how they disappeared. Their location is lost to time, and what's left of the creeks — the Canumay Creek on the western side — is used as a drainage and flood control area. As for Canumay East? What runs through the area now, where Victoria Grand Court used to drain toward Marton, is functionally just one of those concrete lines that moves water, technically, but doesn't support life the way a creek does. A creek has fish, insects, birds, and plants rooted along its banks; a drainage canal is a pipe that happens to be open on top." 
@@ -177,6 +182,11 @@ const LOGS = [
         text: "And the dead zone doesn't stay local. Victoria Village's kanal drains into Canumay East's unnamed waterways, which drain into the Meycauayan River, which drains into Manila Bay. It then connects, however loosely, to the much larger Pampanga River watershed reaching back to the Sierra Madre. We sealed the kangkungan with concrete and mostly forgot. The Meycauayan River itself isn't a footnote here. As part of the Marilao-Meycauayan-Obando River System, it was named to the Blacksmith Institute's 2007 \"Dirty Thirty\" list of the world's most polluted places, and multiple peer-reviewed water studies independently describe it as one of the most severely polluted rivers in the Philippines. Downstream dissolved oxygen has been measured as low as 0.49 parts per million in published water quality research; fish need a minimum of about 5 ppm just to survive. The contamination includes lead from battery recycling, hexavalent chromium from leather tanning, mercury, and nickel — and despite all of that, the river still serves as a domestic and agricultural water source for roughly 250,000 people. The nearby Tullahan River, which forms Valenzuela's southern border, is in even worse shape: functionally biologically dead and one of seven Philippine rivers identified as major contributors of plastic waste to the world's oceans. It's worth sitting with the irony in its name: \"Tullahan\" comes from \"tulya,\" meaning clam, because the river was once so full of shellfish that people named it after them." 
       },
       { type: "subtitle", text: "Flooding: The Water Remembers Where It Used to Be" },
+      {
+        type: "image",
+        src: "/nlex_east2west.jpg",
+        caption: "Looking east to west along the NLEX, the physical divide that split old Canumay in 1966."
+      },
       { 
         type: "seg", 
         text: "Victoria Village floods every typhoon season, and it isn't random. My family's house sits in one of the lowest parts of Canumay East, and it receives water from every surrounding direction. That's not bad luck. That's the original marsh elevation reasserting itself." 
@@ -214,8 +224,26 @@ const LOGS = [
     label: "Log ???",
     date: "— —",
     blocks: [
-      { type: "title", text: "Uncharted Logs" },
-      { type: "seg", text: "Pending field extraction data contents..." }
+      { type: "title", text: "I Never Really Know What to Feel About This Place" },
+      {
+        type: "image",
+        src: "/im_wet.jpg",
+        caption: "Knee-deep in the sala during the 2025 floods. We were much more ready the second time around."
+      },
+      { type: "seg", text: "I never really know what to feel about this place." },
+      { type: "seg", text: "In my twenty years of existing, I just accepted it: this is where I live, the place that decided what kind of person I'd turn out to be. It feels special and containing at the same time, like being held and being held down use the same hands." },
+      { type: "seg", text: "I know what the rain smells like before it falls. Wet earth, rising off asphalt that was hot under my feet a second ago, and then the cold water rushes in around them the longer I stand there. Were they dirty? Of course they were. I never cared. This place feels like mine in a way nothing else does." },
+      { type: "seg", text: "It wasn't always gentle, though. There's one time I remember clearly: standing knee-deep in our own sala, scrubbing dirt and grime off stuff and hanging certificates like laundry. I don't remember being sad about it. I remember my hands being tired and mildly annoyed that electricity was down for a bit. That's all flooding really teaches you, eventually. Not grief. Just the work of cleaning the same thing twice. That sometimes you have to stay and persevere." },
+      { type: "seg", text: "My grandfather came here for the work. Built this house and established a family. That's the whole story I have, and at some point I stopped asking for more of it. He was less a person to me than a wall, something you didn't argue with, something you went quiet around. I don't know what I feel when I think about him. I'm just scared of him, if more than anything. I just wanna leave and yet… I can't." },
+      { type: "seg", text: "I'm not going to figure it out here." },
+      { type: "seg", text: "But I also wanted change, and somehow I'm terrified of it. This place has been the site of every storm I've lived through, and somehow I cannot leave. I tell myself someday I'll escape, and in the same breath I see myself still standing in it, like the leaving and the staying are happening at once and neither one wins." },
+      { type: "quote", text: "Water isn't held by any shape. It just finds the one continuous string back to where it came from. The same way it rises over the streets every rain, memory rises through the cracks in me." },
+      { type: "seg", text: "Some nights I don't fight it. Some nights I want to sink into it." },
+      { type: "seg", text: "There's a tree that isn't here anymore. Gone the way water is never gone: gone for good, gone on purpose, gone in a way nothing rained back. I keep reaching for it anyway, some past version of this place too good to have actually been real, going looking for it like it's still standing somewhere I haven't checked." },
+      { type: "seg", text: "I tell myself I'll leave when I'm older. It still feels distant. Unreachable. Even now, being older." },
+      { type: "seg", text: "I still don't know what to feel about this place." },
+      { type: "seg", text: "I think I'm not supposed to." },
+      { type: "seg", text: "Maybe someday, in the rain." },
     ],
   },
 ];

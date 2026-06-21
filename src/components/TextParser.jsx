@@ -102,6 +102,13 @@ export function RenderedDoc({ blocks }) {
                 <p>{block.text}</p>
               </blockquote>
             );
+          case "image":
+            return (
+              <figure key={i} className="doc-figure">
+                <img src={block.src} alt={block.caption || ""} className="doc-img" />
+                {block.caption && <figcaption className="doc-figcaption">{block.caption}</figcaption>}
+              </figure>
+            );
           default:
             return null;
         }

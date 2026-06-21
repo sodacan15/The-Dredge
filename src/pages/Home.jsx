@@ -19,26 +19,16 @@ export default function Home() {
         "Every rain, it comes back."
       </p>
 
-      <div className="hero-meta">
-        <span>A CS Final Project</span>
-        <span>May 2026</span>
-        <span>Research Concluded</span>
-      </div>
-
-      <hr className="divider" />
-
-      <div className="tag-list">
-        <span className="tag">Ecology</span>
-        <span className="tag">Oral History</span>
-        <span className="tag">Canumay East</span>
-        <span className="tag">Wetlands</span>
-        <span className="tag">Metro Manila</span>
-        <span className="tag">Personal Memoir</span>
-      </div>
-
-      <div className="placeholder-block" style={{ marginTop: "2rem" }}>
-        Featured excerpt / latest log entry — drop content here
-      </div>
+      <figure className="home-hero-figure">
+        <img
+          src="/nlex_bridge.jpg"
+          alt="NLEX overpass at Valenzuela, where the last Kanumai tree once stood"
+          className="home-hero-img"
+        />
+        <figcaption className="home-hero-caption">
+          The NLEX overpass at Canumay — built over the spot where the last Kanumai tree once stood.
+        </figcaption>
+      </figure>
     </div>
   );
 }
