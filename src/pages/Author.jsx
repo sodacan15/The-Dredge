@@ -14,7 +14,7 @@ export default function Author() {
         {/* Left column — photo + quick facts */}
         <div className="author-left">
           <div className="author-photo-wrap">
-            <img src="/profile.png" alt="Reinwald Marone Valeza" className="author-photo" />
+            <img src="/author-photo.png" alt="Reinwald Marone Valeza" className="author-photo" />
           </div>
 
           <div className="author-facts-card">

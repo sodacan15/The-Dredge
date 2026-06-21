@@ -64,6 +64,20 @@ const SECTIONS = [
         body: "Highlights specialized UP geodetic data detailing subsidence threats in Metro Manila where heavy infrastructure and private pumping cause land levels to fall continuously. The CAMANAVA area — which includes Valenzuela — appears in the data as one of the most affected zones. Read alongside the peer-reviewed Sulapas et al. paper below, this establishes the scale of the sinking: 20–42mm per year in older measurements, still 10–20mm in more recent data even with restrictions on extraction."
       },
       {
+        title: "BusinessMirror — SMC River Cleanups Reach 9.12M Metric Tons (2026)",
+        url: "https://businessmirror.com.ph/2026/04/30/smcs-river-cleanups-reach-9-12m-metric-tons-of-waste-silt-removed-since-2020/",
+        urlLabel: "businessmirror.com.ph · April 2026",
+        finding: "The Private Sector Gap",
+        body: "Reports that San Miguel Corporation's 'Better Rivers PH' program has removed more than 9.12 million metric tons of waste from ten major river systems since 2020, including a 2026 maintenance round that pulled 710,168 metric tons from the Bulacan River System — including the downstream Meycauayan River. A private actor doing the dredging the state hasn't prioritized. Nearby communities reported reduced flooding after the earlier Tullahan cleanup, completed in August 2022."
+      },
+      {
+        title: "GMA News — Polo Riverwalk Opens in Valenzuela City (2026)",
+        url: "https://www.gmanetwork.com",
+        urlLabel: "GMA News · February 2026",
+        finding: "The Linear Park Where a Floodwall Was",
+        body: "Covers the January 2026 opening of the Polo Riverwalk — a 2.5-kilometer linear park connecting five barangays along the old Tullahan River floodwalls. A city-level investment in turning a flood-control embankment into public green space, which is exactly the kind of ecological attention the unnamed waterways of Canumay East have never received."
+      },
+      {
         title: "Tribune / Valenzuela LGU — State of Calamity Declaration",
         url: "https://tribune.net.ph",
         urlLabel: "tribune.net.ph · July 2025",
@@ -90,6 +104,20 @@ const SECTIONS = [
         urlLabel: "Official Municipal PDF Repository",
         finding: "The Topographic Bowl",
         body: "Establishes the mathematical reality of local flood vulnerability, proving that 25% of Valenzuela's total land area rests directly at or below sea level, with a baseline average elevation of just 2 meters. This stands in stark contrast to the Canumay industrial zone's highest ridge at 38 meters. The intense elevation delta transforms low-lying residential pockets into natural catch basins, pulling stormwater and heavy industrial runoff downward with nowhere to drain."
+      },
+      {
+        title: "Blacksmith Institute — The World's Worst Polluted Places: The Top Ten (of the Dirty Thirty) (2007)",
+        url: "https://www.blacksmithinstitute.org",
+        urlLabel: "Blacksmith Institute / Pure Earth",
+        finding: "The Named River",
+        body: "Placed the Marilao-Meycauayan-Obando River System — the same system Canumay East's unnamed drainage feeds into — on the 2007 global list of the world's thirty most polluted places. The contamination profile includes lead from battery recycling, hexavalent chromium from leather tanning, mercury, and nickel. This is the downstream consequence of what gets buried in places like Canumay's sealed kangkungan."
+      },
+      {
+        title: "DENR-NCR — Lingunan Creek Named Most Improved Estero in Metro Manila (2021)",
+        url: "https://ncr.denr.gov.ph",
+        urlLabel: "DENR-NCR Official Announcement · March 2021",
+        finding: "The Neighbor That Got the Award",
+        body: "Documents DENR's recognition of Lingunan Creek — immediately adjacent to Canumay East — as Metro Manila's most improved estero in 2021. The contrast is the whole point: Lingunan's waterway received sustained monitoring, cleanup effort, and now an award. Canumay East's eleven creeks received none of those things, and most no longer appear in any official waterway database at all."
       },
       {
         title: "Official Profile History of Barangay Canumay East (Section 2.1)",
@@ -120,6 +148,20 @@ const SECTIONS = [
         body: "Maps the area's geological base as Tropudults paired with Tropudalfs and Oxisols, indicating highly weathered, poorly drained, and naturally waterlogged alluvial floodplain horizons."
       },
       {
+        title: "Pleto et al. — Meycauayan River Water Quality Assessment (2020)",
+        url: "https://www.journalofhealthandpollution.org",
+        urlLabel: "Journal of Health and Pollution",
+        finding: "The 0.49 ppm Number",
+        body: "Measures downstream dissolved oxygen in the Meycauayan River segment of the Marilao-Meycauayan-Obando River System at as low as 0.49 parts per million — against a minimum of ~5 ppm that fish need to survive. The river still serves as a domestic and agricultural water source for approximately 250,000 people. This is what the drainage from Canumay East's sealed-over creeks flows into."
+      },
+      {
+        title: "Eco et al. — Widespread Land Subsidence in Metro Manila (2018)",
+        url: "https://www.jscimedcentral.com",
+        urlLabel: "JSM Environmental Science & Ecology",
+        finding: "The CAMANAVA Baseline",
+        body: "Documents satellite-measured land subsidence rates across Metro Manila from 2003 to 2011, establishing the CAMANAVA baseline at 20 to 42 millimeters per year — among the worst in the region. Valenzuela's position inside this zone means that even if flooding frequency were constant, the ground sinking beneath homes effectively raises flood risk with every passing year."
+      },
+      {
         title: "Cash, Corrine — \"Creating the Conditions for Climate Resilience\" (2021)",
         url: "https://www.cogitatiopress.com/urbanplanning/article/view/4205",
         urlLabel: "Urban Planning Journal · Vol. 6, Issue 3",
@@ -133,6 +175,27 @@ const SECTIONS = [
     label: "Laws & Legislation",
     eyebrow: "Legal Record",
     entries: [
+      {
+        title: "Republic Act No. 8526 (1998) — Valenzuela Cityhood",
+        url: "https://www.officialgazette.gov.ph",
+        urlLabel: "Official Gazette of the Philippines",
+        finding: null,
+        body: "Converted the Municipality of Valenzuela into a component city on February 14, 1998. Cityhood accelerated the pace of industrialization and formalized the administrative structures that now govern Canumay East — including the infrastructure investment priorities that left the barangay's internal waterways unmaintained and unnamed in official databases."
+      },
+      {
+        title: "Executive Order No. 401 (1960) — Polo / Valenzuela Separation",
+        url: "https://www.officialgazette.gov.ph",
+        urlLabel: "Official Gazette · July 21, 1960",
+        finding: null,
+        body: "Signed by President Carlos P. Garcia on July 21, 1960, separating Polo and Valenzuela as independent municipalities and placing Canumay under Valenzuela's jurisdiction. One of the administrative pivots in the long paper trail that eventually produced the two separate barangays — and the two separate, unequal waterway histories — documented in this project."
+      },
+      {
+        title: "Metropolitan Manila Development Authority v. Concerned Residents of Manila Bay, G.R. Nos. 171947–48 (2008)",
+        url: "https://elibrary.judiciary.gov.ph",
+        urlLabel: "Supreme Court E-Library",
+        finding: "The Legal Thread to Canumay's Canals",
+        body: "The Supreme Court's writ of continuing mandamus, issued December 18, 2008, places any waterway that drains into Manila Bay within an ongoing court-ordered rehabilitation chain. Because Canumay East's drainage feeds the Meycauayan River, which feeds Manila Bay, the unnamed concrete canals of Victoria Village are technically covered by this mandate — a legal thread connecting a neighborhood drainage ditch to one of the country's most significant environmental rulings, even if no enforcement has ever pulled on it at that scale."
+      },
       {
         title: "Republic Act No. 10958 (17th Congress)",
         url: "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/86764",

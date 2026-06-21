@@ -147,6 +147,11 @@ const LOGS = [
       },
       {
         type: "image",
+        src: "/nlex-bridge-highway.jpg",
+        caption: "From inside the NLEX looking toward Canumay — the overpass where the barangay's namesake tree once stood is now just a lane marker in a four-lane expressway. Google Street View, Apr 2025."
+      },
+      {
+        type: "image",
         src: "/supermarket.jpg",
         caption: "The NLEX corridor looking east — commercial buildings now occupy the landscape where the wetland and its creeks once extended. The 'Maganda sa Valenzuela' sign on the right marks how much the area's identity has shifted."
       },
@@ -235,6 +240,11 @@ const LOGS = [
       },
       {
         type: "image",
+        src: "/canumay-east-street.png",
+        caption: "A street corner in Canumay East — pioneer trees growing over a perforated block wall beside an 'I ❤️ Canumay East' marker on a utility pole. This is what the whole barangay looks like at eye level now: persistent green pushing through whatever gap the concrete left open."
+      },
+      {
+        type: "image",
         src: "/Assets/mangoxguava.jpg",
         caption: "A mango tree growing alongside a guava beside a neighborhood home in Canumay East — mango trees can live 100 to 300 years. The ones still standing here were almost certainly planted by someone's great-grandparents."
       },
@@ -306,6 +316,16 @@ const LOGS = [
       { 
         type: "seg", 
         text: "July 2025 made the stakes concrete, literally and otherwise. Valenzuela was declared under a state of calamity after Typhoons Crising, Dante, and Emong hit in close succession; more than 9,000 people had to be rescued and evacuated citywide. On July 21 specifically, nearly half a kilometer of NLEX itself went under a meter of floodwater for more than five hours, and that single event is what triggered the emergency dredging operations that followed in August, when over 69,000 cubic meters of silt and debris were pulled from eleven priority waterways across Valenzuela and Meycauayan." 
+      },
+      {
+        type: "image",
+        src: "/im_wet2.jpg",
+        caption: "Not the 2025 flood — one before it. The expression says everything about how this becomes ordinary. You clean the same thing twice and stop expecting it to stop."
+      },
+      {
+        type: "image",
+        src: "/nlex-dusk.jpg",
+        caption: "The NLEX corridor at dusk — motorbikes in rain gear, the 'Maganda sa Valenzuela' sign visible through the overcast. This is what the highway looked like just before the 2025 floods submerged it for five hours."
       },
       { 
         type: "seg", 
