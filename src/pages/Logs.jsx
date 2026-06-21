@@ -125,6 +125,7 @@ const LOGS = [
         src: "/kangkong.jpg",
         caption: "Ipomoea aquatica (kangkong/water spinach) — the plant that covered the low marsh zones of Victoria Village before the land was filled with adobe. Photo: Wikimedia Commons."
       },
+      { type: "quote", text: "BSWM Soil Classification · Canumay East: Tropudults with Tropudalfs, Tropepts, and Oxisols — every one of these independently points to historically wet, poorly drained, seasonally waterlogged ground. The soil remembers what the surface forgot. (Bureau of Soils and Water Management, retrieved via FOI)" },
       { type: "subtitle", text: "The Eleven Creeks" },
       { 
         type: "seg", 
@@ -151,11 +152,6 @@ const LOGS = [
         type: "image",
         src: "/nlex-bridge-highway.jpg",
         caption: "From inside the NLEX looking toward Canumay — the overpass where the barangay's namesake tree once stood is now just a lane marker in a four-lane expressway. Google Street View, Apr 2025."
-      },
-      {
-        type: "image",
-        src: "/supermarket.jpg",
-        caption: "The NLEX corridor looking east — commercial buildings now occupy the landscape where the wetland and its creeks once extended. The 'Maganda sa Valenzuela' sign on the right marks how much the area's identity has shifted."
       },
       { 
         type: "seg", 
@@ -408,6 +404,22 @@ export default function Logs() {
         title="Logs"
         subtitle="Dated entries from the field — observations, conversations, discoveries."
       />
+
+      {/* At-a-glance context strip */}
+      <div className="log-context-strip">
+        <div className="log-context-card">
+          <span className="log-context-label">Field Notes</span>
+          <p className="log-context-text">Five logs reconstructing the ecological history of Victoria Village — from eleven named creeks to one concrete canal.</p>
+        </div>
+        <div className="log-context-card">
+          <span className="log-context-label">Location</span>
+          <p className="log-context-text">Canumay East, Valenzuela City — a barangay named after a tree that no longer grows there.</p>
+        </div>
+        <div className="log-context-card">
+          <span className="log-context-label">Method</span>
+          <p className="log-context-text">Oral testimony, barangay records, soil maps, creek etymologies, and two decades of living with the floods.</p>
+        </div>
+      </div>
 
       {/* Top Tab Switcher */}
       <div className="log-tabs">

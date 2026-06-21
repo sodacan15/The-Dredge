@@ -1947,12 +1947,110 @@ body {
   border-radius: 2px;
 }
 
+/* ── Home: timeline ── */
+.home-timeline-section {
+  margin: 3rem 0 3rem;
+}
+
+.home-timeline-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+}
+
+.home-timeline-track {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-left: 2px solid color-mix(in srgb, var(--rust) 30%, transparent);
+  padding-left: 0;
+  margin-left: 0.5rem;
+}
+
+.home-timeline-item {
+  display: grid;
+  grid-template-columns: 3.2rem 1rem 1fr;
+  align-items: baseline;
+  gap: 0 0.75rem;
+  padding: 0.6rem 0 0.6rem 0;
+  position: relative;
+}
+
+.home-timeline-year {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--rust);
+  opacity: 0.85;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.home-timeline-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--rust);
+  opacity: 0.45;
+  flex-shrink: 0;
+  margin-top: 0.35em;
+  position: relative;
+  left: -4.5px;
+}
+
+.home-timeline-text {
+  font-family: 'Lora', serif;
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin: 0;
+  padding-left: 0.25rem;
+}
+
+/* ── Logs: context strip ── */
+.log-context-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 0 2.5rem;
+  border-top: 1px solid rgba(0,0,0,0.07);
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  padding: 1.25rem 0;
+}
+
+.log-context-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.log-context-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--rust);
+  opacity: 0.85;
+}
+
+.log-context-text {
+  font-family: 'Lora', serif;
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
 /* ── Responsive ── */
 @media (max-width: 860px) {
   .gallery-grid-photos {
     grid-template-columns: repeat(2, 1fr);
   }
-  .home-intro-cards {
+  .log-context-strip {
     grid-template-columns: 1fr;
   }
 }

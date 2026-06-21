@@ -55,21 +55,6 @@ export default function Home() {
 
       <span className="home-annotate">↑ the highway replaced this. both of these, actually.</span>
 
-      <div className="home-intro-cards">
-        <div className="intro-card">
-          <span className="intro-card-label">Field Notes</span>
-          <p className="intro-card-text">Five logs reconstructing the ecological history of Victoria Village — from eleven named creeks to one concrete canal.</p>
-        </div>
-        <div className="intro-card">
-          <span className="intro-card-label">Location</span>
-          <p className="intro-card-text">Canumay East, Valenzuela City — a barangay named after a tree that no longer grows there.</p>
-        </div>
-        <div className="intro-card">
-          <span className="intro-card-label">Method</span>
-          <p className="intro-card-text">Oral testimony, barangay records, soil maps, creek etymologies, and two decades of living with the floods.</p>
-        </div>
-      </div>
-
       <div className="home-map-section">
         <p className="home-map-label">Victoria Village · Canumay East, Valenzuela City</p>
         <div className="home-map-frame">
@@ -89,6 +74,31 @@ export default function Home() {
         >
           View on OpenStreetMap →
         </a>
+      </div>
+
+      <div className="home-timeline-section">
+        <p className="home-timeline-label">Administrative &amp; Ecological Timeline</p>
+        <div className="home-timeline-track">
+          {[
+            { year: "1571", text: "Battle of Bangkusay — Spanish conquest reaches the area" },
+            { year: "1623", text: "Polo established as independent town from Catangalan" },
+            { year: "1887", text: "Pío Valenzuela born in Polo" },
+            { year: "1898", text: "Revolution — Pío Valenzuela elected first municipal mayor" },
+            { year: "1960", text: "EO 401 separates Polo and Valenzuela; Canumay placed under Valenzuela" },
+            { year: "1966", text: "NLEX construction begins — physically divides Canumay east and west" },
+            { year: "1975", text: "Jurisdiction transferred to Metro Manila; rapid industrialization begins" },
+            { year: "1998", text: "Republic Act 8526 — Valenzuela granted cityhood" },
+            { year: "2017", text: "RA 10958 formalizes Canumay East / Canumay West split" },
+            { year: "2025", text: "State of calamity after three typhoons; emergency dredging excludes Canumay East's internal waterways" },
+            { year: "2026", text: "Polo Riverwalk opens. This project's field research conducted." },
+          ].map(({ year, text }) => (
+            <div key={year} className="home-timeline-item">
+              <span className="home-timeline-year">{year}</span>
+              <span className="home-timeline-dot" />
+              <p className="home-timeline-text">{text}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="home-closing-note">
