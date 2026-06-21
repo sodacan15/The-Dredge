@@ -83,6 +83,11 @@ const LOGS = [
         type: "seg", 
         text: "The Kanumai (Diospyros canomoi A. DC.) belongs to the Ebenaceae family, the same family as kamagong and mabolo. It differs from its similar cousin, Diospyros maritima, mainly in habitat. Where D. maritima prefers environments close to the open sea, D. canomoi usually favors hilly ground near fresh water. According to the official Barangay Profile of Canumay East, the tree was once tall enough to serve as a literal landmark: people orienting themselves toward the area would navigate by spotting it. It grew in lowland thickets, favored low to medium altitude, and like a lot of plants tied to old fishing communities, its bark and fruit were used as fish poison, thrown into the water to stun fish for easier harvest. That detail alone tells you something about the landscape it grew in: water close by, fish worth catching, and people who knew how to use both." 
       },
+      {
+        type: "image",
+        src: "/kanumai.jpg",
+        caption: "Diospyros canomoi (Kanumai) — botanical illustration showing the leaves, fruit clusters, and flower detail. The fruit and bark were used as fish poison by communities along the creeks. Illustration: Stuart Xchange / Philippine Medicinal Plants."
+      },
       { type: "subtitle", text: "Ecology and Topography, Before Any of This Was Paved" },
       { 
         type: "seg", 
@@ -112,6 +117,11 @@ const LOGS = [
         type: "image",
         src: "/nlex_bridge.jpg",
         caption: "The NLEX overpass at Canumay — built over the exact spot where the last Kanumai tree stood. Google Street View, Apr 2025."
+      },
+      {
+        type: "image",
+        src: "/supermarket.jpg",
+        caption: "The NLEX corridor looking east — commercial buildings now occupy the landscape where the wetland and its creeks once extended. The 'Maganda sa Valenzuela' sign on the right marks how much the area's identity has shifted."
       },
       { 
         type: "seg", 
@@ -169,6 +179,11 @@ const LOGS = [
       { 
         type: "seg", 
         text: "Putting the topography, the soil, the creek etymology, and the testimonials together, a rough zoning emerges: high ground to the north held Kanumai and Putat trees, coconut groves, and old mango trees, marking generational home sites. The wetland-edge zone held cogon grass, pandan, aratilis, guava, and malunggay. The low marsh zone, where Victoria Village, Libis, and Marton sit now, held the kangkungan marsh, gabihan, and rice paddies, with a water table so close to the surface that wells could be dug straight through a house floor. And running through all of it: eleven creeks, mangroves, boat traffic, fish traps, and the whole water-and-wildlife system Log 2 already laid out." 
+      },
+      {
+        type: "image",
+        src: "/Assets/vgc-fruit.jpg",
+        caption: "An unidentified fruiting tree inside VGC — likely planted as an ornamental, but possibly a relative of the old wetland-edge species. Its fruit is still collected by neighbors."
       },
       { type: "subtitle", text: "What Must Have Lived Here Too" },
       { 

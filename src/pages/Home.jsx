@@ -21,12 +21,12 @@ export default function Home() {
 
       <figure className="home-hero-figure">
         <img
-          src="/nlex_bridge.jpg"
-          alt="NLEX overpass at Valenzuela, where the last Kanumai tree once stood"
+          src="/supermarket.jpg"
+          alt="NLEX corridor with commercial building — the industrialized landscape that replaced Canumay's wetlands"
           className="home-hero-img"
         />
         <figcaption className="home-hero-caption">
-          The NLEX overpass at Canumay — built over the spot where the last Kanumai tree once stood.
+          The NLEX corridor at Canumay East — a commercial building now stands where wetlands and creeks once ran.
         </figcaption>
       </figure>
     </div>
