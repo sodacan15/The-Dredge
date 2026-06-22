@@ -42,7 +42,7 @@ export default function Author() {
           </div>
 
           <div className="author-callout">
-            "I'm not an ecologist. I'm a guy who grew up staring into a canal and eventually decided to look it up."
+            "I'm not an ecologist. I'm a guy who grew up staring into a canal and got flooded then eventually decided to look it up."
           </div>
         </div>
 
