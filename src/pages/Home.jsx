@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="page-title">The <em>Dredge</em></h1>
           <p className="home-tagline">
             Digging what's left in the waters. A reconstruction of what was once
-            here: the creeks, the marshes, the trees, the fish — and a record of
+            here: the creeks, the marshes, the trees, the fish. A record of
             what erased them, and what remains despite everything.
           </p>
 
@@ -19,13 +19,13 @@ export default function Home() {
             <div className="home-sticker" style={{ "--r": "-3deg" }}>
               11 creeks.
               <br />
-              <strong>0</strong> remaining.
+              <strong>None</strong> remaining.
             </div>
             <div className="home-sticker home-sticker-green" style={{ "--r": "1.8deg" }}>
-              1 tree that named
-              <br />a barangay.
+              One tree that gave name 
+              <br /> to a barangay.
               <br />
-              Also gone.
+              Now gone.
             </div>
             <div className="home-sticker home-sticker-blue" style={{ "--r": "-1.2deg" }}>
               A CS student.
@@ -95,10 +95,10 @@ export default function Home() {
       {/* ─── Closing note ─── */}
       <div className="home-closing-note">
         <p className="home-closing-body">
-          This started as a CS final project. It became something harder to
+          This started as a final project for People and Ecosystem. It became something harder to
           categorize. A reconstruction of a wetland nobody thought to write down
           while it was still there, built from creek names, soil data, and my
-          grandfather's memory of the fish that used to live under our house.
+          grandfather's memory of the fish that used to live under our house. A past familiar yet strange. Something beyond grasp.
         </p>
         <p className="home-closing-body">
           The eleven creeks are in Log 2. The people who remember them are in
@@ -106,14 +106,14 @@ export default function Home() {
           connected, underground, the way water always is.
         </p>
         <div className="home-closing-sticker">
-          every name was
+           this is a student documentary: 
           <br />
-          someone's evidence
+          not peer-reviewed ecology, but honest
         </div>
       </div>
 
       <div className="home-annotation">
-        * this is a student documentary: not peer-reviewed ecology, but honest
+  
         fieldwork
       </div>
     </div>
