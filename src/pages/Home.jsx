@@ -60,7 +60,7 @@ export default function Home() {
         <div className="home-photo-col">
           <figure className="home-hero-figure">
             <img
-              src="/supermarket.jpg"
+              src="/Assets/marton-estero.jpg"
               alt="NLEX corridor at Canumay East: the industrialized landscape that replaced the wetland"
               className="home-hero-img"
             />
