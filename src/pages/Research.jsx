@@ -389,6 +389,29 @@ export default function Research() {
         title="The Research"
         subtitle="Classified references backing the ecological reconstruction, land subsidence analysis, and oral histories of Victoria Village, Canumay East."
       />
+      <div className="log-context-strip">
+        <div className="log-context-card">
+          <span className="log-context-label">Field Notes</span>
+          <p className="log-context-text">
+            Five logs reconstructing the ecological history of Victoria Village,
+            from eleven named creeks to one concrete canal.
+          </p>
+        </div>
+        <div className="log-context-card">
+          <span className="log-context-label">Location</span>
+          <p className="log-context-text">
+            Canumay East, Valenzuela City, a barangay named after a tree that no
+            longer grows there.
+          </p>
+        </div>
+        <div className="log-context-card">
+          <span className="log-context-label">Method</span>
+          <p className="log-context-text">
+            Oral testimony, barangay records, soil maps, creek etymologies, and
+            two decades of living with the floods.
+          </p>
+        </div>
+      </div>
 
       <hr className="divider" />
 
