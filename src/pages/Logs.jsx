@@ -661,6 +661,7 @@ export default function Logs() {
             </>
           ) : (
             <RenderedDoc blocks={current.blocks} />
+            <br />
           )}
 
           <div className="log-nav-footer">
