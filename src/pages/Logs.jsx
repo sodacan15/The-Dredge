@@ -236,12 +236,6 @@ const LOGS = [
       },
       {
         type: "image",
-        src: "/nlex_bridge.jpg",
-        caption:
-          "The NLEX overpass at Canumay, built over the exact spot where the last Kanumai tree stood. Google Street View, Apr 2025.",
-      },
-      {
-        type: "image",
         src: "/nlex-bridge-highway.jpg",
         caption:
           "From inside the NLEX looking toward Canumay, the overpass where the barangay's namesake tree once stood is now just a lane marker in a four-lane expressway. Google Street View, Apr 2025.",
