@@ -302,7 +302,7 @@ const LOGS = [
         type: "image",
         src: "/Assets/gabi.jpg",
         caption:
-          "Colocasia esculenta (gabi, wetland taro), still growing in neighborhood gardens today, a living remnant of the old wetland-edge ecosystem. Field photograph, May 2026.",
+          "Colocasia esculenta (gabi, wetland taro), still growing in neighborhood gardens today, a living remnant of the old wetland-edge ecosystem. Field photograph.",
       },
       {
         type: "seg",
@@ -316,7 +316,7 @@ const LOGS = [
         type: "image",
         src: "/Assets/toLibis.jpg",
         caption:
-          "The path toward Sitio Libis, a community that organized itself from scratch against the same flooding problems the whole barangay shares. They eventually purchased the land and re-blocked the settlement entirely. Field photograph, May 2026.",
+          "The path toward Sitio Libis, a community that organized itself from scratch against the same flooding problems the whole barangay shares. They eventually purchased the land and re-blocked the settlement entirely. Field photograph.",
       },
       { type: "subtitle", text: "Guesswork, But Grounded Guesswork" },
       {
@@ -331,7 +331,7 @@ const LOGS = [
         type: "image",
         src: "/Assets/vgc-fruit.jpg",
         caption:
-          "An unidentified fruiting tree inside VGC, likely planted as an ornamental, but possibly a relative of the old wetland-edge flora. Its fruit is still collected by neighbors. Field photograph, May 2026.",
+          "An unidentified fruiting tree inside VGC, likely planted as an ornamental, but possibly a relative of the old wetland-edge flora. Its fruit is still collected by neighbors. Field photograph.",
       },
       { type: "subtitle", text: "What Must Have Lived Here Too" },
       {
@@ -352,31 +352,31 @@ const LOGS = [
         type: "image",
         src: "/aratilis.jpg",
         caption:
-          "Aratilis growing over a concrete wall on D. Bonifacio Drive. Nobody planted it here. It colonized the moist, disturbed soil at the canal's edge on its own. This exact tree is the one mentioned in the log. Field photograph, D. Bonifacio Drive, May 2026.",
+          "Aratilis growing over a concrete wall on D. Bonifacio Drive. Nobody planted it here. It colonized the moist, disturbed soil at the canal's edge on its own. This exact tree is the one mentioned in the log. Field photograph, D. Bonifacio Drive.",
       },
       {
         type: "image",
         src: "/canumay-east-street.png",
         caption:
-          "A street corner in Canumay East. Pioneer trees growing over a perforated block wall beside an 'I ❤️ Canumay East' marker on a utility pole. This is what the whole barangay looks like at eye level now: persistent green through whatever gap the concrete left open. Field photograph, May 2026.",
+          "A street corner in Canumay East. Pioneer trees growing over a perforated block wall beside an 'I ❤️ Canumay East' marker on a utility pole. This is what the whole barangay looks like at eye level now: persistent green through whatever gap the concrete left open. Field photograph.",
       },
       {
         type: "image",
         src: "/Assets/mangoxguava.jpg",
         caption:
-          "A mango tree alongside a guava beside a neighborhood home in Canumay East. Mango trees live 100 to 300 years — the ones still standing were almost certainly planted by someone's great-grandparents. Field photograph, May 2026.",
+          "A mango tree alongside a guava beside a neighborhood home in Canumay East. Mango trees live 100 to 300 years — the ones still standing were almost certainly planted by someone's great-grandparents. Field photograph.",
       },
       {
         type: "image",
         src: "/Assets/canal-plants.jpg",
         caption:
-          "Canal-edge vegetation along Canumay East, pioneer species colonizing the disturbed, moist soil where creeks used to flow. Field photograph, May 2026.",
+          "Canal-edge vegetation along Canumay East, pioneer species colonizing the disturbed, moist soil where creeks used to flow. Field photograph.",
       },
       {
         type: "image",
         src: "/Assets/binunga.jpg",
         caption:
-          "Macaranga tanarius (binunga) growing around empty lots, a pioneer species that thrives in areas once surrounded by water. The sticky sap is a distinctive field marker. Field photograph, May 2026.",
+          "Macaranga tanarius (binunga) growing around empty lots, a pioneer species that thrives in areas once surrounded by water. The sticky sap is a distinctive field marker. Field photograph.",
       },
       { type: "subtitle", text: "The Full Portrait" },
       {
@@ -414,7 +414,7 @@ const LOGS = [
         type: "image",
         src: "/Assets/bonifacio-canal.jpg",
         caption:
-          "The drainage canal along D. Bonifacio Drive, concrete infrastructure where a living creek ecosystem once ran. Almost nothing lives in it. Field photograph, May 2026.",
+          "The drainage canal along D. Bonifacio Drive, concrete infrastructure where a living creek ecosystem once ran. Almost nothing lives in it. Field photograph.",
       },
       {
         type: "seg",
@@ -424,7 +424,7 @@ const LOGS = [
         type: "image",
         src: "/Assets/Baringtonia.jpg",
         caption:
-          "Barringtonia asiatica (Putat), one surviving specimen found behind a factory wall near the Bonifacio canal. A remnant of the fish-poison trees that fishing communities once relied on. Field photograph, May 2026.",
+          "Barringtonia asiatica (Putat), one surviving specimen found behind a factory wall near the Bonifacio canal. A remnant of the fish-poison trees that fishing communities once relied on. Field photograph.",
       },
       {
         type: "seg",
@@ -434,7 +434,7 @@ const LOGS = [
         type: "image",
         src: "/Assets/vgc-canal.jpg",
         caption:
-          "A canal running through VGC. Water moves, but nothing lives in it. This is what replaced the Sapang Bangka-bangka, where people once traveled by boat. Field photograph, May 2026.",
+          "A canal running through VGC. Water moves, but nothing lives in it. This is what replaced the Sapang Bangka-bangka, where people once traveled by boat. Field photograph.",
       },
       {
         type: "subtitle",
@@ -444,7 +444,7 @@ const LOGS = [
         type: "image",
         src: "/nlex_east2west.jpg",
         caption:
-          "Looking east to west along the NLEX, the physical divide that split old Canumay in 1966. The highway was built over and beside the original creek corridor. In July 2025, flooding along this section shut it down for five hours. Field photograph, May 2026.",
+          "Looking east to west along the NLEX, the physical divide that split old Canumay in 1966. The highway was built over and beside the original creek corridor. In July 2025, flooding along this section shut it down for five hours. Field photograph.",
       },
       {
         type: "seg",
@@ -468,7 +468,7 @@ const LOGS = [
         type: "image",
         src: "/nlex-dusk.jpg",
         caption:
-          "The NLEX corridor at dusk. Motorbikes in rain gear, the 'Maganda sa Valenzuela' sign visible through the overcast. This is what the highway looked like just before the 2025 floods submerged it for five hours. Field photograph, May 2026.",
+          "The NLEX corridor at dusk. Motorbikes in rain gear, the 'Maganda sa Valenzuela' sign visible through the overcast. This is what the highway looked like just before the 2025 floods submerged it for five hours. Field photograph.",
       },
       {
         type: "seg",
@@ -478,13 +478,13 @@ const LOGS = [
         type: "image",
         src: "/Assets/marton-estero.jpg",
         caption:
-          "The estero near Marton Road, one of the last visible waterways in Canumay East, now functioning as a flood drain rather than a living creek. Field photograph, May 2026.",
+          "The estero near Marton Road, one of the last visible waterways in Canumay East, now functioning as a flood drain rather than a living creek. Field photograph.",
       },
       {
         type: "image",
         src: "/Assets/old-canal.jpg",
         caption:
-          "A canal in Canumay East. The water has nowhere to go except down and in. This is the geometry of induced flooding: streets raised over decades, drainage walls lifted to match, and the original marsh-level homes sitting lower with each cycle. Field photograph, May 2026.",
+          "A canal in Canumay East. The water has nowhere to go except down and in. This is the geometry of induced flooding: streets raised over decades, drainage walls lifted to match, and the original marsh-level homes sitting lower with each cycle. Field photograph.",
       },
       {
         type: "quote",
