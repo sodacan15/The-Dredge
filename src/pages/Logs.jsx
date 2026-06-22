@@ -350,12 +350,6 @@ const LOGS = [
       },
       {
         type: "image",
-        src: "/canumay-east-street.png",
-        caption:
-          "A street corner in Canumay East. Pioneer trees growing over a perforated block wall beside an 'I ❤️ Canumay East' marker on a utility pole. This is what the whole barangay looks like at eye level now: persistent green through whatever gap the concrete left open. Field photograph.",
-      },
-      {
-        type: "image",
         src: "/Assets/mangoxguava.jpg",
         caption:
           "A mango tree alongside a guava beside a neighborhood home in Canumay East. Mango trees live 100 to 300 years — the ones still standing were almost certainly planted by someone's great-grandparents. Field photograph.",
@@ -452,18 +446,7 @@ const LOGS = [
         type: "seg",
         text: "July 2025 made the stakes concrete, literally and otherwise. Valenzuela was declared under a state of calamity after Typhoons Crising, Dante, and Emong hit in close succession; more than 9,000 people had to be rescued and evacuated citywide. [6] On July 21 specifically, nearly half a kilometer of NLEX itself went under a meter of floodwater for more than five hours, and that single event is what triggered the emergency dredging operations that followed in August, when over 69,000 cubic meters of silt and debris were pulled from eleven priority waterways across Valenzuela and Meycauayan. [7]",
       },
-      {
-        type: "image",
-        src: "/im_wet2.jpg",
-        caption:
-          "Not the 2025 flood, one before it. The expression says everything about how this becomes ordinary. You clean the same thing twice and stop expecting it to stop. Valeza family archive.",
-      },
-      {
-        type: "image",
-        src: "/nlex-dusk.jpg",
-        caption:
-          "The NLEX corridor at dusk. Motorbikes in rain gear, the 'Maganda sa Valenzuela' sign visible through the overcast. This is what the highway looked like just before the 2025 floods submerged it for five hours. Field photograph.",
-      },
+      
       {
         type: "seg",
         text: "On top of all of that, the ground itself is slowly sinking. Valenzuela sits inside the CAMANAVA area (Caloocan, Malabon, Navotas, Valenzuela), one of the worst subsidence zones in Metro Manila. Older satellite data (2003–2011) put the CAMANAVA rate at 20 to 42 millimeters a year; [4] more recent measurements from 2015–2019 suggest it's actually improved to roughly 10 to 20 millimeters a year, [5] which researchers attribute to groundwater extraction restrictions inside Metro Manila proper. It's a rare piece of good news in this research, though it comes with a sharp asterisk, since the unrestricted provinces just outside the city line, Bulacan and Cavite, are still sinking at 40 millimeters a year or more. [4] The honest, uncomfortable version of the flooding story is that it isn't primarily about heavier rain. It's that the ground is sinking faster than the sea is rising.",
