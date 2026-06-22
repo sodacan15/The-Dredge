@@ -30,7 +30,7 @@ const SECTIONS = [
       {
         title: "Creek Name Etymology",
         finding: "Eleven names as ecological field report",
-        body: "The eleven sapang names of old Canumay were analyzed as descriptive records, not just place names. Sapang Pangitlogan-Bakaw (mangrove nesting ground), Sapang Bangka-bangka (boat-navigable depth), Sapang Halang Sa Araw (canopy density blocking sunlight), Sapang Binawan (fish trap productivity) — each is a biological observation written in Tagalog by the people who lived beside the water."
+        body: "The eleven creeks names of old Canumay were analyzed as descriptive records, not just place names. Sapang Pangitlogan-Bakaw (mangrove nesting ground), Sapang Bangka-bangka (boat-navigable depth), Sapang Halang Sa Araw (canopy density blocking sunlight), Sapang Binawan (fish trap productivity) — each is a biological observation written in Tagalog by the people who lived beside the water."
       },
       {
         title: "Ecological Cross-Referencing",
@@ -326,7 +326,7 @@ const SECTIONS = [
         title: "Grandfather — Original Resident, Victoria Village",
         date: "May 2026",
         speaker: "Lolo (maternal grandfather)",
-        quote: "Dati, dito, may hito, dalag, samaral. Kangkong, gabi, palay. Tubig malapit — ang balon, bubukas mo lang ang sahig.",
+        quote: "Dati, may hito, dalag, samaral. Kangkong, gabi, palayan",
         finding: "Three Fish, One Sentence",
         body: "My grandfather confirmed three fish species living on the exact lot where our house now stands: hito (catfish), dalag (mudfish), and samaral (rabbitfish). On the plant side: kangkong, gabi (the wetland variety), sedge grass, rice paddies, cogon grass at the edges, and coconut trees on slightly drier ground. He also confirmed that the original water table was high enough that a well could be opened directly through the house floor — a detail later corroborated by the soil classification data. He came to Victoria Village for work, built the house, and established the family. That's the whole story I have."
       },
@@ -334,7 +334,7 @@ const SECTIONS = [
         title: "Barangay Worker — Canumay East Barangay Hall",
         date: "May 2026",
         speaker: "Barangay office staff (name withheld)",
-        quote: "Doon dati, sa NLEX overpass — doon nakatayo yung puno. Wala na ngayon.",
+        quote: "Doon dati, sa NLEX overpass, doon nakatayo yung puno. Wala na ngayon.",
         finding: "The Tree and the Bridge",
         body: "Encountered while processing a PWD rice ticket. When asked whether she knew where the original Kanumai tree once stood — the tree the barangay is named after — she said it used to stand at the NLEX overpass bridge, the same structure that physically split Canumay East from Canumay West when construction began in 1966. There is no Kanumai anywhere in the vicinity today: no original, no descendant, no second-generation tree. Just the bridge."
       },
@@ -344,15 +344,15 @@ const SECTIONS = [
         speaker: "Multiple residents, Victoria Village",
         quote: "Bumabaha talaga dito every typhoon. Hindi bago. Ganyan na since dati.",
         finding: "The Water Always Comes Back",
-        body: "Multiple Victoria Village neighbors confirmed the old creek without prompting — none of them needed to be told there used to be water here; they already knew. They described the recurrent flooding as something they lived with rather than were surprised by. Several noted how road levels around their houses had risen over the decades while their own floors stayed at the original elevation, creating the bowl effect described in Log 4."
+        body: "Multiple Victoria Village neighbors confirmed the old creek without prompting. None of them needed to be told there used to be water here; they already knew. They described the recurrent flooding as something they lived with rather than were surprised by. Several noted how road levels around their houses had risen over the decades while their own floors stayed at the original elevation, creating the bowl effect described in Log 4."
       },
       {
         title: "Sitio Libis residents — low-lying community",
         date: "May 2026",
         speaker: "Libis residents (several, informal conversation)",
-        quote: "Guyabano ang puno namin. Gusto niya ang tubig — basta malapit sa tubig, tumutubo.",
+        quote: "Ay ahhh Guyabano ang puno namin.",
         finding: "The Guyabano Tells You Something",
-        body: "Residents of Sitio Libis pointed out guyabano trees growing in their yards — a detail I wouldn't have known to look for. Guyabano prefers moist, well-drained soil close to water. It's a small thing, but it lines up with everything else: this whole stretch sat on a wetland-edge gradient, and the plants people chose to grow (whether they realized it or not) reflect the soil moisture that's still there, even under the concrete."
+        body: "Residents of Sitio Libis pointed out guyabano trees growing in their yards. A detail I wouldn't have known to look for. Guyabano prefers moist, well-drained soil close to water. It's a small thing, but it lines up with everything else: this whole stretch sat on a wetland-edge gradient, and the plants people chose to grow (whether they realized it or not) reflect the soil moisture that's still there, even under the concrete."
       },
       {
         title: "Author's Personal Testimony — Victoria Village",
