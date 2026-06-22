@@ -150,6 +150,18 @@ function ReadingProgress() {
   );
 }
 
+/* ── Inline citation parser ── */
+function parseWithCitations(text) {
+  const parts = text.split(/(\[\d+\])/g);
+  if (parts.length === 1) return text;
+  return parts.map((part, i) => {
+    if (/^\[\d+\]$/.test(part)) {
+      return <sup key={i} className="doc-cite">{part}</sup>;
+    }
+    return part;
+  });
+}
+
 /* ── Main RenderedDoc ── */
 export function RenderedDoc({ blocks }) {
   if (!blocks || blocks.length === 0) {
@@ -173,7 +185,7 @@ export function RenderedDoc({ blocks }) {
               <Reveal key={i} delay={delay}>
                 <div className="doc-seg-wrap">
                   {block.marginNote && <MarginNote text={block.marginNote} />}
-                  <p className="doc-seg">{block.text}</p>
+                  <p className="doc-seg">{parseWithCitations(block.text)}</p>
                 </div>
               </Reveal>
             );
@@ -199,17 +211,23 @@ export function RenderedDoc({ blocks }) {
                 </blockquote>
               </Reveal>
             );
-          case "image":
+          case "image": {
+            const imgClass = [
+              "doc-img",
+              block.mono ? "doc-img--mono" : "",
+              block.contain ? "doc-img--contain" : "",
+            ].filter(Boolean).join(" ");
             return (
               <Reveal key={i} delay={delay}>
                 <figure className="doc-figure">
-                  <img src={block.src} alt={block.caption || ""} className="doc-img" />
+                  <img src={block.src} alt={block.caption || ""} className={imgClass} />
                   {block.caption && (
                     <figcaption className="doc-figcaption">{block.caption}</figcaption>
                   )}
                 </figure>
               </Reveal>
             );
+          }
           case "sapang-glossary":
             return (
               <Reveal key={i} delay={0}>
@@ -232,6 +250,23 @@ export function RenderedDoc({ blocks }) {
                   </div>
                 </div>
               </Reveal>
+            );
+          case "citeblock":
+            return (
+              <div key={i} className="doc-citeblock">
+                <p className="doc-citeblock-label">— sources cited in this log —</p>
+                <ol className="doc-citeblock-list">
+                  {(block.citations || []).map((c, ci) => (
+                    <li key={ci} className="doc-citeblock-item">
+                      {c.url ? (
+                        <a href={c.url} target="_blank" rel="noopener noreferrer" className="doc-cite-link">{c.title}</a>
+                      ) : (
+                        <span>{c.title}</span>
+                      )}
+                    </li>
+                  ))}
+                </ol>
+              </div>
             );
           case "margin-note":
             return null;
