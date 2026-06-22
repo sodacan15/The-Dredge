@@ -67,11 +67,11 @@ const LOGS = [
       },
       {
         type: "seg",
-        text: "Valenzuela City sits on the northwestern edge of Metro Manila, about 14 kilometers north of Manila proper, bordered by Bulacan to the north and Caloocan to the south. It occupies a low-lying alluvial plain carved out by the Meycauayan River system. Long before it was Valenzuela, this land was just water-shaped earth. The numbers back that up even today: roughly a quarter of the city sits below sea level, with elevations ranging from about 5 meters below at the lowest point to 109 meters at the highest. Even the parts that count as high ground here aren't very high.",
+        text: "Valenzuela City sits on the northwestern edge of Metro Manila, about 14 kilometers north of Manila proper, bordered by Bulacan to the north and Caloocan to the south. It occupies a low-lying alluvial plain carved out by the Meycauayan River system. Long before it was Valenzuela, this land was just water-shaped earth. The numbers back that up even today: roughly a quarter of the city sits below sea level, with elevations ranging from about 5 meters below at the lowest point to 109 meters at the highest. [1] Even the parts that count as high ground here aren't very high.",
       },
       {
         type: "seg",
-        text: "The town's first name was Polo, from the Tagalog pulô, meaning island, and it earned that name honestly. Before the Spanish arrived, this was already a wetland-agricultural community built around an abundance of waterways: the Tullahan River on one side and branches of the Rio Grande de Pampanga on the other, enough that early residents genuinely experienced it as separate land, an island ringed by rivers rather than sea. This was especially true around Coloong, Lingunan, and the barangay of Polo itself.",
+        text: "The town's first name was Polo, from the Tagalog pulô, meaning island, and it earned that name honestly. [2] Before the Spanish arrived, this was already a wetland-agricultural community built around an abundance of waterways: the Tullahan River on one side and branches of the Rio Grande de Pampanga on the other, enough that early residents genuinely experienced it as separate land, an island ringed by rivers rather than sea. This was especially true around Coloong, Lingunan, and the barangay of Polo itself.",
       },
       {
         type: "seg",
@@ -88,6 +88,7 @@ const LOGS = [
       {
         type: "image",
         src: "/Assets/barangay-profile.jpg",
+        contain: true,
         caption:
           "Barangay Profile of Canumay East, Section 2.1, the official history document listing all 7 sitios and 11 sapang. The Kanumai tree is named explicitly as the barangay's landmark. Barangay Hall physical archives.",
       },
@@ -98,15 +99,16 @@ const LOGS = [
       },
       {
         type: "seg",
-        text: "On July 21, 1960, President Carlos P. Garcia signed Executive Order No. 401, dividing Polo from Valenzuela as separate municipalities. That arrangement didn't even last: by 1963 the split was reversed, and the two towns were reunified. In 1975, jurisdiction transferred from Bulacan to Metro Manila. Cityhood came on February 14, 1998, through Republic Act 8526.",
+        text: "On July 21, 1960, President Carlos P. Garcia signed Executive Order No. 401, [6] dividing Polo from Valenzuela as separate municipalities. That arrangement didn't even last: by 1963 the split was reversed, and the two towns were reunified. In 1975, jurisdiction transferred from Bulacan to Metro Manila. Cityhood came on February 14, 1998, through Republic Act 8526. [7]",
       },
       {
         type: "seg",
-        text: "Today the city carries a real, documented list of business and governance awards. The Philippine Chamber of Commerce and Industry inducted Valenzuela into its Most Business-Friendly LGU Hall of Fame after wins in 2012, 2014, and 2015, then handed the city the award again in 2019 and 2020, with a special citation as recently as 2025. The World Bank and International Finance Corporation's 2011 ease-of-business rankings put Valenzuela first out of 25 nominated cities for Ease of Registering Property, fourth for Ease of Starting a Business, and sixth for Ease of Dealing with Construction Permits. By most economic measures, this is a success story. By the measures that matter for this project, it's the story of how a wetland got paved and faded in the recess of time.",
+        text: "Today the city carries a real, documented list of business and governance awards. The Philippine Chamber of Commerce and Industry inducted Valenzuela into its Most Business-Friendly LGU Hall of Fame after wins in 2012, 2014, and 2015, then handed the city the award again in 2019 and 2020, with a special citation as recently as 2025. The World Bank and International Finance Corporation's 2011 ease-of-business rankings put Valenzuela first out of 25 nominated cities for Ease of Registering Property, fourth for Ease of Starting a Business, and sixth for Ease of Dealing with Construction Permits. [8] By most economic measures, this is a success story. By the measures that matter for this project, it's the story of how a wetland got paved and faded in the recess of time.",
       },
       {
         type: "image",
         src: "/dr_valenzuela.jpg",
+        contain: true,
         caption:
           "Dr. Pío Valenzuela (1869–1956), physician, Katipunero, first elected mayor of the area during the 1898 Philippine Revolution. The city, and this research, carry his name. Photo: Wikipedia / Wikimedia Commons.",
       },
@@ -126,17 +128,17 @@ const LOGS = [
       },
       {
         type: "seg",
-        text: "Before the split, old Canumay was one of the largest original barangays in Valenzuela. 341 hectares combined, seven sitios, and eleven sapangs; all of the land is named after the Kanumai tree. Each sitio name was its own small piece of ecological evidence: Kaypandan for the pandan that grows at marshy edges; Bilaran for where people dried fish and crops by the water; Daang Malalim for a sunken, flood-prone road; Pinagbayanan for the old town center; Dulong Canumay for the farthest edge of the barangay; and Canumay itself, where a big tree is located.",
+        text: "Before the split, old Canumay was one of the largest original barangays in Valenzuela. 341 hectares combined, seven sitios, and eleven sapangs; all of the land is named after the Kanumai tree. [4] Each sitio name was its own small piece of ecological evidence: Kaypandan for the pandan that grows at marshy edges; Bilaran for where people dried fish and crops by the water; Daang Malalim for a sunken, flood-prone road; Pinagbayanan for the old town center; Dulong Canumay for the farthest edge of the barangay; and Canumay itself, where a big tree is located.",
         marginNote:
           "Sitio names as ecological field data. No biologist needed, people already wrote it down.",
       },
       {
         type: "seg",
-        text: "The split into Canumay East and Canumay West didn't happen overnight, nor was it due to some divide between the communities. It started physically on October 2, 1966, when construction crews under Col. Tan of the 512th Engineering Construction Battalion began cutting the Manila North Diversion Road to become NLEX. The project diagonally cut through Canumay's western edge; about a kilometer of highway sliced through old barangay territory. The source material I'm working from calls this the ecological turning point, and after sitting with the rest of the research, I'd agree. That physical division became an administrative one decades later: City Ordinance No. 37 in November 2011 proposed the formal split; a plebiscite on March 3, 2012 (notably overseen by deployed AFP and PNP personnel) ratified it; and Republic Act No. 10958, passed by the 17th Congress on October 30, 2017, made it official. Canumay East came out of that division at 1,563,546 square meters, or 156 hectares. Canumay West came out larger, at 1,850,972 square meters, or 185 hectares. One ecosystem, split unevenly into two barangays. This also birthed a unique tradition: every two years, both barangays pass around the celebration of Easter Sunday.",
+        text: "The split into Canumay East and Canumay West didn't happen overnight, nor was it due to some divide between the communities. It started physically on October 2, 1966, when construction crews under Col. Tan of the 512th Engineering Construction Battalion began cutting the Manila North Diversion Road to become NLEX. [3] The project diagonally cut through Canumay's western edge; about a kilometer of highway sliced through old barangay territory. The source material I'm working from calls this the ecological turning point, and after sitting with the rest of the research, I'd agree. That physical division became an administrative one decades later: City Ordinance No. 37 in November 2011 proposed the formal split; a plebiscite on March 3, 2012 (notably overseen by deployed AFP and PNP personnel) ratified it; and Republic Act No. 10958, passed by the 17th Congress on October 30, 2017, made it official. [5] Canumay East came out of that division at 1,563,546 square meters, or 156 hectares. Canumay West came out larger, at 1,850,972 square meters, or 185 hectares. One ecosystem, split unevenly into two barangays. This also birthed a unique tradition: every two years, both barangays pass around the celebration of Easter Sunday.",
       },
       {
         type: "seg",
-        text: "Canumay East today is bounded by Lingunan and Lawang Bato to the northwest and holds two distinct internal zones: high-ground hilly zones and low-ground areas such as Victoria Village, Sitio Libis, and Marton Road. No matter how high or low their topography is, both are highly industrialized, with factories such as New Star Apa and Paper One blending with residential homes. As of the 2020 census, the barangay had a population of 14,657 (up from 12,462 in 2015, spread across 3,455 households averaging 3.61 members each); the largest single age group is 20- to 24-year-olds, just over 1,500 people. That's the paper trail: the borders, the renamings, the splits, the headcounts. Now for the part that actually matters to this project: what was living on this land before any of it happened?",
+        text: "Canumay East today is bounded by Lingunan and Lawang Bato to the northwest and holds two distinct internal zones: high-ground hilly zones and low-ground areas such as Victoria Village, Sitio Libis, and Marton Road. No matter how high or low their topography is, both are highly industrialized, with factories such as New Star Apa and Paper One blending with residential homes. As of the 2020 census, the barangay had a population of 14,657 (up from 12,462 in 2015, spread across 3,455 households averaging 3.61 members each); [3] the largest single age group is 20- to 24-year-olds, just over 1,500 people. That's the paper trail: the borders, the renamings, the splits, the headcounts. Now for the part that actually matters to this project: what was living on this land before any of it happened?",
       },
       {
         type: "image",
@@ -149,6 +151,19 @@ const LOGS = [
         src: "/Assets/barangay-map.jpg",
         caption:
           "Road Map of Barangay Canumay East, the official map showing the NLEX diagonal cut on the left, the named roads, and the waterway lines that represent what used to be eleven living creeks. Note: for reference purposes only, not to scale. Source: Barangay Hall of Canumay East, official records.",
+      },
+      {
+        type: "citeblock",
+        citations: [
+          { title: "Valenzuela City Ecological Profiles 2019/2021 — elevation, sea-level share, topographic range", url: "https://valenzuela.gov.ph" },
+          { title: "Valenzuela City History Portal — Polo etymology (pulô) and early colonial settlement", url: "https://valenzuela.gov.ph/history" },
+          { title: "PhilAtlas — Canumay East — NLEX construction date, 2020 census population, area figures", url: "https://www.philatlas.com/luzon/ncr/valenzuela/canumay-east.html" },
+          { title: "Official Barangay Profile History, Section 2.1 — seven sitios, eleven sapang, 341 ha combined (Barangay Hall physical archives, Canumay East)", url: null },
+          { title: "Republic Act No. 10958 (17th Congress, 2017) — formal administrative split of Canumay", url: "https://lawphil.net/statutes/repacts/ra2017/ra_10958_2017.html" },
+          { title: "Executive Order No. 401 (President Garcia, July 21, 1960) — Polo/Valenzuela separation", url: "https://www.officialgazette.gov.ph" },
+          { title: "Republic Act No. 8526 (February 14, 1998) — Valenzuela cityhood", url: "https://www.officialgazette.gov.ph" },
+          { title: "World Bank / IFC — Philippines Doing Business Survey (2011) — Valenzuela ease-of-business rankings", url: "https://documents.worldbank.org" },
+        ],
       },
     ],
   },
@@ -165,7 +180,7 @@ const LOGS = [
       { type: "subtitle", text: "The Tree Itself: Diospyros canomoi" },
       {
         type: "seg",
-        text: "The Kanumai (Diospyros canomoi A. DC.) belongs to the Ebenaceae family, the same family as kamagong and mabolo. It differs from its similar cousin, Diospyros maritima, mainly in habitat. Where D. maritima prefers environments close to the open sea, D. canomoi usually favors hilly ground near fresh water. According to the official Barangay Profile of Canumay East, the tree was once tall enough to serve as a literal landmark: people orienting themselves toward the area would navigate by spotting it. It grew in lowland thickets, favored low to medium altitude, and like a lot of plants tied to old fishing communities, its bark and fruit were used as fish poison, thrown into the water to stun fish for easier harvest. That detail alone tells you something about the landscape it grew in: water close by, fish worth catching, and people who knew how to use both.",
+        text: "The Kanumai (Diospyros canomoi A. DC.) belongs to the Ebenaceae family, the same family as kamagong and mabolo. [1] It differs from its similar cousin, Diospyros maritima, mainly in habitat. Where D. maritima prefers environments close to the open sea, D. canomoi usually favors hilly ground near fresh water. According to the official Barangay Profile of Canumay East, [2] the tree was once tall enough to serve as a literal landmark: people orienting themselves toward the area would navigate by spotting it. It grew in lowland thickets, favored low to medium altitude, and like a lot of plants tied to old fishing communities, its bark and fruit were used as fish poison, thrown into the water to stun fish for easier harvest. [1] That detail alone tells you something about the landscape it grew in: water close by, fish worth catching, and people who knew how to use both.",
       },
       {
         type: "image",
@@ -185,7 +200,7 @@ const LOGS = [
       },
       {
         type: "seg",
-        text: "Old Canumay sat at the meeting point of upland and wetland. Hillier ground to the north and low marsh to the south, with creeks threading the gap between them. The soil classification map prepared by Valenzuela's City Planning and Development Office and the Bureau of Soils and Water Management still places Canumay East entirely within a single soil zone: Tropudults with Tropudalfs, Tropepts, and Oxisols. Every one of those classifications independently points to the same conclusion: historically wet, poorly drained, seasonally waterlogged ground. The mix between the high elevation of the hills and the lower elevations of the marshes creates a dynamic environment. The higher hills contain a lot of trees, and when rain comes, the water drains to the lower parts of the land where the marshes exist.",
+        text: "Old Canumay sat at the meeting point of upland and wetland. Hillier ground to the north and low marsh to the south, with creeks threading the gap between them. The soil classification map prepared by Valenzuela's City Planning and Development Office and the Bureau of Soils and Water Management [3] still places Canumay East entirely within a single soil zone: Tropudults with Tropudalfs, Tropepts, and Oxisols. Every one of those classifications independently points to the same conclusion: historically wet, poorly drained, seasonally waterlogged ground. The mix between the high elevation of the hills and the lower elevations of the marshes creates a dynamic environment. The higher hills contain a lot of trees, and when rain comes, the water drains to the lower parts of the land where the marshes exist.",
       },
       {
         type: "image",
@@ -202,11 +217,11 @@ const LOGS = [
       { type: "subtitle", text: "The Eleven Creeks" },
       {
         type: "seg",
-        text: "The eleven sapang of old Canumay had names. Not labels, not survey coordinates. Names. Every single one was a description written in Tagalog by the people who actually lived beside the water. You could reconstruct the whole landscape just from reading them carefully.",
+        text: "The eleven sapang of old Canumay had names. [2] Not labels, not survey coordinates. Names. Every single one was a description written in Tagalog by the people who actually lived beside the water. You could reconstruct the whole landscape just from reading them carefully.",
       },
       {
         type: "seg",
-        text: 'Sapang Bulok ("Rotten Creek") described the stagnant, decomposing smell of healthy marsh chemistry. Sapang Pangitlogan-Bakaw, or "Creek of the Mangrove Nesting Ground," confirms there were mangroves here once, with birds nesting and laying eggs along the bank. Sapang Halang Sa Araw, or "Creek Blocked from the Sun," describes a canopy so thick over the water that sunlight couldn\'t reach it, meaning it\'s an old-growth forest wetland. Sapang Bangka-bangka was wide and deep enough for boat travel. Sapang Binawan was where people set fish traps. Read together, it\'s a descriptive way to describe the waterways of Canumay and how people depend on and co-exist with them.',
+        text: 'Sapang Bulok ("Rotten Creek") described the stagnant, decomposing smell of healthy marsh chemistry. Sapang Pangitlogan-Bakaw, or "Creek of the Mangrove Nesting Ground," confirms there were mangroves here once, with birds nesting and laying eggs along the bank. Sapang Halang Sa Araw, or "Creek Blocked from the Sun," describes a canopy so thick over the water that sunlight couldn\'t reach it, meaning it\'s an old-growth forest wetland. Sapang Bangka-bangka was wide and deep enough for boat travel. Sapang Binawan was where people set fish traps. Read together, it\'s a descriptive way to describe the waterways of Canumay and how people depend on and co-exist with them. [2]',
       },
       { type: "sapang-glossary" },
       { type: "subtitle", text: "The Heart of It: One Big Tree in the Middle" },
@@ -221,7 +236,7 @@ const LOGS = [
       { type: "subtitle", text: "What's Left Today" },
       {
         type: "seg",
-        text: "Here's where it gets a little eerie. I asked a barangay worker I happened to run into while getting my aunt's PWD rice ticket. I asked her if she knows where the giant Kanumai tree that gave our barangay their name is located. She told me that the tree used to stand on the NLEX overpass bridge, the same bridge that physically split Canumay East from Canumay West back in 1966 (barangay office staff, personal communication, May 2026). There's no Kanumai standing anywhere in the vicinity today, no original, no descendant, and no second-generation tree. Just highway. But on that highway was also a bridge: one traversable by foot and by motorcycle that bridges the two barangays.",
+        text: "Here's where it gets a little eerie. I asked a barangay worker I happened to run into while getting my aunt's PWD rice ticket. I asked her if she knows where the giant Kanumai tree that gave our barangay their name is located. She told me that the tree used to stand on the NLEX overpass bridge, the same bridge that physically split Canumay East from Canumay West back in 1966. [4] There's no Kanumai standing anywhere in the vicinity today, no original, no descendant, and no second-generation tree. Just highway. But on that highway was also a bridge: one traversable by foot and by motorcycle that bridges the two barangays.",
       },
       {
         type: "image",
@@ -243,6 +258,15 @@ const LOGS = [
         type: "seg",
         text: "So that's Canumay reduced to its two clearest symbols: a highway overpass standing exactly where its namesake tree once did and a former network of eleven living creeks erased and replaced by one engineered canal that carries everything except the things that used to live in the water.",
       },
+      {
+        type: "citeblock",
+        citations: [
+          { title: "Stuart Xchange — Diospyros canomoi A. DC. (Kanumai) — Ebenaceae family, habitat, fish-poison use", url: "https://www.stuartxchange.org/Kanumai.html" },
+          { title: "Official Barangay Profile History, Section 2.1 — Kanumai as landmark, eleven sapang names and meanings (Barangay Hall physical archives)", url: null },
+          { title: "BSWM Soil Gateway / City Planning and Development Office — Canumay East soil classification (Tropudults, Tropudalfs, Oxisols)", url: "https://www.foi.gov.ph" },
+          { title: "Barangay office staff, personal communication, May 2026 — oral account of Kanumai tree location at NLEX overpass", url: null },
+        ],
+      },
     ],
   },
   {
@@ -262,7 +286,7 @@ const LOGS = [
       },
       {
         type: "seg",
-        text: "I interviewed my own grandfather for this. Turns out, our house was once a kangkungan before it got dumped by adobe rocks. He confirmed three fish species live on where our house stands: hito (catfish), dalag (mudfish, an iconic wetland species whose presence alone tells you the ecosystem was functioning), and samaral (rabbit fish). On the plant side, he named kangkong, gabi (wetland variety), sedge grass, active rice paddies (palayaban), cogon grass at the wetland edges, and coconuts on the slightly drier ground near homes. And I have my own memory to add to his: tadpoles living in the kanal near our house before it was concreted over, which on its own confirms a functioning amphibian breeding habitat existed within my own lifetime, not some distant past.",
+        text: "I interviewed my own grandfather for this. Turns out, our house was once a kangkungan before it got dumped by adobe rocks. He confirmed three fish species live on where our house stands: hito (catfish), [2] dalag (mudfish, an iconic wetland species whose presence alone tells you the ecosystem was functioning), [3] and samaral (rabbit fish). [4] On the plant side, he named kangkong, [5] gabi (wetland variety), sedge grass, active rice paddies (palayaban), cogon grass at the wetland edges, and coconuts on the slightly drier ground near homes. And I have my own memory to add to his: tadpoles living in the kanal near our house before it was concreted over, which on its own confirms a functioning amphibian breeding habitat existed within my own lifetime, not some distant past. [1]",
         marginNote:
           "He told me this over dinner. He didn't think it was important. That's the whole problem.",
       },
@@ -284,7 +308,7 @@ const LOGS = [
       },
       {
         type: "seg",
-        text: "Sitio Libis turned out to be a bigger part of this story than I expected when I started. It's the subject of an actual peer-reviewed case study. Corrine Cash and their study \"Creating the Conditions for Climate Resilience: A Community-Based Approach in Canumay East, Philippines,\" published in the journal Urban Planning in 2021, documents a community that organized itself, more or less from scratch, against the same flooding and water problems. Libis sits on land originally owned by the Philippine Veterans Bank; residents lived there for years under the constant threat of eviction before organizing as the United Libis Homeowners Association (ULHOA), led by Theresa Carampatana, to purchase the land outright and re-block their own settlement. They did it by replanning narrow, flood-prone footpaths into a layout that could actually drain. It worked well enough that ULHOA has since been invited to speak at UN-Habitat Philippines events about community-led flood and waste management. None of that is ecology, exactly, but it's the human half of the same story: the water never left, and the people living closest to it have been doing the adapting almost entirely on their own.",
+        text: "Sitio Libis turned out to be a bigger part of this story than I expected when I started. It's the subject of an actual peer-reviewed case study. Corrine Cash and their study \"Creating the Conditions for Climate Resilience: A Community-Based Approach in Canumay East, Philippines,\" published in the journal Urban Planning in 2021, [6] documents a community that organized itself, more or less from scratch, against the same flooding and water problems. Libis sits on land originally owned by the Philippine Veterans Bank; residents lived there for years under the constant threat of eviction before organizing as the United Libis Homeowners Association (ULHOA), led by Theresa Carampatana, to purchase the land outright and re-block their own settlement. [6] They did it by replanning narrow, flood-prone footpaths into a layout that could actually drain. It worked well enough that ULHOA has since been invited to speak at UN-Habitat Philippines events about community-led flood and waste management. None of that is ecology, exactly, but it's the human half of the same story: the water never left, and the people living closest to it have been doing the adapting almost entirely on their own.",
       },
       {
         type: "image",
@@ -295,7 +319,7 @@ const LOGS = [
       { type: "subtitle", text: "Guesswork, But Grounded Guesswork" },
       {
         type: "seg",
-        text: "I want to be upfront: I'm a computer science student, not an ecologist. Everything past this point is reconstruction, not certainty. But it's reconstruction built on real evidence: topography, soil classification, creek names, oral testimony, and the fact that Canumay's waterways are technically still part of the Meycauayan River system, which connects onward through Manila Bay to the broader Pampanga River watershed, which is why this little barangay's drainage technically falls under the Supreme Court's Manila Bay rehabilitation mandate: a legal thread connecting our backyard canal to one of the country's biggest environmental cleanup efforts, even if nobody's pulled on that thread yet.",
+        text: "I want to be upfront: I'm a computer science student, not an ecologist. Everything past this point is reconstruction, not certainty. But it's reconstruction built on real evidence: topography, soil classification, creek names, oral testimony, and the fact that Canumay's waterways are technically still part of the Meycauayan River system, which connects onward through Manila Bay to the broader Pampanga River watershed, which is why this little barangay's drainage technically falls under the Supreme Court's Manila Bay rehabilitation mandate [7] — a legal thread connecting our backyard canal to one of the country's biggest environmental cleanup efforts, even if nobody's pulled on that thread yet.",
       },
       {
         type: "seg",
@@ -320,7 +344,7 @@ const LOGS = [
       { type: "subtitle", text: "What's Still Here, If You Look" },
       {
         type: "seg",
-        text: "And yet. Field walks in May 2026 turned up more survivors than I expected. Aratilis is growing wild beside the big drainage canal on D. Bonifacio Drive. Nobody planted it; it just colonized the disturbed, moist soil at the canal's edge. There also used to be an aratilis in our area before it disappeared. I still remember the sticky-sweet smell of its crushed fruit from when I was a kid. Gabi, the wetland variety of taro, is still growing in neighborhood gardens. Mango and guava trees old enough to mark where past homesteads stood, mango trees can live 100 to 300 years, so the ones still standing here were very likely planted by someone's great-grandparents. Malunggay, planted beside nearly every house, generation after generation. There are also binunga trees growing around empty lots in the land, which are known for their sticky sap. As you can see, most of the plants that thrive in the area are pioneer trees, thriving and living in areas that were once surrounded by water.",
+        text: "And yet. Field walks in May 2026 turned up more survivors than I expected. Aratilis is growing wild beside the big drainage canal on D. Bonifacio Drive. [8] Nobody planted it; it just colonized the disturbed, moist soil at the canal's edge. There also used to be an aratilis in our area before it disappeared. I still remember the sticky-sweet smell of its crushed fruit from when I was a kid. Gabi, the wetland variety of taro, is still growing in neighborhood gardens. Mango and guava trees old enough to mark where past homesteads stood, mango trees can live 100 to 300 years, so the ones still standing here were very likely planted by someone's great-grandparents. Malunggay, planted beside nearly every house, generation after generation. There are also binunga trees growing around empty lots in the land, which are known for their sticky sap. [7] As you can see, most of the plants that thrive in the area are pioneer trees, thriving and living in areas that were once surrounded by water.",
       },
       {
         type: "image",
@@ -357,6 +381,20 @@ const LOGS = [
         type: "seg",
         text: "Put it all together, and Canumay East looks like a ghostly wetland. Sure, it may seem like an ordinary neighborhood filled with pioneer and heritage trees and plants. But beneath it is remnants and evidence of a place that it once was.",
       },
+      {
+        type: "citeblock",
+        citations: [
+          { title: "Grandfather (maternal), personal communication, May 2026 — species present, original land conditions before infill", url: null },
+          { title: "FishBase — Clarias batrachus (hito / walking catfish) — ecological range", url: "https://www.fishbase.se/summary/Clarias-batrachus.html" },
+          { title: "FishBase — Channa striata (dalag / striped snakehead) — wetland ecosystem indicator", url: "https://www.fishbase.se/summary/Channa-striata.html" },
+          { title: "FishBase — Siganus sp. (samaral / rabbitfish) — estuarine and brackish-water indicator", url: "https://www.fishbase.se/identification/SpeciesList.php?famcode=430" },
+          { title: "Stuart Xchange — Ipomoea aquatica (kangkong / water spinach) — wetland habitat indicator", url: "https://www.stuartxchange.org/Kangkong.html" },
+          { title: "Cash, Corrine — \"Creating the Conditions for Climate Resilience\" (2021), Urban Planning Vol. 6 No. 2 — ULHOA / Sitio Libis community study", url: "https://www.cogitatiopress.com/urbanplanning/article/view/4205" },
+          { title: "Stuart Xchange — Macaranga tanarius (binunga / parasol leaf tree) — pioneer species, disturbed sites", url: "https://www.stuartxchange.org/Binunga.html" },
+          { title: "Wikipedia — Muntingia calabura (aratilis / Jamaica cherry) — colonizes disturbed, moist soils", url: "https://en.wikipedia.org/wiki/Muntingia_calabura" },
+          { title: "Neighbors / Sitio Libis residents, personal communication, May 2026 — guyabano trees, creek memory", url: null },
+        ],
+      },
     ],
   },
   {
@@ -388,7 +426,7 @@ const LOGS = [
       },
       {
         type: "seg",
-        text: "And the dead zone doesn't stay local. Victoria Village's kanal drains into Canumay East's unnamed waterways, which drain into the Meycauayan River, which drains into Manila Bay. It then connects, however loosely, to the much larger Pampanga River watershed reaching back to the Sierra Madre. We sealed the kangkungan with concrete and mostly forgot. The Meycauayan River itself isn't a footnote here. As part of the Marilao-Meycauayan-Obando River System, it was named to the Blacksmith Institute's 2007 \"Dirty Thirty\" list of the world's most polluted places, and multiple peer-reviewed water studies independently describe it as one of the most severely polluted rivers in the Philippines. Downstream dissolved oxygen has been measured as low as 0.49 parts per million in published water quality research (vs. a fish survival minimum of about 5 ppm); the contamination includes lead from battery recycling, hexavalent chromium from leather tanning, mercury, and nickel, and despite all of that, the river still serves as a domestic and agricultural water source for roughly 250,000 people (GAIA / Blacksmith Institute, 2007). The nearby Tullahan River, which forms Valenzuela's southern border, is in even worse shape: functionally biologically dead and one of seven Philippine rivers identified as major contributors of plastic waste to the world's oceans. It's worth sitting with the irony in its name: \"Tullahan\" comes from \"tulya,\" meaning clam, because the river was once so full of shellfish that people named it after them.",
+        text: "And the dead zone doesn't stay local. Victoria Village's kanal drains into Canumay East's unnamed waterways, which drain into the Meycauayan River, which drains into Manila Bay. [1] It then connects, however loosely, to the much larger Pampanga River watershed reaching back to the Sierra Madre. We sealed the kangkungan with concrete and mostly forgot. The Meycauayan River itself isn't a footnote here. As part of the Marilao-Meycauayan-Obando River System, it was named to the Blacksmith Institute's 2007 \"Dirty Thirty\" list of the world's most polluted places, [2] and multiple peer-reviewed water studies independently describe it as one of the most severely polluted rivers in the Philippines. Downstream dissolved oxygen has been measured as low as 0.49 parts per million in published water quality research [3] (vs. a fish survival minimum of about 5 ppm); the contamination includes lead from battery recycling, hexavalent chromium from leather tanning, mercury, and nickel, [2] and despite all of that, the river still serves as a domestic and agricultural water source for roughly 250,000 people. [3] The nearby Tullahan River, which forms Valenzuela's southern border, is in even worse shape: functionally biologically dead and one of seven Philippine rivers identified as major contributors of plastic waste to the world's oceans. It's worth sitting with the irony in its name: \"Tullahan\" comes from \"tulya,\" meaning clam, because the river was once so full of shellfish that people named it after them.",
       },
       {
         type: "image",
@@ -416,7 +454,7 @@ const LOGS = [
       },
       {
         type: "seg",
-        text: "July 2025 made the stakes concrete, literally and otherwise. Valenzuela was declared under a state of calamity after Typhoons Crising, Dante, and Emong hit in close succession; more than 9,000 people had to be rescued and evacuated citywide. On July 21 specifically, nearly half a kilometer of NLEX itself went under a meter of floodwater for more than five hours, and that single event is what triggered the emergency dredging operations that followed in August, when over 69,000 cubic meters of silt and debris were pulled from eleven priority waterways across Valenzuela and Meycauayan.",
+        text: "July 2025 made the stakes concrete, literally and otherwise. Valenzuela was declared under a state of calamity after Typhoons Crising, Dante, and Emong hit in close succession; more than 9,000 people had to be rescued and evacuated citywide. [6] On July 21 specifically, nearly half a kilometer of NLEX itself went under a meter of floodwater for more than five hours, and that single event is what triggered the emergency dredging operations that followed in August, when over 69,000 cubic meters of silt and debris were pulled from eleven priority waterways across Valenzuela and Meycauayan. [7]",
       },
       {
         type: "image",
@@ -432,7 +470,7 @@ const LOGS = [
       },
       {
         type: "seg",
-        text: "On top of all of that, the ground itself is slowly sinking. Valenzuela sits inside the CAMANAVA area (Caloocan, Malabon, Navotas, Valenzuela), one of the worst subsidence zones in Metro Manila. Older satellite data (2003–2011) put the CAMANAVA rate at 20 to 42 millimeters a year (Raucoules et al., 2013); more recent measurements from 2015–2019 suggest it's actually improved to roughly 10 to 20 millimeters a year, which researchers attribute to groundwater extraction restrictions inside Metro Manila proper. It's a rare piece of good news in this research, though it comes with a sharp asterisk, since the unrestricted provinces just outside the city line, Bulacan and Cavite, are still sinking at 40 millimeters a year or more (Abidin et al., 2011). The honest, uncomfortable version of the flooding story is that it isn't primarily about heavier rain. It's that the ground is sinking faster than the sea is rising.",
+        text: "On top of all of that, the ground itself is slowly sinking. Valenzuela sits inside the CAMANAVA area (Caloocan, Malabon, Navotas, Valenzuela), one of the worst subsidence zones in Metro Manila. Older satellite data (2003–2011) put the CAMANAVA rate at 20 to 42 millimeters a year; [4] more recent measurements from 2015–2019 suggest it's actually improved to roughly 10 to 20 millimeters a year, [5] which researchers attribute to groundwater extraction restrictions inside Metro Manila proper. It's a rare piece of good news in this research, though it comes with a sharp asterisk, since the unrestricted provinces just outside the city line, Bulacan and Cavite, are still sinking at 40 millimeters a year or more. [4] The honest, uncomfortable version of the flooding story is that it isn't primarily about heavier rain. It's that the ground is sinking faster than the sea is rising.",
       },
       {
         type: "image",
@@ -453,11 +491,11 @@ const LOGS = [
       { type: "subtitle", text: "What the City Is Doing, and Isn't" },
       {
         type: "seg",
-        text: "This is the part of the research that turned out to be less about ecology and more about who gets protected. The eleven waterways targeted in the August 2025 dredging operation were chosen specifically because their blockages were worsening flooding along NLEX and in Valenzuela and Meycauayan more broadly after that five-hour highway submersion in July. Canumay West does have two named, tracked creeks, Paso de Blas Creek at L. San Diego and at T. Santiago, both included in the 2025 cleanup. The pattern holds up uncomfortably well across the whole research: creeks that touch NLEX get dredged, get named, and get official attention because protecting them protects the highway. Lingunan, the barangay next door, had one of its creeks named DENR's Most Improved Estero in Metro Manila in 2021. In the World Bank's own sewerage system assessment, Canumay East falls under the sub-catchment that received the least infrastructure investment of the three covered by the project.",
+        text: "This is the part of the research that turned out to be less about ecology and more about who gets protected. The eleven waterways targeted in the August 2025 dredging operation were chosen specifically because their blockages were worsening flooding along NLEX and in Valenzuela and Meycauayan more broadly after that five-hour highway submersion in July. [7] Canumay West does have two named, tracked creeks, Paso de Blas Creek at L. San Diego and at T. Santiago, both included in the 2025 cleanup. The pattern holds up uncomfortably well across the whole research: creeks that touch NLEX get dredged, get named, and get official attention because protecting them protects the highway. Lingunan, the barangay next door, had one of its creeks named DENR's Most Improved Estero in Metro Manila in 2021. [8] In the World Bank's own sewerage system assessment, Canumay East falls under the sub-catchment that received the least infrastructure investment of the three covered by the project. [9]",
       },
       {
         type: "seg",
-        text: 'To be fair, it\'s not nothing, citywide. Valenzuela runs creek and waterway cleanup drives with MMDA, cites the Clean Water Act (Republic Act 9275) in its sustainability policy, and technically falls under the Manila Bay rehabilitation mandate through its connection to the Meycauayan River system. San Miguel Corporation\'s private cleanup of the Tullahan River, completed in August 2022 after just over two years of work, removed 1.12 million metric tons of silt and waste, a part of SMC\'s larger "Better Rivers PH" program, which has now pulled more than 9.12 million metric tons of waste from ten major river systems nationwide since 2020. Nearby communities did report less flooding afterward. A more recent round of maintenance cleanup, reported in April 2026, removed another 710,168 metric tons from the Bulacan River System, including the downstream portion of the Meycauayan River. The Polo Riverwalk, a 2.5-kilometer linear park connecting five barangays along the old Tullahan floodwalls, opened in January 2026. DENR has stated publicly that the biodiversity these rivers once supported can return with sustained effort. Whether "sustained effort" ever turns toward the unnamed, undredged side of the watershed is the open question this whole project is really asking.',
+        text: 'To be fair, it\'s not nothing, citywide. Valenzuela runs creek and waterway cleanup drives with MMDA, cites the Clean Water Act (Republic Act 9275) [10] in its sustainability policy, and technically falls under the Manila Bay rehabilitation mandate [11] through its connection to the Meycauayan River system. San Miguel Corporation\'s private cleanup of the Tullahan River, completed in August 2022 after just over two years of work, removed 1.12 million metric tons of silt and waste, a part of SMC\'s larger "Better Rivers PH" program, which has now pulled more than 9.12 million metric tons of waste from ten major river systems nationwide since 2020. [12] Nearby communities did report less flooding afterward. A more recent round of maintenance cleanup, reported in April 2026, removed another 710,168 metric tons from the Bulacan River System, including the downstream portion of the Meycauayan River. The Polo Riverwalk, a 2.5-kilometer linear park connecting five barangays along the old Tullahan floodwalls, opened in January 2026. [13] DENR has stated publicly that the biodiversity these rivers once supported can return with sustained effort. Whether "sustained effort" ever turns toward the unnamed, undredged side of the watershed is the open question this whole project is really asking.',
       },
       {
         type: "seg",
@@ -466,6 +504,24 @@ const LOGS = [
           "This is the argument. Everything else in these logs is just evidence for this sentence.",
       },
       { type: "seg", text: "It wasn't." },
+      {
+        type: "citeblock",
+        citations: [
+          { title: "Manila Bay Office / EMB — Watershed Data Portal — Meycauayan River connectivity to Manila Bay", url: "https://mbo.emb.gov.ph/?page_id=18" },
+          { title: "Blacksmith Institute — The World's Worst Polluted Places (2007) — Marilao-Meycauayan-Obando River System 'Dirty Thirty'", url: "https://www.blacksmithinstitute.org" },
+          { title: "Pleto et al. — Meycauayan River Water Quality Assessment (2020) — 0.49 ppm dissolved oxygen; 250,000 people dependent on river", url: "https://www.journalofhealthandpollution.org" },
+          { title: "Eco et al. — Widespread Land Subsidence in Metro Manila (2018) — CAMANAVA 20–42 mm/yr baseline; Bulacan/Cavite 40 mm/yr", url: "https://www.jscimedcentral.com" },
+          { title: "Sulapas et al. — Ground Subsidence Study (2024), ScienceDirect — Metro Manila 10–20 mm/yr recent estimate", url: "https://www.sciencedirect.com/science/article/pii/S1569843224004618" },
+          { title: "Tribune — Valenzuela State of Calamity Declaration, July 2025 — Typhoons Crising, Dante, Emong; 9,000+ evacuated", url: "https://tribune.net.ph" },
+          { title: "Manila Bulletin — Emergency Creek Dredging, August 2025 — 69,000 m³ removed from 11 priority waterways", url: "https://mb.com.ph/2025/08/08/valenzuela-lgu-mmda-intensify-creeks-cleanup-drive" },
+          { title: "DENR-NCR — Lingunan Creek Named Most Improved Estero in Metro Manila (2021)", url: "https://ncr.denr.gov.ph" },
+          { title: "World Bank Environmental Assessment Report (2014) — Canumay East in least-invested sub-catchment of three", url: "https://documents.worldbank.org" },
+          { title: "Republic Act No. 9275 — Philippine Clean Water Act (2004)", url: "https://www.officialgazette.gov.ph/2004/03/22/republic-act-no-9275/" },
+          { title: "MMDA et al. v. Concerned Residents of Manila Bay, G.R. Nos. 171947–48 (SC, 2008) — Manila Bay rehabilitation mandate", url: "https://elibrary.judiciary.gov.ph" },
+          { title: "BusinessMirror — SMC Better Rivers PH: 9.12M metric tons removed since 2020 (April 2026)", url: "https://businessmirror.com.ph/2026/04/30/smcs-river-cleanups-reach-9-12m-metric-tons-of-waste-silt-removed-since-2020/" },
+          { title: "GMA News — Polo Riverwalk opens in Valenzuela, January 2026 — 2.5 km along old Tullahan floodwalls", url: "https://www.gmanetwork.com" },
+        ],
+      },
     ],
   },
   {
@@ -480,6 +536,7 @@ const LOGS = [
       {
         type: "image",
         src: "/im_wet.jpg",
+        mono: true,
         caption:
           "Knee-deep in the sala during the 2025 floods. We were more ready the second time around. Valeza family archive.",
       },
