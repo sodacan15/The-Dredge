@@ -11,7 +11,16 @@ export default function PageHeader({ eyebrow, title, subtitle, titleEm }) {
               : title}
           </h1>
         </div>
-        <img src="/stamp.png" alt="" className="page-header-stamp" aria-hidden="true" />
+        <a
+          href="https://www.youtube.com/watch?v=lm3t3myPspk&list=RDgNoW8w5nmwQ&index=10"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="page-header-stamp-link"
+          title="Watch on YouTube"
+          aria-label="Watch related video on YouTube"
+        >
+          <img src="/stamp.png" alt="" className="page-header-stamp" aria-hidden="true" />
+        </a>
       </div>
       {subtitle && <p className="page-subtitle">{subtitle}</p>}
     </div>
