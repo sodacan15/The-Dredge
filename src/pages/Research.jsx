@@ -3,6 +3,48 @@ import PageHeader from "../components/PageHeader";
 
 const SECTIONS = [
   {
+    id: "methodology",
+    label: "Methodology",
+    eyebrow: "How This Was Made",
+    entries: [
+      {
+        title: "Primary Method: Oral History",
+        finding: "Testimony as ecological data",
+        body: "The core of this research is oral testimony — interviews with my grandfather, a barangay worker, and Sitio Libis residents. None of them were interviewed as ecological experts; I asked them what they remembered. What came back were species names, plant names, and physical descriptions of the land before it was built over. Each memory is treated as field data, cross-checked against soil maps, botanical records, and place-name etymology."
+      },
+      {
+        title: "Barangay Archive Research",
+        finding: "Official history as field guide",
+        body: "The Barangay Profile of Canumay East, Section 2.1, held in physical archives at the barangay hall, provided the eleven sapang names, the seven sitio names, and confirmed the Kanumai tree's position as the barangay's historical landmark. This document is the single most important primary source in the project — retrieved in person during a field visit, May 2026."
+      },
+      {
+        title: "Soil Map Analysis",
+        finding: "The soil as historical witness",
+        body: "A soil classification map prepared by the Bureau of Soils and Water Management, retrieved via the Freedom of Information portal (foi.gov.ph), placed Canumay East entirely within Tropudults–Tropudalfs–Oxisols soil types that independently point to a historically wet, poorly drained, seasonally waterlogged floodplain. The soil tells you what the surface stopped showing."
+      },
+      {
+        title: "Field Walks — May 2026",
+        finding: "Pioneer species as ecological markers",
+        body: "Three separate walking surveys through Canumay East in May 2026 documented surviving plant species: aratilis at the canal edge, barringtonia behind a factory wall, binunga on empty lots, gabi in neighborhood gardens, old-growth mango and coconut trees. Each species is a clue — pioneer trees mark where land was disturbed, fish-poison trees mark where water once was, and old fruit trees mark where homesteads stood."
+      },
+      {
+        title: "Creek Name Etymology",
+        finding: "Eleven names as ecological field report",
+        body: "The eleven sapang names of old Canumay were analyzed as descriptive records, not just place names. Sapang Pangitlogan-Bakaw (mangrove nesting ground), Sapang Bangka-bangka (boat-navigable depth), Sapang Halang Sa Araw (canopy density blocking sunlight), Sapang Binawan (fish trap productivity) — each is a biological observation written in Tagalog by the people who lived beside the water."
+      },
+      {
+        title: "Ecological Cross-Referencing",
+        finding: "Species logic as reconstruction tool",
+        body: "Where direct evidence was incomplete, species presence was inferred from ecological logic: if the marsh plants are confirmed, the marsh fish almost certainly followed. If the fish are confirmed, the fishing culture and its tools (fish-poison trees like Kanumai and Barringtonia) follow. This approach is explicitly flagged in Log 3 as 'grounded guesswork' — reconstruction built on real evidence, not speculation."
+      },
+      {
+        title: "Secondary Sources & Academic Literature",
+        finding: "Peer review as corroboration",
+        body: "Academic sources were used to corroborate oral testimony and field observation: Corrine Cash's 2021 Urban Planning paper on ULHOA in Sitio Libis, Eco et al. (2018) and Sulapas et al. (2024) on CAMANAVA land subsidence, Pleto et al. (2020) on Meycauayan River water quality, and the World Bank's 2014 environmental assessment of Valenzuela's sub-catchments. All sources are listed in full in the other Research sections."
+      },
+    ]
+  },
+  {
     id: "websites",
     label: "Websites",
     eyebrow: "Digital Sources",

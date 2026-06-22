@@ -85,13 +85,6 @@ const LOGS = [
         type: "seg",
         text: "The town's eventual renaming is where local history gets a name and a face. Dr. Pío Valenzuela was born in Polo in 1887. He is a physician, Katipunero, one of the key figures in the revolutionary movement against Spain. During the 1898 Philippine Revolution he was elected the area's first municipal mayor, and it's his role in that uprising that earned the town his surname decades later, when a portion of old Polo was carved out and renamed in his honor.",
       },
-      {
-        type: "image",
-        src: "/Assets/barangay-profile.jpg",
-        contain: true,
-        caption:
-          "Barangay Profile of Canumay East, Section 2.1, the official history document listing all 7 sitios and 11 sapang. The Kanumai tree is named explicitly as the barangay's landmark. Barangay Hall physical archives.",
-      },
       { type: "subtitle", text: "The Long Road to Cityhood" },
       {
         type: "seg",
@@ -115,18 +108,6 @@ const LOGS = [
       // ← timeline renders here in JSX, this slot is intentionally empty in blocks
       { type: "subtitle", text: "Canumay: The Barangay That Got Cut in Half" },
       {
-        type: "image",
-        src: "/Assets/old-farm.jpg",
-        caption:
-          "Agricultural land use typical of old Canumay, the kind of open-field, water-adjacent landscape that preceded industrialization in the area. Source: historical archive photograph.",
-      },
-      {
-        type: "image",
-        src: "/Assets/binunga2014.jpg",
-        caption:
-          "A binunga tree photographed on a Canumay East street in February 2014 via Google Street View, these pioneer trees were already colonizing disturbed lots even then. The contrast between the tree and the concrete wall behind it is the whole story.",
-      },
-      {
         type: "seg",
         text: "Before the split, old Canumay was one of the largest original barangays in Valenzuela. 341 hectares combined, seven sitios, and eleven sapangs; all of the land is named after the Kanumai tree. [4] Each sitio name was its own small piece of ecological evidence: Kaypandan for the pandan that grows at marshy edges; Bilaran for where people dried fish and crops by the water; Daang Malalim for a sunken, flood-prone road; Pinagbayanan for the old town center; Dulong Canumay for the farthest edge of the barangay; and Canumay itself, where a big tree is located.",
         marginNote:
@@ -139,12 +120,6 @@ const LOGS = [
       {
         type: "seg",
         text: "Canumay East today is bounded by Lingunan and Lawang Bato to the northwest and holds two distinct internal zones: high-ground hilly zones and low-ground areas such as Victoria Village, Sitio Libis, and Marton Road. No matter how high or low their topography is, both are highly industrialized, with factories such as New Star Apa and Paper One blending with residential homes. As of the 2020 census, the barangay had a population of 14,657 (up from 12,462 in 2015, spread across 3,455 households averaging 3.61 members each); [3] the largest single age group is 20- to 24-year-olds, just over 1,500 people. That's the paper trail: the borders, the renamings, the splits, the headcounts. Now for the part that actually matters to this project: what was living on this land before any of it happened?",
-      },
-      {
-        type: "image",
-        src: "/Assets/emptylot2014.jpg",
-        caption:
-          "An empty lot in Canumay East, February 2014, Google Street View captures pioneer trees already reclaiming disturbed ground before the lot was built over. The adobe rubble in the foreground is typical of infill construction in the area.",
       },
       {
         type: "image",
@@ -177,6 +152,12 @@ const LOGS = [
         type: "seg",
         text: "Every barangay in this part of Valenzuela is named after something: a tree, a feature, a memory of what used to grow there. Canumay's namesake is a tree most people here have never seen, because it isn't here anymore. This log is about that tree, the eleven creeks it used to stand near, and what's left of either.",
       },
+      {
+        type: "image",
+        src: "/Assets/barangay-profile.jpg",
+        contain: true,
+        caption: "Barangay Profile of Canumay East, Section 2.1 — the official history document listing all 7 sitios and 11 sapang. The Kanumai tree is named explicitly as the barangay's landmark. Barangay Hall physical archives.",
+      },
       { type: "subtitle", text: "The Tree Itself: Diospyros canomoi" },
       {
         type: "seg",
@@ -193,6 +174,21 @@ const LOGS = [
         src: "/canumai_reimagined.png",
         caption:
           "The Kanumai as it might have stood, a theoretical rendition of the tree by the author. No photograph of the original exists; this is reconstruction from description alone.",
+      },
+      {
+        type: "image",
+        src: "/Assets/old-farm.jpg",
+        caption: "Agricultural land use typical of old Canumay — the kind of open-field, water-adjacent landscape that preceded industrialization in this area. Source: historical archive photograph.",
+      },
+      {
+        type: "image",
+        src: "/Assets/emptylot2014.jpg",
+        caption: "An empty lot in Canumay East, February 2014. Pioneer trees already reclaiming disturbed ground before the lot was built over. The adobe rubble is typical of infill construction. Source: Google Street View.",
+      },
+      {
+        type: "image",
+        src: "/Assets/binunga2014.jpg",
+        caption: "A binunga tree on a Canumay East street, February 2014. Pioneer trees were colonizing disturbed lots even then. The contrast between the tree and the concrete wall behind it is the whole story. Source: Google Street View.",
       },
       {
         type: "subtitle",
@@ -295,6 +291,12 @@ const LOGS = [
         src: "/dalag.jpg",
         caption:
           "Channa striata (dalag/mudfish), my grandfather confirmed these lived where our house now stands. Its presence alone tells you the ecosystem was once functioning. Photo: Wikimedia Commons.",
+      },
+      {
+        type: "image",
+        src: "/kangkong.jpg",
+        caption:
+          "Ipomoea aquatica (kangkong / water spinach) — my grandfather confirmed the ground under our house was once a kangkungan before it was buried under adobe. Still found growing wild in wet margins throughout the barangay. Photo: Wikimedia Commons.",
       },
       {
         type: "image",
@@ -420,9 +422,9 @@ const LOGS = [
       },
       {
         type: "image",
-        src: "/barringtonia_fruit.jpg",
+        src: "/Assets/Baringtonia.jpg",
         caption:
-          "Barringtonia asiatica (Putat), one surviving specimen found behind a factory wall near the Bonifacio canal. A remnant of the fish-poison trees that fishing communities once relied on. Photo: Wikimedia Commons.",
+          "Barringtonia asiatica (Putat), one surviving specimen found behind a factory wall near the Bonifacio canal. A remnant of the fish-poison trees that fishing communities once relied on. Field photograph, May 2026.",
       },
       {
         type: "seg",
@@ -537,6 +539,7 @@ const LOGS = [
         type: "image",
         src: "/im_wet.jpg",
         mono: true,
+        href: "https://www.youtube.com/watch?v=1Oz9rEpcBH0",
         caption:
           "Knee-deep in the sala during the 2025 floods. We were more ready the second time around. Valeza family archive.",
       },

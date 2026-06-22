@@ -13,7 +13,19 @@ export default function Author() {
       <div className="author-layout">
         <div className="author-left">
           <div className="author-photo-wrap">
-            <img src="/author-photo.png" alt="Reinwald Marone Valeza" className="author-photo" />
+            <a
+              href="https://www.youtube.com/watch?v=6XxQC_f6Dok"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="author-video-link"
+              title="Watch on YouTube"
+            >
+              <div className="author-video-frame">
+                <img src="/author-photo.png" alt="Reinwald Marone Valeza" className="author-stamp-img author-real-photo" />
+                <span className="author-stamp-play">▶ Watch on YouTube</span>
+              </div>
+            </a>
+            <p className="author-photo-caption">Reinwald Marone Valeza · Victoria Village, Canumay East</p>
           </div>
 
           <div className="author-facts-card">

@@ -1074,6 +1074,302 @@ body {
   border-bottom-color: var(--water);
 }
 
+/* ── YouTube video embed (logs) ── */
+.doc-video-wrap {
+  margin: 1.8rem 0;
+}
+
+.doc-video-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border: 8px solid #fff;
+  box-shadow: 3px 5px 16px rgba(36,24,16,0.14);
+  transform: rotate(-0.3deg);
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.doc-video-frame::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 40%;
+  width: 44px;
+  height: 13px;
+  background: var(--tape-color);
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.doc-video-embed {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+/* ── Citeblock (footnotes/references) ── */
+.doc-citeblock {
+  margin: 2.5rem 0 1rem;
+  padding: 1rem 1.25rem 1.25rem;
+  border-top: 1px solid var(--paper-deep);
+  border-left: 3px solid var(--rust);
+  background: rgba(140, 90, 50, 0.03);
+}
+
+.doc-citeblock-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.52rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 0.75rem;
+}
+
+.doc-citeblock-list {
+  margin: 0;
+  padding-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.doc-cite-item {
+  font-family: 'Spectral', serif;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.doc-cite-link {
+  color: var(--water);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+.doc-cite-link:hover {
+  border-bottom-color: var(--water);
+  color: var(--rust);
+}
+
+.doc-cite-nolink {
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+/* ── Logo video modal ── */
+.sidebar-logo-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+}
+
+.sidebar-logo-btn:hover .sidebar-logo {
+  transform: scale(1.06);
+  filter: brightness(1.05);
+}
+
+.logo-video-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 13, 8, 0.75);
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInUp 0.2s ease both;
+}
+
+.logo-video-card {
+  background: var(--paper-warm);
+  border: 8px solid #fff;
+  box-shadow: 4px 8px 32px rgba(20,13,8,0.35);
+  width: min(560px, 90vw);
+  border-radius: 2px;
+}
+
+.logo-video-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.8rem 0.4rem;
+}
+
+.logo-video-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--rust);
+  opacity: 0.7;
+}
+
+.logo-video-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 2px;
+  transition: background 0.1s;
+}
+.logo-video-close:hover { background: rgba(140,90,50,0.1); }
+
+.logo-video-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.logo-video-embed {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+.logo-video-caption {
+  font-family: 'Caveat', cursive;
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  text-align: center;
+  padding: 0.5rem 0 0.6rem;
+  opacity: 0.55;
+}
+
+/* ── Author page stamp link ── */
+.author-video-link {
+  display: block;
+  text-decoration: none;
+}
+
+.author-video-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  border: 8px solid #fff;
+  box-shadow: 3px 5px 16px rgba(36,24,16,0.14);
+  overflow: hidden;
+  border-radius: 2px;
+  transform: rotate(-0.5deg);
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: var(--parchment);
+}
+
+.author-video-link:hover .author-video-frame {
+  box-shadow: 4px 8px 24px rgba(36,24,16,0.22);
+  transform: rotate(-0.5deg) scale(1.02);
+}
+
+.author-stamp-img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.author-stamp-play {
+  position: absolute;
+  bottom: 0.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--ink-muted);
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.author-video-link:hover .author-stamp-play {
+  opacity: 1;
+}
+
+.author-photo-caption {
+  font-family: 'Caveat', cursive;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  text-align: center;
+  margin-top: 0.5rem;
+  opacity: 0.7;
+}
+
+/* ── Gallery video card ── */
+.gallery-video-card {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  width: 100%;
+  animation: fadeInUp 0.4s ease both;
+}
+
+.gallery-video-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border: 6px solid #fff;
+  box-shadow: 2px 4px 12px rgba(36,24,16,0.13);
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.gallery-video-embed {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+/* ── Video-link card (thumbnail → opens YouTube in new tab) ── */
+.video-link-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.video-link-frame {
+  position: relative;
+}
+
+.video-link-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(0,0,0,0.45);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.video-link-card:hover .video-link-play {
+  opacity: 1;
+}
+
+.video-link-card:hover .photo-frame {
+  box-shadow: 4px 8px 20px rgba(36,24,16,0.22);
+}
+
+/* ── Author real photo (cover, not contain) ── */
+.author-real-photo {
+  object-fit: cover;
+  padding: 0;
+}
+
 /* ── Reading progress bar ── */
 .reading-progress-bar {
   position: fixed;
@@ -1353,6 +1649,39 @@ body {
   max-height: 420px;
   object-fit: cover;
   display: block;
+}
+
+.doc-img-link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+
+.doc-img-link-badge {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: rgba(0,0,0,0.52);
+  padding: 0.25rem 0.75rem;
+  border-radius: 2px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.doc-img-link:hover .doc-img-link-badge {
+  opacity: 1;
+}
+
+.doc-img-link:hover .doc-img {
+  filter: brightness(0.88);
+  transition: filter 0.2s;
 }
 
 .doc-img--mono {

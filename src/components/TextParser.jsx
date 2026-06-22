@@ -52,17 +52,17 @@ function Reveal({ children, delay = 0 }) {
 
 /* ── Sapang Glossary card ── */
 const SAPANG = [
-  { name: "Sapang Bulok",           meaning: "Rotten Creek",                note: "The smell of healthy marsh chemistry — decay that sustains life." },
-  { name: "Sapang Pangitlogan-Bakaw", meaning: "Mangrove Nesting Creek",    note: "Mangroves with nesting birds once lined this bank. Pangitlog = to lay eggs." },
-  { name: "Sapang Halang Sa Araw",  meaning: "Creek Blocked from the Sun",  note: "Old-growth canopy so thick that sunlight never reached the water." },
-  { name: "Sapang Bangka-bangka",   meaning: "Boat Creek",                  note: "Wide and deep enough for actual boat travel — a navigable waterway." },
-  { name: "Sapang Binawan",         meaning: "Fish Trap Creek",             note: "Where people set traps; the name implies a consistent, reliable catch." },
-  { name: "Sapang Kay Calumpit",    meaning: "Creek toward Calumpit",       note: "A directional name — this creek pointed the way to Calumpit, Bulacan." },
-  { name: "Sapang Pangit",          meaning: "Ugly Creek",                  note: "Named for appearance, not quality — likely a slow, murky marsh arm." },
-  { name: "Sapang Saga",            meaning: "Saga Creek",                  note: "Named after the saga plant (Adenanthera) — a marker tree at the bank." },
-  { name: "Sapang Patulo",          meaning: "Dripping Creek",              note: "A seepage creek — water that bled from the hillside into the marsh." },
-  { name: "Sapang Kulong-kulong",   meaning: "Enclosed Creek",              note: "Surrounded on most sides — a sheltered inlet or backwater pool." },
-  { name: "Sapang Bilaran",         meaning: "Drying Ground Creek",         note: "Where fish and crops were laid to dry in the sun near the water." },
+  { name: "Sapang Bulok",             meaning: "Rotten Creek",               note: "The smell of healthy marsh chemistry — decay that sustains life." },
+  { name: "Sapang Pangitlogan-Bakaw", meaning: "Mangrove Nesting Creek",     note: "Mangroves with nesting birds once lined this bank. Pangitlog = to lay eggs." },
+  { name: "Sapang Halang Sa Araw",    meaning: "Creek Blocked from the Sun", note: "Old-growth canopy so thick that sunlight never reached the water." },
+  { name: "Sapang Bangka-bangka",     meaning: "Boat Creek",                 note: "Wide and deep enough for actual boat travel — a navigable waterway." },
+  { name: "Sapang Binawan",           meaning: "Fish Trap Creek",            note: "Where people set traps; the name implies a consistent, reliable catch." },
+  { name: "Sapang Kay Calumpit",      meaning: "Creek toward Calumpit",      note: "A directional name — this creek pointed the way to Calumpit, Bulacan." },
+  { name: "Sapang Pangit",            meaning: "Ugly Creek",                 note: "Named for appearance, not quality — likely a slow, murky marsh arm." },
+  { name: "Sapang Saga",              meaning: "Saga Creek",                 note: "Named after the saga plant (Adenanthera) — a marker tree at the bank." },
+  { name: "Sapang Patulo",            meaning: "Dripping Creek",             note: "A seepage creek — water that bled from the hillside into the marsh." },
+  { name: "Sapang Kulong-kulong",     meaning: "Enclosed Creek",             note: "Surrounded on most sides — a sheltered inlet or backwater pool." },
+  { name: "Sapang Bilaran",           meaning: "Drying Ground Creek",        note: "Where fish and crops were laid to dry in the sun near the water." },
 ];
 
 function SapangGlossary() {
@@ -77,7 +77,6 @@ function SapangGlossary() {
         </span>
         <span className="sapang-toggle-sub">field insert · creek name glossary</span>
       </button>
-
       {open && (
         <div className="sapang-body">
           <p className="sapang-intro">
@@ -111,7 +110,7 @@ function SapangGlossary() {
 }
 
 /* ── Margin note ── */
-function MarginNote({ text, children }) {
+function MarginNote({ text }) {
   const [open, setOpen] = useState(false);
   return (
     <div className="margin-note-wrap">
@@ -132,7 +131,7 @@ function MarginNote({ text, children }) {
   );
 }
 
-/* ── Reading progress bar (for the log doc) ── */
+/* ── Reading progress bar ── */
 function ReadingProgress() {
   const [pct, setPct] = useState(0);
   useEffect(() => {
@@ -145,21 +144,26 @@ function ReadingProgress() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  return (
-    <div className="reading-progress-bar" style={{ width: `${pct}%` }} />
-  );
+  return <div className="reading-progress-bar" style={{ width: `${pct}%` }} />;
 }
 
-/* ── Inline citation parser ── */
-function parseWithCitations(text) {
-  const parts = text.split(/(\[\d+\])/g);
-  if (parts.length === 1) return text;
-  return parts.map((part, i) => {
-    if (/^\[\d+\]$/.test(part)) {
-      return <sup key={i} className="doc-cite">{part}</sup>;
-    }
-    return part;
-  });
+/* ── YouTube / video embed ── */
+function VideoEmbed({ src, caption }) {
+  return (
+    <div className="doc-video-wrap">
+      <div className="doc-video-frame">
+        <iframe
+          src={src}
+          className="doc-video-embed"
+          title={caption || "Video"}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          loading="lazy"
+        />
+      </div>
+      {caption && <p className="doc-figcaption">{caption}</p>}
+    </div>
+  );
 }
 
 /* ── Main RenderedDoc ── */
@@ -185,7 +189,7 @@ export function RenderedDoc({ blocks }) {
               <Reveal key={i} delay={delay}>
                 <div className="doc-seg-wrap">
                   {block.marginNote && <MarginNote text={block.marginNote} />}
-                  <p className="doc-seg">{parseWithCitations(block.text)}</p>
+                  <p className="doc-seg">{block.text}</p>
                 </div>
               </Reveal>
             );
@@ -211,65 +215,54 @@ export function RenderedDoc({ blocks }) {
                 </blockquote>
               </Reveal>
             );
-          case "image": {
-            const imgClass = [
-              "doc-img",
-              block.mono ? "doc-img--mono" : "",
-              block.contain ? "doc-img--contain" : "",
-            ].filter(Boolean).join(" ");
+          case "image":
             return (
               <Reveal key={i} delay={delay}>
                 <figure className="doc-figure">
-                  <img src={block.src} alt={block.caption || ""} className={imgClass} />
+                  {block.href ? (
+                    <a href={block.href} target="_blank" rel="noopener noreferrer" className="doc-img-link">
+                      <img src={block.src} alt={block.caption || ""} className="doc-img" />
+                      <span className="doc-img-link-badge">▶ Watch on YouTube</span>
+                    </a>
+                  ) : (
+                    <img src={block.src} alt={block.caption || ""} className="doc-img" />
+                  )}
                   {block.caption && (
                     <figcaption className="doc-figcaption">{block.caption}</figcaption>
                   )}
                 </figure>
               </Reveal>
             );
-          }
+          case "video":
+            return (
+              <Reveal key={i} delay={delay}>
+                <VideoEmbed src={block.src} caption={block.caption} />
+              </Reveal>
+            );
           case "sapang-glossary":
             return (
               <Reveal key={i} delay={0}>
                 <SapangGlossary />
               </Reveal>
             );
-          case "timeline":
+          case "citeblock":
             return (
               <Reveal key={i} delay={0}>
-                <div className="doc-timeline">
-                  <p className="doc-timeline-label">Administrative &amp; Ecological Timeline</p>
-                  <div className="doc-timeline-track">
-                    {(block.events || []).map(({ year, text }) => (
-                      <div key={year} className="doc-timeline-item">
-                        <span className="doc-timeline-year">{year}</span>
-                        <span className="doc-timeline-dot" />
-                        <p className="doc-timeline-text">{text}</p>
-                      </div>
+                <div className="doc-citeblock">
+                  <p className="doc-citeblock-label">References</p>
+                  <ol className="doc-citeblock-list">
+                    {(block.citations || []).map((c, j) => (
+                      <li key={j} className="doc-cite-item">
+                        {c.url
+                          ? <a href={c.url} target="_blank" rel="noopener noreferrer" className="doc-cite-link">{c.title}</a>
+                          : <span className="doc-cite-nolink">{c.title}</span>
+                        }
+                      </li>
                     ))}
-                  </div>
+                  </ol>
                 </div>
               </Reveal>
             );
-          case "citeblock":
-            return (
-              <div key={i} className="doc-citeblock">
-                <p className="doc-citeblock-label">— sources cited in this log —</p>
-                <ol className="doc-citeblock-list">
-                  {(block.citations || []).map((c, ci) => (
-                    <li key={ci} className="doc-citeblock-item">
-                      {c.url ? (
-                        <a href={c.url} target="_blank" rel="noopener noreferrer" className="doc-cite-link">{c.title}</a>
-                      ) : (
-                        <span>{c.title}</span>
-                      )}
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            );
-          case "margin-note":
-            return null;
           default:
             return null;
         }

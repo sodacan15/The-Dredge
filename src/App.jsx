@@ -26,7 +26,15 @@ export default function App() {
     <div className="layout">
       <nav className="sidebar">
         <div className="sidebar-brand">
-          <img src="/logo.png" alt="The Dredge" className="sidebar-logo" />
+          <a
+            href="https://www.youtube.com/watch?v=DjJKHFwLpg4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="sidebar-logo-btn"
+            title="Listen on YouTube"
+          >
+            <img src="/logo.png" alt="The Dredge" className="sidebar-logo" />
+          </a>
           <p className="sidebar-title">The Dredge</p>
         </div>
         <ul className="nav-list">
