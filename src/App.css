@@ -2474,6 +2474,266 @@ sup.doc-cite {
 /* ── Image orientation (EXIF-aware) ── */
 img { image-orientation: from-image; }
 
+/* ══════════════════════════════════════════════════════
+   HOME — 2-column masthead layout (Apr–Jun 2026 redesign)
+══════════════════════════════════════════════════════ */
+
+/* Additional keyframes */
+@keyframes popIn {
+  0%   { opacity: 0; transform: translateY(12px) rotate(var(--r, -2deg)) scale(0.9); }
+  70%  { transform: translateY(-2px) rotate(var(--r, -2deg)) scale(1.02); }
+  100% { opacity: 1; transform: translateY(0) rotate(var(--r, -2deg)) scale(1); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(22px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* 2-col masthead */
+.home-masthead {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+.home-text-col {
+  animation: fadeInUp 0.5s ease both;
+}
+
+.home-tagline {
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  margin: 0.65rem 0 1.1rem;
+}
+
+/* Photo column */
+.home-photo-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  animation: slideInRight 0.6s ease 0.15s both;
+}
+
+.home-hero-figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.home-hero-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+  filter: sepia(0.08) contrast(0.95);
+  transition: transform 0.45s ease, filter 0.3s ease;
+}
+
+.home-hero-figure:hover .home-hero-img {
+  transform: scale(1.035);
+  filter: sepia(0.03) contrast(1);
+}
+
+.home-photo-row {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 0.6rem;
+  align-items: start;
+}
+
+.home-photo-third {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.home-photo-third-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  filter: sepia(0.08) contrast(0.95);
+  transition: transform 0.45s ease, filter 0.3s ease;
+}
+
+.home-photo-third:hover .home-photo-third-img {
+  transform: scale(1.04);
+  filter: sepia(0.03) contrast(1);
+}
+
+/* Stamp as link */
+.home-field-stamp-link {
+  text-decoration: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.home-field-stamp-link:hover {
+  opacity: 0.6 !important;
+  transform: rotate(-8deg) scale(1.1) !important;
+}
+
+/* Page-header stamp as YouTube link */
+.page-header-stamp-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.page-header-stamp-link:hover .page-header-stamp {
+  opacity: 0.95;
+  transform: rotate(1deg) scale(1.14);
+}
+
+/* Sticker cluster in masthead — override spacing */
+.home-masthead .home-sticker-cluster {
+  margin: 0 0 1rem;
+  gap: 0.75rem;
+  animation: none;
+}
+
+.home-masthead .home-sticker {
+  font-size: 0.92rem;
+  padding: 0.65rem 0.85rem;
+}
+
+/* Grand quote compact inside masthead */
+.home-masthead .home-grand-quote {
+  font-size: clamp(1rem, 2.2vw, 1.4rem);
+  margin: 1.1rem 0 0.5rem;
+}
+
+/* Stagger sticker pop-in */
+.home-sticker:nth-child(1) { animation: popIn 0.45s ease 0.1s both; }
+.home-sticker:nth-child(2) { animation: popIn 0.45s ease 0.2s both; }
+.home-sticker:nth-child(3) { animation: popIn 0.45s ease 0.3s both; }
+.home-field-stamp-link      { animation: popIn 0.45s ease 0.4s both; }
+
+/* Responsive: stack on narrow screens */
+@media (max-width: 680px) {
+  .home-masthead { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════════════════════
+   GALLERY — embedded location map
+══════════════════════════════════════════════════════ */
+
+.gallery-map-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--paper-deep);
+  animation: fadeInUp 0.5s ease 0.1s both;
+}
+
+.gallery-map-header {
+  margin-bottom: 0.9rem;
+}
+
+.gallery-map-label {
+  display: block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.53rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--rust);
+  opacity: 0.7;
+  margin-bottom: 0.3rem;
+}
+
+.gallery-map-title {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.gallery-map-sub {
+  font-family: 'Spectral', serif;
+  font-size: 0.84rem;
+  color: var(--ink-muted);
+  font-style: italic;
+  margin: 0;
+}
+
+.gallery-map-frame {
+  position: relative;
+  padding-top: 42%;
+  overflow: hidden;
+  border: 1px solid var(--paper-deep);
+  border-radius: var(--radius);
+  margin-top: 0.75rem;
+}
+
+.gallery-map-embed {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+  filter: sepia(0.18) contrast(0.88);
+}
+
+.gallery-map-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--water);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.gallery-map-link:hover {
+  border-bottom-color: var(--water);
+}
+
+/* ══════════════════════════════════════════════════════
+   CONSISTENCY — shared interactive improvements
+══════════════════════════════════════════════════════ */
+
+/* Smooth hover lift for photo cards */
+.photo-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(36,24,16,0.14);
+}
+
+/* Home annotation (asterisk footer) */
+.home-annotation {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  opacity: 0.5;
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Doc segment hover highlight */
+.doc-seg {
+  transition: background 0.2s;
+  padding: 0.1rem 0.3rem;
+  margin: 0 -0.3rem;
+  border-radius: 3px;
+}
+
+.doc-seg:hover {
+  background: rgba(139, 62, 34, 0.035);
+}
+
 /* ── Doc: inline timeline (Log 1) ── */
 .doc-timeline {
   margin: 2rem 0 2.5rem;
