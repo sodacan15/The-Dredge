@@ -19,7 +19,7 @@ export default function Home() {
             <div className="home-sticker" style={{ "--r": "-3deg" }}>
               11 creeks.
               <br />
-              <strong>ONE</strong> remaining.
+              <strong>NONE</strong> intact.
             </div>
             <div className="home-sticker home-sticker-green" style={{ "--r": "1.8deg" }}>
               One tree that gave name 
